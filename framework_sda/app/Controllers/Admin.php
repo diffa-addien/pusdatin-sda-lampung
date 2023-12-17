@@ -30,7 +30,7 @@ class Admin extends _BaseController
         $data_akun = $this->M_Akun->findAll();
         $data_kat = $this->M_Kategori->findAll();
         
-        $geo_kosong = file_get_contents(base_url("geojson_kosong.geojson"));
+        $geo_kosong = file_get_contents(realpath("geojson_kosong.geojson"));
         $geo_kosong = json_decode($geo_kosong)->features;
 
         $data = [
