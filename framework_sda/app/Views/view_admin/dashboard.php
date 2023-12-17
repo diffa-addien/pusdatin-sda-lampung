@@ -260,7 +260,7 @@ try {
           var layerPetak".++$hitPetak." = omnivore.kml('".base_url($dir_geojson).$sda["geojson_petak"]."', null, customLayer).addTo(map);    
         ";
       } else {
-        $petakJSON = json_decode(file_get_contents(base_url($dir_geojson.$sda["geojson_petak"])))->features;
+        $petakJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_petak"])))->features;
         foreach($petakJSON as $index=>$feature){
           $petakJSON[$index]->properties->deskripsi = $sda["isi_data"];
           $petakJSON[$index]->properties->judul_data = $sda["judul_data"];
@@ -315,7 +315,7 @@ try {
           var layerGaris".++$hitGaris." = omnivore.kml('".base_url($dir_geojson).$sda["geojson_garis"]."', null, customLayer).addTo(map);    
         ";
       }else{
-        $garisJSON = json_decode(file_get_contents(base_url($dir_geojson.$sda["geojson_garis"])))->features;
+        $garisJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_garis"])))->features;
         foreach($garisJSON as $index=>$feature){
           $garisJSON[$index]->properties->deskripsi = $sda["isi_data"];
           $garisJSON[$index]->properties->judul_data = $sda["judul_data"];
@@ -370,7 +370,7 @@ try {
           var layerTitik".++$hitTitik." = omnivore.kml('".base_url($dir_geojson).$sda["geojson_titik"]."', null, customLayer).addTo(map);    
         ";
       }else{
-        $titikJSON = json_decode(file_get_contents(base_url($dir_geojson.$sda["geojson_titik"])))->features;
+        $titikJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_titik"])))->features;
         foreach($titikJSON as $index=>$feature){
           $titikJSON[$index]->properties->deskripsi = $sda["isi_data"];
           $titikJSON[$index]->properties->judul_data = $sda["judul_data"];
@@ -445,7 +445,7 @@ try {
         ";
 
       }else{
-        $petakJSON = json_decode(file_get_contents(base_url($dir_prov_geojson.$sda_p["geojson_petak"])))->features;
+        $petakJSON = json_decode(file_get_contents(realpath($dir_prov_geojson.$sda_p["geojson_petak"])))->features;
         foreach($petakJSON as $index=>$feature){
           $petakJSON[$index]->properties->deskripsi = $sda_p["isi_data"];
           $petakJSON[$index]->properties->judul_data = $sda_p["judul_data"];
@@ -500,7 +500,7 @@ try {
           var layerGaris".++$hitGaris." = omnivore.kml('".base_url($dir_prov_geojson).$sda_p["geojson_garis"]."', null, customLayer).addTo(map);    
         ";
       }else{
-        $garisJSON = json_decode(file_get_contents(base_url($dir_prov_geojson.$sda_p["geojson_garis"])))->features;
+        $garisJSON = json_decode(file_get_contents(realpath($dir_prov_geojson.$sda_p["geojson_garis"])))->features;
         foreach($garisJSON as $index=>$feature){
           $garisJSON[$index]->properties->deskripsi = $sda_p["isi_data"];
           $garisJSON[$index]->properties->judul_data = $sda_p["judul_data"];
@@ -555,7 +555,7 @@ try {
           var layerTitik".++$hitTitik." = omnivore.kml('".base_url($dir_prov_geojson).$sda_p["geojson_titik"]."', null, customLayer).addTo(map);    
         ";
       }else{
-        $titikJSON = json_decode(file_get_contents(base_url($dir_prov_geojson.$sda_p["geojson_titik"])))->features;
+        $titikJSON = json_decode(file_get_contents(realpath($dir_prov_geojson.$sda_p["geojson_titik"])))->features;
         foreach($titikJSON as $index=>$feature){
           $titikJSON[$index]->properties->deskripsi = $sda_p["isi_data"];
           $titikJSON[$index]->properties->judul_data = $sda_p["judul_data"];
