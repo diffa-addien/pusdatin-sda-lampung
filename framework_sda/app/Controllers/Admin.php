@@ -32,6 +32,8 @@ class Admin extends _BaseController
         
         $geo_kosong = file_get_contents(realpath("geojson_kosong.geojson"));
         $geo_kosong = json_decode($geo_kosong)->features;
+        var_dump(realpath("geojson_kosong.geojson"));
+        die;
 
         $data = [
             'title' => "Dasbor",

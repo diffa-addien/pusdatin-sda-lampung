@@ -101,9 +101,9 @@ var customLayer = L.geoJson(null, {
 
 <?php
 // For SDA Provinsi ============================================================================
-$dir_geojson  = base_url("uploads/sda_provinsi/geografis/");
-$dir_img      = base_url("uploads/sda_provinsi/gambar/");
-$dir_doc      = base_url("uploads/sda_provinsi/dokumen/");
+$dir_geojson  = realpath("uploads/sda_provinsi/geografis/");
+$dir_img      = realpath("uploads/sda_provinsi/gambar/");
+$dir_doc      = realpath("uploads/sda_provinsi/dokumen/");
 $hitPetak = $hitGaris = $hitTitik = 0;
 
 foreach($sda_prov as $sda) { 
@@ -141,7 +141,7 @@ try {
           var layerPetak".++$hitPetak." = omnivore.kml('".$dir_geojson.$sda["geojson_petak"]."', null, customLayer).addTo(map);    
         ";
       } else {
-        $petakJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_petak"])))->features;
+        $petakJSON = json_decode(file_get_contents($dir_geojson.$sda["geojson_petak"]))->features;
         foreach($petakJSON as $index=>$feature){
           $petakJSON[$index]->properties->deskripsi = $sda["isi_data"];
           $petakJSON[$index]->properties->judul_data = $sda["judul_data"];
@@ -196,7 +196,7 @@ try {
           var layerGaris".++$hitGaris." = omnivore.kml('".$dir_geojson.$sda["geojson_garis"]."', null, customLayer).addTo(map);    
         ";
       }else{
-        $garisJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_garis"])))->features;
+        $garisJSON = json_decode(file_get_contents($dir_geojson.$sda["geojson_garis"]))->features;
         foreach($garisJSON as $index=>$feature){
           $garisJSON[$index]->properties->deskripsi = $sda["isi_data"];
           $garisJSON[$index]->properties->judul_data = $sda["judul_data"];
@@ -250,7 +250,7 @@ try {
           var layerTitik".++$hitTitik." = omnivore.kml('".$dir_geojson.$sda["geojson_titik"]."', null, customLayer).addTo(map);    
         ";
       }else{
-        $titikJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_titik"])))->features;
+        $titikJSON = json_decode(file_get_contents($dir_geojson.$sda["geojson_titik"]))->features;
         foreach($titikJSON as $index=>$feature){
           $titikJSON[$index]->properties->deskripsi = $sda["isi_data"];
           $titikJSON[$index]->properties->judul_data = $sda["judul_data"];
