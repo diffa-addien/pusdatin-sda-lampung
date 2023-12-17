@@ -1,0 +1,352 @@
+ERROR - 2023-03-23 05:21:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_kode_wilayah` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SE' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('kode_wilayah')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:23:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_kode_wilayah` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SE' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('kode_wilayah')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:24:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_kode_wilayah` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SE' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('kode_wilayah')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:27:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_master_data` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('master_data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:30:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'test_webgiss' in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'test_webgiss', 3306, '', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'test_webgiss' in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-03-23 05:31:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_master_data` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('master_data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:32:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_master_datar` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SE' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('master_datar')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:48:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_master_data` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('master_data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:49:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_master_data` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(26): CodeIgniter\Database\Forge->createTable('master_data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:58:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_master_data` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-050938_MasterData.php(25): CodeIgniter\Database\Forge->createTable('master_data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\MasterData->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 05:59:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayah` VARCHAR(7) NOT NULL,
+	`nilai` INT(11) NULL,
+	' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(35): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:03:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayah` VARCHAR(7) NOT NULL,
+	`nilai` INT(11) NULL,
+	' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(35): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:04:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayah` VARCHAR(7) NOT NULL,
+	`nilai` INT(11) NULL,
+	' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(35): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:04:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayahs` VARCHAR(7) NOT NULL,
+	`nilai` INT(11) NULL,
+' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(35): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:04:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayahs` VARCHAR(7) NOT NULL,
+	`nilais` INT(11) NULL,' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(35): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:04:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayah` VARCHAR(7) NOT NULL,
+	`nilai` INT(11) NULL,
+	' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(35): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:08:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayah` VARCHAR(7) NULL,
+	`nilai` INT(11) NULL,
+	CONS' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(36): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:08:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`kode_wilayah` VARCHAR(7) NOT NULL,
+	`nilai` INT(11) NOT NUL' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(34): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:09:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	CONSTRAINT `pk_data` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER S' at line 3 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(26): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:52:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(36): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-23 06:54:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Database\Migrations\2023-03-23-051006_Data.php(36): CodeIgniter\Database\Forge->createTable('data')
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(877): App\Database\Migrations\Data->up()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

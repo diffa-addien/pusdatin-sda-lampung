@@ -1,0 +1,185 @@
+CRITICAL - 2023-03-24 07:51:10 --> Invalid file: "layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/maps', [], true)
+ 4 APPPATH\Controllers\Admin.php(26): view('view_admin/maps', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 07:58:42 --> Undefined variable: title
+in APPPATH\Views\view_admin\frame\a_layout.php on line 7.
+ 1 APPPATH\Views\view_admin\frame\a_layout.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\view_admin\\frame\\a_layout.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\frame\\a_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/frame/a_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(14): view('view_admin/dashboard')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 10:15:27 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\view_admin\kode_wilayah\import.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/kode_wilayah/import', [], true)
+ 4 APPPATH\Controllers\Admin.php(64): view('view_admin/kode_wilayah/import')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->import()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 10:17:04 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\view_admin\kode_wilayah\import.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/kode_wilayah/import', [], true)
+ 4 APPPATH\Controllers\Admin.php(73): view('view_admin/kode_wilayah/import')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->import()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 10:17:05 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\view_admin\kode_wilayah\import.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/kode_wilayah/import', [], true)
+ 4 APPPATH\Controllers\Admin.php(73): view('view_admin/kode_wilayah/import')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->import()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 10:25:35 --> Undefined variable: title
+in APPPATH\Views\view_admin\frame\a_layout.php on line 7.
+ 1 APPPATH\Views\view_admin\frame\a_layout.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\view_admin\\frame\\a_layout.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\frame\\a_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/frame/a_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/kode_wilayah/import', [], true)
+ 6 APPPATH\Controllers\Admin.php(73): view('view_admin/kode_wilayah/import')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->import()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 10:29:01 --> Undefined index: csv
+in APPPATH\Controllers\Admin.php on line 40.
+ 1 APPPATH\Controllers\Admin.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: csv', 'APPPATH\\Controllers\\Admin.php', 40, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->import()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 10:40:43 --> Undefined variable: kodeWilayah
+in APPPATH\Views\view_admin\akun_list.php on line 20.
+ 1 APPPATH\Views\view_admin\akun_list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kodeWilayah', 'APPPATH\\Views\\view_admin\\akun_list.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\akun_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/akun_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(23): view('view_admin/akun_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 10:41:24 --> Undefined variable: model
+in APPPATH\Controllers\Admin.php on line 19.
+ 1 APPPATH\Controllers\Admin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: model', 'APPPATH\\Controllers\\Admin.php', 19, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_admin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-24 10:48:54 --> mysqli_sql_exception: Duplicate entry '11' for key 'kode_wilayah' in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', NULL, false)
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\app\Controllers\Admin.php(72): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CodeIgniter.php(934): App\Controllers\Admin->import()
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\O...')
+#11 {main}
+CRITICAL - 2023-03-24 10:48:54 --> Duplicate entry '11' for key 'kode_wilayah'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kode_wilayah` (`kode_wilayah`, `nama_wilayah`)
+VALUES (\'11\',\'ACEH\'), (\'12\',\'SUMATERA UTARA\'), (\'13\',\'SUMATERA BARAT\'), (\'14\',\'RIAU\'), (\'15\',\'JAMBI\'), (\'16\',\'SUMATERA SELATAN\'), (\'17\',\'BENGKULU\'), (\'18\',\'LAMPUNG\'), (\'19\',\'KEPULAUAN BANGKA BELITUNG\'), (\'21\',\'KEPULAUAN RIAU\'), (\'31\',\'DKI JAKARTA\'), (\'32\',\'JAWA BARAT\'), (\'33\',\'JAWA TENGAH\'), (\'34\',\'DI YOGYAKARTA\'), (\'35\',\'JAWA TIMUR\'), (\'36\',\'BANTEN\'), (\'51\',\'BALI\'), (\'52\',\'NUSA TENGGARA BARAT\'), (\'53\',\'NUSA TENGGARA TIMUR\'), (\'61\',\'KALIMANTAN BARAT\'), (\'62\',\'KALIMANTAN TENGAH\'), (\'63\',\'KALIMANTAN SELATAN\'), (\'64\',\'KALIMANTAN TIMUR\'), (\'65\',\'KALIMANTAN UTARA\'), (\'71\',\'SULAWESI UTARA\'), (\'72\',\'SULAWESI TENGAH\'), (\'73\',\'SULAWESI SELATAN\'), (\'74\',\'SULAWESI TENGGARA\'), (\'75\',\'GORONTALO\'), (\'76\',\'SULAWESI BARAT\'), (\'81\',\'MALUKU\'), (\'82\',\'MALUKU UTARA\'), (\'91\',\'PAPUA BARAT\'), (\'94\',\'PAPUA\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Controllers\Admin.php(72): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->import()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 13:36:54 --> Invalid file: "view_admin/akun_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/akun_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/akun_list', [], true)
+ 3 APPPATH\Controllers\Admin.php(26): view('view_admin/akun_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_admin()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 13:36:57 --> Invalid file: "view_admin/akun_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/akun_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/akun_list', [], true)
+ 3 APPPATH\Controllers\Admin.php(26): view('view_admin/akun_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_admin()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 13:39:22 --> Invalid file: "view_admin/akun_list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/akun_list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/akun_list', [], true)
+ 3 APPPATH\Controllers\Admin.php(26): view('view_admin/akun_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_wilayah()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 13:46:46 --> Invalid file: "layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/data/import', [], true)
+ 4 APPPATH\Controllers\Admin.php(65): view('view_admin/data/import', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->add_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 14:52:20 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 165.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-24 14:54:43 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 165.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-24 14:56:14 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 165.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-24 14:57:38 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 165.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-24 15:21:56 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 165.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-24 16:06:57 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 165.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-24 16:20:11 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 165.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

@@ -1,0 +1,11 @@
+CRITICAL - 2023-06-09 08:05:26 --> Undefined variable: file2
+in APPPATH\Views\view_admin\dashboard.php on line 120.
+ 1 APPPATH\Views\view_admin\dashboard.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file2', 'APPPATH\\Views\\view_admin\\dashboard.php', 120, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(40): view('view_admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

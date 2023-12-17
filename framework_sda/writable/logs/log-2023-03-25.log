@@ -1,0 +1,57 @@
+ERROR - 2023-03-25 05:09:45 --> mysqli_sql_exception: Unknown column 'id_master_data1' in 'where clause' in C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\app\Controllers\Admin.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\CodeIgniter.php(934): App\Controllers\Admin->index()
+#8 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\framework_sda\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem_sda_gis\public_sis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-25 05:09:45 --> Unknown column 'id_master_data1' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data`
+WHERE `id_master_data1` IS NULL
+AND `kode_wilayah` = :kode_wilayah:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Admin.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 07:23:39 --> Undefined property: stdClass::$kode
+in APPPATH\Controllers\Admin.php on line 20.
+ 1 APPPATH\Controllers\Admin.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kode', 'APPPATH\\Controllers\\Admin.php', 20, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 07:24:47 --> Undefined variable: nilaiMax
+in APPPATH\Views\view_admin\dashboard.php on line 126.
+ 1 APPPATH\Views\view_admin\dashboard.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nilaiMax', 'APPPATH\\Views\\view_admin\\dashboard.php', 126, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(37): view('view_admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 07:24:48 --> Undefined variable: nilaiMax
+in APPPATH\Views\view_admin\dashboard.php on line 126.
+ 1 APPPATH\Views\view_admin\dashboard.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nilaiMax', 'APPPATH\\Views\\view_admin\\dashboard.php', 126, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(37): view('view_admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

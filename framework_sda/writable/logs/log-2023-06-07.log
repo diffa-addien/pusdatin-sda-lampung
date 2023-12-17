@@ -1,0 +1,30 @@
+CRITICAL - 2023-06-07 08:41:58 --> Invalid file: "view_admin/a_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/a_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/a_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/data/import', [], true)
+ 4 APPPATH\Controllers\Admin.php(88): view('view_admin/data/import', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->add_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 08:42:09 --> Invalid file: "view_admin/a_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/a_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/a_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/data/import', [], true)
+ 4 APPPATH\Controllers\Admin.php(88): view('view_admin/data/import', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->add_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 08:43:06 --> Invalid file: "view_admin/a_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/a_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/a_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/data/import', [], true)
+ 4 APPPATH\Controllers\Admin.php(88): view('view_admin/data/import', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->add_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

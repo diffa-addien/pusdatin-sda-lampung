@@ -1,0 +1,143 @@
+CRITICAL - 2023-10-23 15:30:27 --> Undefined variable: tahun_now
+in APPPATH\Views\view_publik\provinsi\data-provinsi.php on line 17.
+ 1 APPPATH\Views\view_publik\provinsi\data-provinsi.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tahun_now', 'APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/data-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(91): view('view_publik/provinsi/data-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 16:32:10 --> Undefined variable: query
+in APPPATH\Controllers\Publik.php on line 86.
+ 1 APPPATH\Controllers\Publik.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: query', 'APPPATH\\Controllers\\Publik.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 16:41:48 --> Undefined variable: tahun
+in APPPATH\Controllers\Publik.php on line 83.
+ 1 APPPATH\Controllers\Publik.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tahun', 'APPPATH\\Controllers\\Publik.php', 83, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 16:43:11 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+in APPPATH\Controllers\Publik.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 16:46:49 --> Undefined variable: data_SDA
+in APPPATH\Views\view_publik\provinsi\data-provinsi.php on line 79.
+ 1 APPPATH\Views\view_publik\provinsi\data-provinsi.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_SDA', 'APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/data-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(99): view('view_publik/provinsi/data-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 17:35:15 --> Array to string conversion
+in APPPATH\Views\view_publik\provinsi\data-provinsi.php on line 30.
+ 1 APPPATH\Views\view_publik\provinsi\data-provinsi.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php', 30, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/data-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(104): view('view_publik/provinsi/data-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 17:36:17 --> Array to string conversion
+in APPPATH\Views\view_publik\provinsi\data-provinsi.php on line 85.
+ 1 APPPATH\Views\view_publik\provinsi\data-provinsi.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/data-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(104): view('view_publik/provinsi/data-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 17:47:01 --> mysqli_num_rows() expects parameter 1 to be mysqli_result, array given
+in APPPATH\Views\view_publik\provinsi\data-provinsi.php on line 37.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_num_rows() expects parameter 1 to be mysqli_result, array given', 'APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php', 37, [...])
+ 2 APPPATH\Views\view_publik\provinsi\data-provinsi.php(37): mysqli_num_rows([...])
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\data-provinsi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/data-provinsi', [], true)
+ 6 APPPATH\Controllers\Publik.php(104): view('view_publik/provinsi/data-provinsi', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 17:55:19 --> Call to undefined function round_to_2dp()
+in APPPATH\Views\view_publik\provinsi\data-provinsi.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/data-provinsi', [], true)
+ 4 APPPATH\Controllers\Publik.php(108): view('view_publik/provinsi/data-provinsi', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 17:57:19 --> syntax error, unexpected '.'
+in APPPATH\Views\view_publik\provinsi\data-provinsi.php on line 38.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/data-provinsi', [], true)
+ 3 APPPATH\Controllers\Publik.php(108): view('view_publik/provinsi/data-provinsi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-23 18:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-23 18:40:03 --> Undefined property: App\Controllers\Login::$M_Akun
+in APPPATH\Controllers\Login.php on line 86.
+ 1 APPPATH\Controllers\Login.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$M_Akun', 'APPPATH\\Controllers\\Login.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->tambah_akun()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-23 18:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-23 18:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

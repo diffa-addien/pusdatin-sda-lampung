@@ -1,0 +1,53 @@
+INFO - 2023-12-17 09:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-17 09:04:38 --> file_get_contents(http://sistemair:10/lampung.geojson): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+in APPPATH\Controllers\Admin.php on line 34.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://sistemair:10/lampung.geojson): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+', 'APPPATH\\Controllers\\Admin.php', 34, [...])
+ 2 APPPATH\Controllers\Admin.php(34): file_get_contents('http://sistemair:10/lampung.geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-17 09:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-17 09:08:26 --> file_get_contents(http://sistemair:10/Petak.geojson): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+
+in APPPATH\Controllers\Admin.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://sistemair:10/Petak.geojson): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+', 'APPPATH\\Controllers\\Admin.php', 33, [...])
+ 2 APPPATH\Controllers\Admin.php(33): file_get_contents('http://sistemair:10/Petak.geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-17 09:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-17 09:09:51 --> Undefined variable: file
+in APPPATH\Controllers\Admin.php on line 37.
+ 1 APPPATH\Controllers\Admin.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file', 'APPPATH\\Controllers\\Admin.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-17 09:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-17 09:10:06 --> Trying to get property 'features' of non-object
+in APPPATH\Controllers\Admin.php on line 37.
+ 1 APPPATH\Controllers\Admin.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'features\' of non-object', 'APPPATH\\Controllers\\Admin.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-17 09:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-17 09:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

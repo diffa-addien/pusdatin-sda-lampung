@@ -1,0 +1,52 @@
+CRITICAL - 2023-06-04 14:46:51 --> Undefined variable: library
+in APPPATH\Views\view_admin\a_layout.php on line 32.
+ 1 APPPATH\Views\view_admin\a_layout.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: library', 'APPPATH\\Views\\view_admin\\a_layout.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\a_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/a_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/beranda', [], true)
+ 6 APPPATH\Controllers\Publik.php(13): view('view_publik/beranda', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:47:54 --> Invalid file: "view_publik/p_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_publik/p_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_publik/p_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/beranda', [], true)
+ 4 APPPATH\Controllers\Publik.php(13): view('view_publik/beranda', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:56:06 --> Invalid file: "view_admin/a_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/a_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/a_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/data/data_list', [], true)
+ 4 APPPATH\Controllers\Admin.php(65): view('view_admin/data/data_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:56:11 --> Invalid file: "view_admin/a_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/a_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/a_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/data/data_list', [], true)
+ 4 APPPATH\Controllers\Admin.php(65): view('view_admin/data/data_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_data()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 14:56:28 --> Invalid file: "view_admin/a_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_admin/a_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('view_admin/a_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/kode_wilayah/wilayah_list', [], true)
+ 4 APPPATH\Controllers\Admin.php(49): view('view_admin/kode_wilayah/wilayah_list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->list_wilayah()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
