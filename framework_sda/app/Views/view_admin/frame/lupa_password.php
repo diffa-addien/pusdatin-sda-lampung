@@ -12,7 +12,8 @@
   <title><?=$title?></title>
 
   <style>
-    .main-content{
+	.svh{min-height: 90vh; min-height: 90svh;}
+	.main-content{
 		width: 50%;
 		border-radius: 20px;
 		box-shadow: 0 5px 5px rgba(0,0,0,.4);
@@ -91,7 +92,7 @@
 </head>
 <body class="bg-body-secondary">
 	<!-- Main Content -->
-	<div class="container-fluid d-flex align-items-center justify-content-center" style="height: 90vh;">
+	<div class="container-fluid d-flex align-items-center justify-content-center svh">
 		<div class="row main-content bg-primary text-center">
 			<div class="col-md-4 text-center company__info bg-primary">
 				<span class="company__logo"><h2><i class="fas fa-faucet"></i></h2></span>

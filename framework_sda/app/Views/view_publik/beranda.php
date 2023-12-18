@@ -99,7 +99,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
       <div class="col-md-6 d-flex flex-column justify-content-center text-sm-start text-center">
         <h1 class="p-6 fw-bolder">Pusat Data Sumber Daya Air Provinsi Lampung</h1>
         <p class="py-2">
-        Selamat datang di sistem! Kami sangat senang Anda bergabung. Kami tahu bahwa Anda memiliki banyak pertanyaan, dan kami siap membantu Anda. Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami.
+        Selamat datang di sistem! Kami sangat senang Anda berkunjung. Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami.
         </p>
         <span class="mb-3">
           <a href="javascript: scrollke('mainmenu')" class="btn btn-warning btn-lg btn-block rounded-0 text-center" style="width:240px; max-width:100%">Selengkapnya <i class="fas fa-chevron-circle-down"></i></a>

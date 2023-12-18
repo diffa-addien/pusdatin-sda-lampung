@@ -74,13 +74,13 @@
         </li> -->
 
         <?php if($_SESSION['role'] == "admin_utama"){?>
-        <li class="nav-item">
-          <a class="nav-link" href="<?=base_url("Admin/profil_sistem")?>" role="button"><i class="fas fa-cog mr-1"></i>Pengaturan</a>
+        <li class="nav-item" style="font-size: 125%; margin-top:-4px">
+          <a class="nav-link" href="<?=base_url("Admin/profil_sistem")?>" role="button"><i class="fas fa-cog mr-1"></i><span class="d-none d-sm-inline" style="font-size:16px">Pengaturan</span></a>
         </li>
         <span class="nav-link"> | </span>
         <?php } ?>
 
-        <li class="nav-item">
+        <li class="nav-item" style="overflow:hidden; white-space: nowrap;">
           <a class="nav-link" href="#" data-toggle="dropdown" role="button">
             <i class="fas fa-user-circle fa-lg"></i> <?=$_SESSION['nama']?>
           </a>

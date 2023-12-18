@@ -75,10 +75,12 @@ function cekView($value){
   <!-- Render Konten -->
   <div class="z-10 w-100 py-2 bg-white" style="height: 41px; box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;">
     <div class="container">
-    <a href="<?= base_url()?>"><i class="fas fa-chevron-left border-end border-2 pe-2 text-start"></i></a> <b class="text-capitalize ps-2"><?=$jenis." ".$nama?></b>
-    <span class="float-end">
-      <span class="pe-2">Tampilan:</span><a href="?layout=maps" class="<?=cekView('maps')?>" title="Mode Maps"><i class="fa fa-map"></i></a> <span class="border-end border-2 p-0 mx-1"></span> <a href="?layout=list" class="ps-1 <?=cekView('list')?>" title="Mode List"><i class="fa fa-list-alt"></i></a>
-    </span>
+      <div class="d-inline-block" style="max-width: 75%; overflow:hidden; white-space: nowrap;">
+        <a href="<?= base_url()?>"><i class="fas fa-chevron-left border-end border-2 pe-2 text-start"></i></a> <b class="text-capitalize ps-2"><?=$jenis." ".$nama?></b>
+      </div>
+        <span class="float-end">
+          <span class="pe-2 d-none d-sm-inline">Tampilan : </span><a href="?layout=maps" class="<?=cekView('maps')?>" title="Mode Maps"><i class="fa fa-map"></i></a> <span class="border-end border-2 p-0 mx-1"></span> <a href="?layout=list" class="ps-1 <?=cekView('list')?>" title="Mode List"><i class="fa fa-list-alt"></i></a>
+        </span> 
     </div>
   </div>
   <?= $this->renderSection('content') ?>
