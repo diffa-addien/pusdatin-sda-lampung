@@ -98,9 +98,9 @@ var customLayer = L.geoJson(null, {
 
 <?php
 // For SDA Provinsi ============================================================================
-$dir_geojson  = base_url("uploads/sda_wilayah/geografis/");
-$dir_img      = base_url("uploads/sda_wilayah/gambar/");
-$dir_doc      = base_url("uploads/sda_wilayah/dokumen/");
+$dir_geojson  = "uploads/sda_wilayah/geografis/";
+$dir_img      = "uploads/sda_wilayah/gambar/";
+$dir_doc      = "uploads/sda_wilayah/dokumen/";
 $hitPetak = $hitGaris = $hitTitik = 0;
 
 foreach($sda_wilayah as $sda) { 

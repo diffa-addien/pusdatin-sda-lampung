@@ -47,9 +47,9 @@ class Database extends Config
     public array $online = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'id21194146_sistemair',
-        'password' => 'Takuma-12',
-        'database' => 'id21194146_sdalam',
+        'username' => 'adminpusdatin_1',
+        'password' => 'UnilaOke@2023',
+        'database' => 'adminpusdatin_lampung',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

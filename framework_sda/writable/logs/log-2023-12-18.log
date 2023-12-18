@@ -1,0 +1,12 @@
+CRITICAL - 2023-12-18 05:30:01 --> file_get_contents(C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem-pusdatin-lampung\uploads\sda_provinsi\geografisID2_Petak.geojson): failed to open stream: No such file or directory
+in APPPATH\Views\view_publik\provinsi\maps-provinsi.php on line 144.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\Users\\ACER\\OneDrive\\Dokumen\\_SKRIPSI\\PROJECT\\sistem-pusdatin-lampung\\uploads\\sda_provinsi\\geografisID2_Petak.geojson): failed to open stream: No such file or directory', 'APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php', 144, [...])
+ 2 APPPATH\Views\view_publik\provinsi\maps-provinsi.php(144): file_get_contents('FCPATH\\uploads\\sda_provinsi\\geografisID2_Petak.geojson')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/maps-provinsi', [], true)
+ 6 APPPATH\Controllers\Publik.php(85): view('view_publik/provinsi/maps-provinsi', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

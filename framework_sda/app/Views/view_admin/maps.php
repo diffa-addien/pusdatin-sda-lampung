@@ -139,9 +139,9 @@ var customLayer = L.geoJson(null, {
 
 <?php
 // For SDA Wilayah ============================================================================
-$dir_geojson  = base_url("uploads/sda_wilayah/geografis/");
-$dir_img      = base_url("uploads/sda_wilayah/gambar/");
-$dir_doc      = base_url("uploads/sda_wilayah/dokumen/");
+$dir_geojson  = "uploads/sda_wilayah/geografis/";
+$dir_img      = "uploads/sda_wilayah/gambar/";
+$dir_doc      = "uploads/sda_wilayah/dokumen/";
 $hitPetak = $hitGaris = $hitTitik = 0;
 
 foreach($SDA_wilayah as $sda) { 
@@ -324,9 +324,9 @@ try {
 
 <?php
 // For SDA Provinsi ============================================================================
-$dir_prov_geojson  = base_url("uploads/sda_provinsi/geografis/");
-$dir_prov_img      = base_url("uploads/sda_provinsi/gambar/");
-$dir_prov_doc      = base_url("uploads/sda_provinsi/dokumen/");
+$dir_prov_geojson  = "uploads/sda_provinsi/geografis/";
+$dir_prov_img      = "uploads/sda_provinsi/gambar/";
+$dir_prov_doc      = "uploads/sda_provinsi/dokumen/";
 
 foreach($SDA_prov as $sda_p) {
   $cekGambar = "";
