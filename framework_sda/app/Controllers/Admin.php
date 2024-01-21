@@ -265,10 +265,11 @@ class Admin extends _BaseController
     public function save_profil()
     {
         $dir_img = "uploads/data_provinsi/";
-        $logo_sis = $this->request->getVar("logo_sis_lama");
-        $logo_prov = $this->request->getVar("logo_prov_lama");
+        $logo_sis_fix = $this->request->getVar("logo_sis_lama");
+        $logo_prov_fix = $this->request->getVar("logo_prov_lama");
 
         if($this->request->getFile('logo_sis')->isValid()){
+            // die;
             $validationRule = [
                 'logo_sis' => [
                     'label' => 'Error Image: ',
@@ -286,13 +287,14 @@ class Admin extends _BaseController
             $img = $this->request->getFile('logo_sis');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
-            $check = realpath($dir_img.$logo_sis);
+            $check = realpath($dir_img.$logo_sis_fix);
             if (is_file($check)){unlink($check);}
-            $logo_sis = "logo_sistem.".$extent;
-            $img->move($dir_img, $logo_sis);
+            $logo_sis_fix = "logo_sistem.".$extent;
+            $img->move($dir_img, $logo_sis_fix);
         }
 
         if($this->request->getFile('logo_prov')->isValid()){
+            // die;
             $validationRule = [
                 'logo_prov' => [
                     'label' => 'Error Image: ',
@@ -310,19 +312,21 @@ class Admin extends _BaseController
             $img = $this->request->getFile('logo_prov');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
-            $check = realpath($dir_img.$logo_prov);
+            $check = realpath($dir_img.$logo_prov_fix);
             if (is_file($check)){unlink($check);}
-            $logo_prov = "logo_provinsi.".$extent;
-            $img->move($dir_img, $logo_prov);
+            $logo_prov_fix = "logo_provinsi.".$extent;
+            $img->move($dir_img, $logo_prov_fix);
         }
         
 
         $this->M_ProfilSistem->save([
             'id' => "1",
             'nama_sistem' => $this->request->getVar('nama_sistem'),
-            'logo_sistem' => $logo_sis,
+            'logo_sistem' => $logo_sis_fix,
+            'no_tlp' => $this->request->getVar('no_tlp'),
+            'email' => $this->request->getVar('email'),
             'nama_provinsi' => $this->request->getVar('nama_provinsi'),
-            'logo_provinsi' => $logo_prov,
+            'logo_provinsi' => $logo_prov_fix,
         ]);
 
         session()->setFlashdata([

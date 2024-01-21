@@ -100,7 +100,9 @@
 	<div class="container-fluid d-flex align-items-center justify-content-center svh">
 		<div class="row main-content bg-primary text-center">
 			<div class="col-md-4 text-center company__info bg-primary">
-				<span class="company__logo"><h2><i class="fas fa-faucet"></i></h2></span>
+				<span class="company__logo">
+					<img src="<?=base_url('uploads/data_provinsi/'.profil_sistem("logo_sistem"))?>" style="max-width:40%">
+				</span>
 				<h4 class="company_title"><?=profil_sistem("nama_sistem")?></h4>
 			</div>
 			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">

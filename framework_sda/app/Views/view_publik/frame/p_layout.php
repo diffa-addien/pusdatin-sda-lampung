@@ -29,6 +29,19 @@
     .bg-footer-2 {
       background-color: rgba(59, 113, 202, 0.15);
     }
+    .logo_img{
+      position:absolute;
+      height: 40px;
+      object-fit: contain;
+      top: 10px;
+    }
+    .logo_teks{
+      position:relative;
+      left: 43px;
+    }
+    .navbar-brand{
+      padding-right: 15px
+    }
     
   </style>
 
@@ -40,7 +53,10 @@
   <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary darken-3 py-3" style="transition-duration: 5s;"
     id="header">
     <div class="container">
-      <a class="navbar-brand me-5" href="<?= base_url()?>"><i class="fas fa-faucet fa-lg"></i> <?=profil_sistem("nama_sistem")?></a>
+      <a class="navbar-brand me-5" href="<?= base_url()?>">
+        <img src="<?=base_url('uploads/data_provinsi/'.profil_sistem("logo_sistem"))?>" class="logo_img">
+        <span class="logo_teks"><?=profil_sistem("nama_sistem")?></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

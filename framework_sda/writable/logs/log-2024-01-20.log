@@ -1,0 +1,48 @@
+CRITICAL - 2024-01-20 18:01:34 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\view_admin\maps.php on line 624.
+ 1 APPPATH\Views\view_admin\maps.php(624): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\view_admin\\maps.php', 624, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\maps.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/maps', [], true)
+ 5 APPPATH\Controllers\Admin.php(71): view('view_admin/maps', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->maps()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-20 18:01:37 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\view_admin\maps.php on line 624.
+ 1 APPPATH\Views\view_admin\maps.php(624): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\view_admin\\maps.php', 624, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\maps.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/maps', [], true)
+ 5 APPPATH\Controllers\Admin.php(71): view('view_admin/maps', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->maps()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-20 18:04:38 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\view_admin\maps.php on line 625.
+ 1 APPPATH\Views\view_admin\maps.php(625): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\view_admin\\maps.php', 625, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\maps.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/maps', [], true)
+ 5 APPPATH\Controllers\Admin.php(71): view('view_admin/maps', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->maps()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-20 18:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-20 18:04:57 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\view_admin\maps.php on line 625.
+ 1 APPPATH\Views\view_admin\maps.php(625): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\view_admin\\maps.php', 625, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\maps.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/maps', [], true)
+ 5 APPPATH\Controllers\Admin.php(71): view('view_admin/maps', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->maps()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-20 18:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-20 18:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-20 18:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

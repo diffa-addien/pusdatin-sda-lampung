@@ -1,5 +1,6 @@
 <?php
 //  $col_jenis = array_column($data_wilayah, 'tahun');
+$total_data = count($SDA_prov) + count($SDA_wilayah);
 ?>
 <?= $this->extend('view_admin/frame/empty_layout') ?>
 <?= $this->section('head') ?>
@@ -8,6 +9,11 @@
 <style>
   .w-px-190{
     width: 190px
+  }
+  .svh{
+    height: calc(100vh - 50px); 
+    height: calc(100svh - 50px); 
+    width: 100vw;
   }
   .img-pop{
     width: 100%;
@@ -22,6 +28,13 @@
     width: 260px;
     margin: 3px;
   } 
+  #kategori{
+    max-height: 35vh;
+    overflow-x: hidden;
+  }
+  .count-wrap{
+    background-color: rgba(0,0,0,0);
+  }
 </style>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
@@ -52,7 +65,7 @@
     </div>
   </div><!-- /.card-header -->
   <div class="card-body overflow-hidden p-0" style="height: calc(100vh - 50px);">
-    <div id="map" class="m-0 p-0" style="height: calc(100vh - 50px); width: 100vw;"></div>
+    <div id="map" class="m-0 p-0 svh"></div>
   </div><!-- /.card-body -->
 </div>
 <?= $this->endSection('content') ?>
@@ -176,7 +189,7 @@ try {
               });
             }
           });
-          var layerPetak".++$hitPetak." = omnivore.kml('".$dir_geojson.$sda["geojson_petak"]."', null, customLayer).addTo(map);    
+          var layerPetak".++$hitPetak." = omnivore.kml('".base_url($dir_geojson.$sda["geojson_petak"])."', null, customLayer).addTo(map);    
         ";
       } else {
         $petakJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_petak"])))->features;
@@ -232,7 +245,7 @@ try {
               });
             }
           });
-          var layerGaris".++$hitGaris." = omnivore.kml('".$dir_geojson.$sda["geojson_garis"]."', null, customLayer).addTo(map);    
+          var layerGaris".++$hitGaris." = omnivore.kml('".base_url($dir_geojson.$sda["geojson_garis"])."', null, customLayer).addTo(map);    
         ";
       }else{
         $garisJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_garis"])))->features;
@@ -286,7 +299,7 @@ try {
               });
             }
           });
-          var layerTitik".++$hitTitik." = omnivore.kml('".$dir_geojson.$sda["geojson_titik"]."', null, customLayer).addTo(map);    
+          var layerTitik".++$hitTitik." = omnivore.kml('".base_url($dir_geojson.$sda["geojson_titik"])."', null, customLayer).addTo(map);    
         ";
       }else{
         $titikJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_titik"])))->features;
@@ -361,7 +374,7 @@ try {
               });
             }
           });
-          var layerPetak".++$hitPetak." = omnivore.kml('".$dir_prov_geojson.$sda_p["geojson_petak"]."', null, customLayer).addTo(map);    
+          var layerPetak".++$hitPetak." = omnivore.kml('".base_url($dir_prov_geojson.$sda_p["geojson_petak"])."', null, customLayer).addTo(map);    
         ";
 
       }else{
@@ -419,7 +432,7 @@ try {
               });
             }
           });
-          var layerGaris".++$hitGaris." = omnivore.kml('".$dir_prov_geojson.$sda_p["geojson_garis"]."', null, customLayer).addTo(map);    
+          var layerGaris".++$hitGaris." = omnivore.kml('".base_url($dir_prov_geojson.$sda_p["geojson_garis"])."', null, customLayer).addTo(map);    
         ";
       }else{
         $garisJSON = json_decode(file_get_contents(realpath($dir_prov_geojson.$sda_p["geojson_garis"])))->features;
@@ -474,7 +487,7 @@ try {
               });
             }
           });
-          var layerTitik".++$hitTitik." = omnivore.kml('".$dir_prov_geojson.$sda_p["geojson_titik"]."', null, customLayer).addTo(map);    
+          var layerTitik".++$hitTitik." = omnivore.kml('".base_url($dir_prov_geojson.$sda_p["geojson_titik"])."', null, customLayer).addTo(map);    
         ";
       }else{
         $titikJSON = json_decode(file_get_contents(realpath($dir_prov_geojson.$sda_p["geojson_titik"])))->features;
@@ -600,8 +613,26 @@ L.Control.kategori = L.Control.extend({
   onRemove: function(map) {},
 });
 
-var kategoriControl = new L.Control.kategori()
-kategoriControl.addTo(map);
+// add button penghitung
+L.Control.counter = L.Control.extend({
+  options: {
+    position: 'bottomright'
+  },
+  onAdd: function(map) {
+    var container = L.DomUtil.create('div', 'leaflet-bar p-0 count-wrap');
+
+    var button = L.DomUtil.create('div', 'px-1', container);
+    button.innerHTML = 'Menemukan: <?=$total_data?> Data';
+
+    L.DomEvent.disableClickPropagation(container);
+
+    return container;
+  },
+  onRemove: function(map) {},
+});
+
+var kategoriControl = new L.Control.kategori().addTo(map);
+var dataCounter = new L.Control.counter().addTo(map);
 
 </script>
 <?= $this->endSection('script') ?>

@@ -29,7 +29,7 @@
       <div class="mb-0 row">
         <div class="col-sm-3">
           <label for="logo_prov" class="col-form-label">Logo Provinsi</label>
-          <input type="hidden" name="logo_prov_lama" value="<?=profil_sistem("logo_prov")?>" required>
+          <input type="hidden" name="logo_prov_lama" value="<?=profil_sistem("logo_provinsi")?>" required>
           <input type="file" accept=".jpg,.png,.jpeg,.svg" name="logo_prov" class="form-control" id="logo_prov" onchange="onFileUpload(this);">
           <div class="d-grid w-100 text-center border p-2">
             <img class="w-100" id="ajaxImgUpload2" alt="Preview Image" src="<?=base_url('uploads/data_provinsi/'.profil_sistem("logo_provinsi"))?>" />

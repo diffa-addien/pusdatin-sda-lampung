@@ -3,27 +3,6 @@ $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERV
 $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];  
 ?>
 <?= $this->extend('view_publik/frame/maps_layout') ?>
-<?= $this->section('head') ?>
-<style>
-  .svh{height: calc(100vh - 100px); height: calc(100svh - 100px); width: 100%;}
-  .w-px-190{
-    width: 190px
-  }
-  .img-pop{
-    width: 100%;
-    max-height: 150px;
-    object-fit: cover;
-  }
-  .leaflet-popup-content-wrapper {
-    max-width: 300px;
-    padding: 2px;
-  }
-  .leaflet-popup-content{
-    width: 260px;
-    margin: 3px;
-  } 
-</style>
-<?= $this->endSection()?>
 
 <?= $this->section('content') ?>
 <div class="z-1 p-0 border">
@@ -135,7 +114,7 @@ try {
               });
             }
           });
-          var layerPetak".++$hitPetak." = omnivore.kml('".$dir_geojson.$sda["geojson_petak"]."', null, customLayer).addTo(map);    
+          var layerPetak".++$hitPetak." = omnivore.kml('".base_url($dir_geojson.$sda["geojson_petak"])."', null, customLayer).addTo(map);    
         ";
       } else {
         $petakJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_petak"])))->features;
@@ -191,7 +170,7 @@ try {
               });
             }
           });
-          var layerGaris".++$hitGaris." = omnivore.kml('".$dir_geojson.$sda["geojson_garis"]."', null, customLayer).addTo(map);    
+          var layerGaris".++$hitGaris." = omnivore.kml('".base_url($dir_geojson.$sda["geojson_garis"])."', null, customLayer).addTo(map);    
         ";
       }else{
         $garisJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_garis"])))->features;
@@ -245,7 +224,7 @@ try {
               });
             }
           });
-          var layerTitik".++$hitTitik." = omnivore.kml('".$dir_geojson.$sda["geojson_titik"]."', null, customLayer).addTo(map);    
+          var layerTitik".++$hitTitik." = omnivore.kml('".base_url($dir_geojson.$sda["geojson_titik"])."', null, customLayer).addTo(map);    
         ";
       }else{
         $titikJSON = json_decode(file_get_contents(realpath($dir_geojson.$sda["geojson_titik"])))->features;
@@ -348,7 +327,7 @@ L.Control.kategori = L.Control.extend({
   onAdd: function(map) {
     var container = L.DomUtil.create('div', 'leaflet-bar p-0 bg-white w-px-190');
 
-    var button = L.DomUtil.create('div', 'card py-0', container);
+    var button = L.DomUtil.create('div', 'py-0', container);
     button.innerHTML = ""+
     '<div class="card-header p-2" data-bs-toggle="collapse" data-bs-target="#kategori" role="button">'+
       '<div class="mb-0" style="font-size: 15px">Kategori: <i class="fas fa-arrow-right"></i> <?=get_kategoriById($kategori_now)?></div>'+ 
@@ -377,7 +356,7 @@ L.Control.tahun = L.Control.extend({
   onAdd: function(map) {
     var container = L.DomUtil.create('div', 'leaflet-bar p-0 bg-white');
 
-    var button = L.DomUtil.create('div', 'card py-0', container);
+    var button = L.DomUtil.create('div', 'px-1', container);
     button.innerHTML = ""
     +'<form action="<?=$CurPageURL?>" method="post" style="position: relative;">'
     +'<input type="hidden" name="kategori" value="<?=$kategori_now?>" required/>'
@@ -397,10 +376,30 @@ L.Control.tahun = L.Control.extend({
   onRemove: function(map) {},
 });
 
+// add button penghitung
+L.Control.counter = L.Control.extend({
+  options: {
+    position: 'bottomright'
+  },
+  onAdd: function(map) {
+    var container = L.DomUtil.create('div', 'leaflet-bar p-0 count-wrap');
+
+    var button = L.DomUtil.create('div', 'px-1', container);
+    button.innerHTML = 'Menemukan: <?=count($sda_wilayah)?> Data';
+
+    L.DomEvent.disableClickPropagation(container);
+
+    return container;
+  },
+  onRemove: function(map) {},
+});
+
 var kategoriControl = new L.Control.kategori();
 kategoriControl.addTo(map);
 var tahunControl = new L.Control.tahun();
 tahunControl.addTo(map);
+var dataCounter = new L.Control.counter();
+dataCounter.addTo(map);
 
 L.control.layers(baseLayers, overlayMaps, {
   collapsed: true

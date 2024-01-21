@@ -30,7 +30,45 @@ function cekView($value){
   <link rel="stylesheet" href="<?= base_url('myassets/leaflet-search/src/leaflet-search.css')?>">
   <style>
     .disabled{pointer-events: none; color: grey;}
-    .svh{}
+
+    .svh{height: calc(100vh - 100px); height: calc(100svh - 100px); width: 100%;}
+    .w-px-190{
+      width: 190px
+    }
+    .img-pop{
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+    }
+    .leaflet-popup-content-wrapper {
+      max-width: 300px;
+      padding: 2px;
+    }
+    .leaflet-popup-content{
+      width: 260px;
+      margin: 3px;
+    } 
+    .logo_img{
+      position:absolute;
+      height: 40px;
+      object-fit: contain;
+      top: 10px;
+    }
+    .logo_teks{
+      position:relative;
+      left: 43px;
+    }
+    .navbar-brand{
+      padding-right: 15px
+    }
+
+    #kategori{
+      max-height: 35vh;
+      overflow-x: hidden;
+    }
+    .count-wrap{
+      background-color: rgba(0,0,0,0);
+    }
   </style>
   <!-- Render tambahan (Opsional) -->
   <?= $this->renderSection('head') ?>
@@ -39,7 +77,10 @@ function cekView($value){
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-primary darken-3" style="transition-duration: 5s;" id="header">
     <div class="container">
-      <a class="navbar-brand" href="<?= base_url()?>"><i class="fas fa-faucet fa-lg"></i> <?=profil_sistem("nama_sistem")?></a>
+    <a class="navbar-brand me-5" href="<?= base_url()?>">
+        <img src="<?=base_url('uploads/data_provinsi/'.profil_sistem("logo_sistem"))?>" class="logo_img">
+        <span class="logo_teks"><?=profil_sistem("nama_sistem")?></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
