@@ -31,7 +31,7 @@ function cekView($value){
   <style>
     .disabled{pointer-events: none; color: grey;}
 
-    .svh{height: calc(100vh - 100px); height: calc(100svh - 100px); width: 100%;}
+    .svh{height: calc(100vh - 110px); height: calc(100svh - 110px); width: 100%;}
     .w-px-190{
       width: 190px
     }
