@@ -22,7 +22,9 @@
     body{
       overflow-x: hidden;
     }
-
+    .paddinger{
+      border-top: 5rem solid var(--bs-primary);
+    }
     .bg-footer {
       background-color: rgba(59, 113, 202, 0.05);
     }
@@ -30,17 +32,17 @@
       background-color: rgba(59, 113, 202, 0.15);
     }
     .logo_img{
-      position:absolute;
+      position:relative;
       height: 40px;
       object-fit: contain;
-      top: 10px;
+      top: 0px;
     }
     .logo_teks{
       position:relative;
-      left: 43px;
+      left: 0px;
     }
     .navbar-brand{
-      padding-right: 15px
+      padding-right: 0px
     }
     
   </style>
@@ -50,7 +52,7 @@
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary darken-3 py-3" style="transition-duration: 5s;"
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary darken-3 py-3" style="transition-duration: 5s;"
     id="header">
     <div class="container">
       <a class="navbar-brand me-5" href="<?= base_url()?>">
@@ -90,7 +92,9 @@
   </nav>
 
   <!-- Render Konten -->
-  <?= $this->renderSection('content') ?>
+  <div class="paddinger">
+    <?= $this->renderSection('content') ?>
+  </div>
 
   <div class="py-4 bg-footer-2">
     <div class="container-sm">

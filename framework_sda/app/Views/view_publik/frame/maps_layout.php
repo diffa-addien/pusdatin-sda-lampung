@@ -49,17 +49,17 @@ function cekView($value){
       margin: 3px;
     } 
     .logo_img{
-      position:absolute;
+      position:relative;
       height: 40px;
       object-fit: contain;
-      top: 10px;
+      top: 0px;
     }
     .logo_teks{
       position:relative;
-      left: 43px;
+      left: 0px;
     }
     .navbar-brand{
-      padding-right: 15px
+      padding-right: 0px
     }
 
     #kategori{
