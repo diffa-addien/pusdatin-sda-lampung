@@ -58,10 +58,17 @@
         </div>
         <div class="col-sm-6">
           <label for="lat" class="col-form-label">Dokumen <small class="text-muted">opsional</small></label>
-          <input type="hidden" name="dokumen_sebelumnya" value="<?=$data_SDA["dokumen"]?>" required>
-          <input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.zip" name="dokumen" class="form-control" id="lat"
+          <select name="tipe_dokumen" id="tipe_dokumen" class="form-control" required>
+            <option value="link">Link / URL</option>
+            <option value="upload">Upload (Max: 10mb)</option>
+          </select>
+          <input type="text" name="link_dokumen" class="form-control" id="link_dokumen" placeholder="Paste link disini"
             title="Masukan nilai yang valid">
-          <div class="form-control rounded-0">Sebelumnya: <?=$data_SDA["dokumen"] == "" ? "Tanpa Dokumen!" : $data_SDA["dokumen"]?> (<?=$data_SDA["ket_dokumen"] == "" ? "Tanpa Keterangan" : $data_SDA["ket_dokumen"]?>)</div>
+          <input type="hidden" name="dokumen_sebelumnya" value="<?=$data_SDA["dokumen"]?>" required>
+          <input type="hidden" name="tipe_sebelumnya" value="<?=$data_SDA["tipe_dokumen"]?>" required>
+          <input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.zip" id="upload_dokumen" name="upload_dokumen" class="form-control d-none"
+            title="Masukan nilai yang valid">
+          <div class="p-1 border rounded-0">Sebelumnya: <?=$data_SDA["dokumen"] == "" ? "Tanpa Dokumen!" : "[".$data_SDA["tipe_dokumen"]."] ".$data_SDA["dokumen"]?> (<?=$data_SDA["ket_dokumen"] == "" ? "Tanpa Keterangan" : $data_SDA["ket_dokumen"]?>)</div>
           <div class="pl-1">
             <span>Ket. File: </span>
             <input type="checkbox" id="doc" name="doc" value="Doc">
@@ -74,7 +81,7 @@
             <label for="gambar_ket"> Gambar</label>
             <input type="hidden" name="ket_sebelumnya" value="<?=$data_SDA["ket_dokumen"]?>" required>
             <br/>
-            <small >*Abaikan jika tidak ada perubahan keterangan</small>
+            <small >*Abaikan jika tidak ada perubahan dokumen atau keterangan</small>
           </div>
           
         </div>
@@ -139,6 +146,18 @@ function onFileUpload(input, id) {
 }
 </script>
 <script>
+$('#tipe_dokumen').change(function() {
+  if( $('#tipe_dokumen').val() == "upload" ){
+    $('#upload_dokumen').removeClass('d-none d-block').addClass('d-block');
+    $('#link_dokumen').removeClass('d-none d-block').addClass('d-none');
+    $('#link_dokumen').val('').change();
+  }else{
+    $('#link_dokumen').removeClass('d-none d-block').addClass('d-block');
+    $('#upload_dokumen').removeClass('d-none d-block').addClass('d-none');
+    $('#upload_dokumen').val('').change();
+  }
+});
+
 $('#id_kategori').val('<?=$data_SDA["id_kategori"]?>').change();
 
 function onFileUpload(input, id) {

@@ -25,7 +25,25 @@ function get_extensi($file_name){
   $temp = explode('.',$file_name);
   $extension = end($temp);
 
+  if(preg_match('(pdf|doc|docx|ppt|pptx|zip)', $extension) === 0) {
+    $extension = "Lainnya";
+  } 
+
   return $extension;
+}
+
+function dokumen_link($doc, $tipe, $dir){
+  if($dir == "provinsi"){
+    $directory = "uploads/sda_provinsi/dokumen/";
+  }else{
+    $directory = "uploads/sda_wilayah/dokumen/";
+  }
+
+  if($tipe == "upload"){
+    echo base_url($directory.$doc);
+  }else{
+    echo $doc;
+  }
 }
 
 function get_kategoriById($id){

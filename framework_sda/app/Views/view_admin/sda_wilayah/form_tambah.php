@@ -58,7 +58,13 @@
         </div>
         <div class="col-sm-6">
           <label for="lat" class="col-form-label">Dokumen <small class="text-muted">opsional</small></label>
-          <input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.zip" name="dokumen" class="form-control" id="lat"
+          <select name="tipe_dokumen" id="tipe_dokumen" class="form-control" required>
+            <option value="link">Link / URL</option>
+            <option value="upload">Upload (Max: 10mb)</option>
+          </select>
+          <input type="text" name="link_dokumen" class="form-control" id="link_dokumen" placeholder="Paste link disini"
+            title="Masukan nilai yang valid">
+          <input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.zip" name="upload_dokumen" class="form-control d-none" id="upload_dokumen"
             title="Masukan nilai yang valid">
           <div class="mb-3">
             <span>Ket. File : </span>
@@ -111,6 +117,18 @@
 
 <?= $this->section('script')?>
 <script>
+$('#tipe_dokumen').change(function() {
+  if( $('#tipe_dokumen').val() == "upload" ){
+    $('#upload_dokumen').removeClass('d-none d-block').addClass('d-block');
+    $('#link_dokumen').removeClass('d-none d-block').addClass('d-none');
+    $('#link_dokumen').val('').change();
+  }else{
+    $('#link_dokumen').removeClass('d-none d-block').addClass('d-block');
+    $('#upload_dokumen').removeClass('d-none d-block').addClass('d-none');
+    $('#upload_dokumen').val('').change();
+  }
+});
+
 function onFileUpload(input, id) {
   id = id || '#ajaxImgUpload';
   if (input.files && input.files[0]) {

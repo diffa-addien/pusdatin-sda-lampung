@@ -30,7 +30,7 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
         <td><?= $data_sda["judul_data"]; ?></td>
         <td>
           <?php if($data_sda["dokumen"]){?>
-          <a href="<?= base_url($dir_doc.$data_sda["dokumen"])?>" data-placement="top" data-toggle="tooltip" title="<?=$data_sda["ket_dokumen"]?>"><i class='fas fa-file'> <?=get_extensi($data_sda["dokumen"])?></i></a>
+          <a href="<?=dokumen_link($data_sda["dokumen"],$data_sda["tipe_dokumen"],"wilayah")?>" data-placement="top" data-toggle="tooltip" title="<?=$data_sda["ket_dokumen"]?>"><i class='fas fa-file'> <?=get_extensi($data_sda["dokumen"])?></i></a>
           <?php }else{ echo "-";} ?>
         </td>
         <td>

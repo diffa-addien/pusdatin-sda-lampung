@@ -596,6 +596,7 @@ class Admin extends _BaseController
 
         $namaGambar=$namaGjsonPetak=$namaGjsonGaris=$namaGjsonTitik=$namaDokumen = "";
         $ket_dokumen = "";
+        $tipe_dokumen = $this->request->getVar('tipe_dokumen');
         if(!empty($this->request->getVar('doc'))){
             $ket_dokumen = $ket_dokumen.$this->request->getVar('doc')."; ";
         }
@@ -638,17 +639,21 @@ class Admin extends _BaseController
             }
             $img->move($dir_img, $namaGambar);
         }
-
-        if($this->request->getFile('dokumen')->isValid()){
-            $dok = $this->request->getFile('dokumen');
-            $extent = explode('.',$dok->getName());
-            $extent = end($extent);
-            $namaDokumen = "ID".$ID."_Dokumen.".$extent;
-            $check = base_url($dir_doc.$namaDokumen);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
+        
+        if($tipe_dokumen=="upload"){
+            if($this->request->getFile('upload_dokumen')->isValid()){
+                $dok = $this->request->getFile('upload_dokumen');
+                $extent = explode('.',$dok->getName());
+                $extent = end($extent);
+                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $check = base_url($dir_doc.$namaDokumen);
+                if (is_readable($check)){
+                    unlink($check); // Hapus duplicate
+                }
+                $dok->move($dir_doc, $namaDokumen);
             }
-            $dok->move($dir_doc, $namaDokumen);
+        }else{
+            $namaDokumen = $this->request->getVar('link_dokumen');
         }
 
         if($this->request->getFile('geojson_petak')->isValid()){
@@ -693,6 +698,7 @@ class Admin extends _BaseController
             'id_wilayah' => $this->request->getVar('id_wilayah'),
             'gambar' => $namaGambar,
             'dokumen' => $namaDokumen,
+            'tipe_dokumen' => $tipe_dokumen,
             'ket_dokumen' => $ket_dokumen,
             'geojson_titik' => $namaGjsonTitik,
             'geojson_garis' => $namaGjsonGaris,
@@ -719,6 +725,7 @@ class Admin extends _BaseController
         $namaGjsonGaris = $this->request->getVar('geogaris_sebelumnya');
         $namaGjsonTitik = $this->request->getVar('geotitik_sebelumnya');
         $ket_dokumen = "";
+        $tipe_dokumen = $this->request->getVar('tipe_dokumen');
         if(!empty($this->request->getVar('doc'))){
             $ket_dokumen = $ket_dokumen.$this->request->getVar('doc').";";
         }
@@ -764,16 +771,22 @@ class Admin extends _BaseController
             $img->move($dir_img, $namaGambar);
         }
 
-        if($this->request->getFile('dokumen')->isValid()){
-            $dok = $this->request->getFile('dokumen');
-            $extent = explode('.',$dok->getName());
-            $extent = end($extent);
-            $namaDokumen = "ID".$ID."_Dokumen.".$extent;
-            $check = base_url($dir_doc.$namaDokumen);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
+        if($tipe_dokumen=="upload"){
+            if($this->request->getFile('upload_dokumen')->isValid()){
+                $dok = $this->request->getFile('upload_dokumen');
+                $extent = explode('.',$dok->getName());
+                $extent = end($extent);
+                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $check = base_url($dir_doc.$namaDokumen);
+                if (is_readable($check)){
+                    unlink($check); // Hapus duplicate
+                }
+                $dok->move($dir_doc, $namaDokumen);
             }
-            $dok->move($dir_doc, $namaDokumen);
+        }else if(!empty($this->request->getVar('link_dokumen'))){
+            $namaDokumen = $this->request->getVar('link_dokumen');
+        }else{
+            $tipe_dokumen = $this->request->getVar('tipe_sebelumnya');
         }
 
         if($this->request->getFile('geojson_petak')->isValid()){
@@ -878,6 +891,7 @@ class Admin extends _BaseController
 
         $namaGambar=$namaGjsonPetak=$namaGjsonGaris=$namaGjsonTitik=$namaDokumen = "";
         $ket_dokumen = "";
+        $tipe_dokumen = $this->request->getVar('tipe_dokumen');
         if(!empty($this->request->getVar('doc'))){
             $ket_dokumen = $ket_dokumen.$this->request->getVar('doc').";";
         }
@@ -920,17 +934,20 @@ class Admin extends _BaseController
             }
             $img->move($dir_img, $namaGambar);
         }
-
-        if($this->request->getFile('dokumen')->isValid()){
-            $dok = $this->request->getFile('dokumen');
-            $extent = explode('.',$dok->getName());
-            $extent = end($extent);
-            $namaDokumen = "ID".$ID."_Dokumen.".$extent;
-            $check = base_url($dir_doc.$namaDokumen);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
+        if($tipe_dokumen=="upload"){
+            if($this->request->getFile('upload_dokumen')->isValid()){
+                $dok = $this->request->getFile('upload_dokumen');
+                $extent = explode('.',$dok->getName());
+                $extent = end($extent);
+                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $check = base_url($dir_doc.$namaDokumen);
+                if (is_readable($check)){
+                    unlink($check); // Hapus duplicate
+                }
+                $dok->move($dir_doc, $namaDokumen);
             }
-            $dok->move($dir_doc, $namaDokumen);
+        }else{
+            $namaDokumen = $this->request->getVar('link_dokumen');
         }
 
         if($this->request->getFile('geojson_petak')->isValid()){
@@ -974,6 +991,7 @@ class Admin extends _BaseController
             'id_kategori' => $this->request->getVar('id_kategori'),
             'gambar' => $namaGambar,
             'dokumen' => $namaDokumen,
+            'tipe_dokumen' => $tipe_dokumen,
             'ket_dokumen' => $ket_dokumen,
             'geojson_titik' => $namaGjsonTitik,
             'geojson_garis' => $namaGjsonGaris,
@@ -1001,6 +1019,7 @@ class Admin extends _BaseController
         $namaGjsonTitik = $this->request->getVar('geotitik_sebelumnya');
 
         $ket_dokumen = "";
+        $tipe_dokumen = $this->request->getVar('tipe_dokumen');
         if(!empty($this->request->getVar('doc'))){
             $ket_dokumen = $ket_dokumen.$this->request->getVar('doc').";";
         }
@@ -1017,7 +1036,6 @@ class Admin extends _BaseController
         if($ket_dokumen == ""){
             $ket_dokumen = $this->request->getVar('ket_sebelumnya');
         }
-        
 
         $ID = $id;
         
@@ -1048,16 +1066,22 @@ class Admin extends _BaseController
             $img->move($dir_img, $namaGambar);
         }
 
-        if($this->request->getFile('dokumen')->isValid()){
-            $dok = $this->request->getFile('dokumen');
-            $extent = explode('.',$dok->getName());
-            $extent = end($extent);
-            $namaDokumen = "ID".$ID."_Dokumen.".$extent;
-            $check = base_url($dir_doc.$namaDokumen);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
+        if($tipe_dokumen=="upload"){
+            if($this->request->getFile('upload_dokumen')->isValid()){
+                $dok = $this->request->getFile('upload_dokumen');
+                $extent = explode('.',$dok->getName());
+                $extent = end($extent);
+                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $check = base_url($dir_doc.$namaDokumen);
+                if (is_readable($check)){
+                    unlink($check); // Hapus duplicate
+                }
+                $dok->move($dir_doc, $namaDokumen);
             }
-            $dok->move($dir_doc, $namaDokumen);
+        }else if(!empty($this->request->getVar('link_dokumen'))){
+            $namaDokumen = $this->request->getVar('link_dokumen');
+        }else{
+            $tipe_dokumen = $this->request->getVar('tipe_sebelumnya');
         }
 
         if($this->request->getFile('geojson_petak')->isValid()){
@@ -1101,6 +1125,7 @@ class Admin extends _BaseController
             'id_kategori' => $this->request->getVar('id_kategori'),
             'gambar' => $namaGambar,
             'dokumen' => $namaDokumen,
+            'tipe_dokumen' => $tipe_dokumen,
             'ket_dokumen' => $ket_dokumen,
             'geojson_titik' => $namaGjsonTitik,
             'geojson_garis' => $namaGjsonGaris,

@@ -51,13 +51,19 @@
           <label for="gambar" class="col-form-label">Gambar <small class="text-muted">opsional</small></label>
           <input type="file" accept=".jpg,.png,.jpeg,.svg" name="gambar" class="form-control" id="gambar"
             onchange="onFileUpload(this);">
-          <div class="d-grid w-100 text-center border p-2">
+          <div class="d-grid w-100 text-center border p-2" style="min-height:100px">
             <img class="" id="ajaxImgUpload" alt="Preview Image" src="" />
           </div>
         </div>
         <div class="col-sm-6">
           <label for="lat" class="col-form-label">Dokumen <small class="text-muted">opsional</small></label>
-          <input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.zip" name="dokumen" class="form-control" id="lat"
+          <select name="tipe_dokumen" id="tipe_dokumen" class="form-control" required>
+            <option value="link">Link / URL</option>
+            <option value="upload">Upload (Max: 10mb)</option>
+          </select>
+          <input type="text" name="link_dokumen" class="form-control" id="link_dokumen" placeholder="Paste link disini"
+            title="Masukan nilai yang valid">
+          <input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.zip" name="upload_dokumen" class="form-control d-none" id="upload_dokumen"
             title="Masukan nilai yang valid">
           <div class="mb-3">
             <span>Ket. File: </span>
@@ -130,6 +136,17 @@ function checkFileExtension() {
 </script>
 <script src='<?=base_url('myassets/kmltogeojson/togeojson.js')?>'></script>
 <script>
+$('#tipe_dokumen').change(function() {
+  if( $('#tipe_dokumen').val() == "upload" ){
+    $('#upload_dokumen').removeClass('d-none d-block').addClass('d-block');
+    $('#link_dokumen').removeClass('d-none d-block').addClass('d-none');
+    $('#link_dokumen').val('').change();
+  }else{
+    $('#link_dokumen').removeClass('d-none d-block').addClass('d-block');
+    $('#upload_dokumen').removeClass('d-none d-block').addClass('d-none');
+    $('#upload_dokumen').val('').change();
+  }
+});
 $("#geojson_petak").change(function () {
   var filename = $("#geojson_petak").val();
   var thekml = JSON.stringify(filename);
