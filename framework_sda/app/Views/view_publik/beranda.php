@@ -223,7 +223,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
       <div class="card shadow">
         <img src="<?=base_url('uploads/data_wilayah/gambar/' . $kam['gambar'])?>" class="card-img-top logo_wilayah p-1" alt="...">
         <div class="card-body p-0">
-          <a href="<?=base_url('publik/data_wilayah/'.$kam['id'].'?layout=maps')?>" class="btn btn-primary p-1 pb-2 pt-1 rounded-top-0 w-100"><?=$kab['nama']?></a>
+          <a href="<?=base_url('publik/data_wilayah/'.$kam['id'].'?layout=maps')?>" class="btn btn-primary p-1 pb-2 pt-1 rounded-top-0 w-100"><?=$kam['nama']?></a>
         </div>
       </div>
     </div>
