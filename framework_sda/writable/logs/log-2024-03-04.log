@@ -1,0 +1,65 @@
+INFO - 2024-03-04 11:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 11:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 11:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 11:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 11:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 11:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 11:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 11:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-04 11:13:29 --> Trying to get property 'features' of non-object
+in APPPATH\Views\view_publik\provinsi\maps-provinsi.php on line 230.
+ 1 APPPATH\Views\view_publik\provinsi\maps-provinsi.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'features\' of non-object', 'APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php', 230, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/maps-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(85): view('view_publik/provinsi/maps-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 11:16:23 --> Invalid argument supplied for foreach()
+in APPPATH\Views\view_publik\provinsi\maps-provinsi.php on line 231.
+ 1 APPPATH\Views\view_publik\provinsi\maps-provinsi.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php', 231, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/maps-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(85): view('view_publik/provinsi/maps-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 11:16:45 --> Trying to get property 'features' of non-object
+in APPPATH\Views\view_publik\provinsi\maps-provinsi.php on line 230.
+ 1 APPPATH\Views\view_publik\provinsi\maps-provinsi.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'features\' of non-object', 'APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php', 230, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/maps-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(85): view('view_publik/provinsi/maps-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 11:19:04 --> Trying to get property 'features' of non-object
+in APPPATH\Views\view_publik\provinsi\maps-provinsi.php on line 230.
+ 1 APPPATH\Views\view_publik\provinsi\maps-provinsi.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'features\' of non-object', 'APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php', 230, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_publik\\provinsi\\maps-provinsi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_publik/provinsi/maps-provinsi', [], true)
+ 5 APPPATH\Controllers\Publik.php(85): view('view_publik/provinsi/maps-provinsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Publik->data_provinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-04 12:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 12:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
