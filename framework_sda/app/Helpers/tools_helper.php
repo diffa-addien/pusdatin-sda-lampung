@@ -40,9 +40,9 @@ function dokumen_link($doc, $tipe, $dir){
   }
 
   if($tipe == "upload"){
-    echo base_url($directory.$doc);
+    return base_url($directory.$doc);
   }else{
-    echo $doc;
+    return $doc;
   }
 }
 
@@ -52,6 +52,14 @@ function get_kategoriById($id){
   $namaKategori = $model["nama"];
 
   return $namaKategori;
+}
+
+function cekSesiUnduh($link){
+  if(!session()->get('role')){
+    return base_url('Publik/pemberitahuan');
+  }else{
+    return $link;
+  }
 }
 
 ?>

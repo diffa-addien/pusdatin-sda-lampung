@@ -61,7 +61,7 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
         </td>
         <td>
           <?php if($sda_wilayah["dokumen"]){?>
-          <a href="javascript:void(0)" onclick="location.href='<?= base_url('Publik/pemberitahuan')?>'" data-bs-placement="top" data-bs-toggle="tooltip" title="<?=$sda_wilayah["ket_dokumen"]?>"><i class='fas fa-file'> <?=get_extensi($sda_wilayah["dokumen"])?></i></a>
+            <a href="<?=cekSesiUnduh(dokumen_link($sda_wilayah["dokumen"],$sda_wilayah["tipe_dokumen"],"wilayah"))?>"><i class='fas fa-file'> <?=get_extensi($sda_wilayah["dokumen"])?></i></a>
           <?php }else{ echo "-";} ?>
         </td>
         <td><?= $sda_wilayah["tahun"]; ?></td>

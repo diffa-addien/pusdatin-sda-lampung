@@ -61,7 +61,7 @@
       </td>
       <td>
         <?php if($sda_prov["dokumen"]){?>
-        <a href="javascript:void(0)" onclick="location.href='<?= base_url('Publik/pemberitahuan')?>'" data-bs-placement="top" data-bs-toggle="tooltip" title="<?=$sda_prov["ket_dokumen"]?>"><i class='fas fa-file'> <?=get_extensi($sda_prov["dokumen"])?></i></a>
+        <a href="<?=cekSesiUnduh(dokumen_link($sda_prov["dokumen"],$sda_prov["tipe_dokumen"],"provinsi"))?>"><i class='fas fa-file'> <?=get_extensi($sda_prov["dokumen"])?></i></a>
         <?php }else{ echo "-";} ?>
       </td>
       <td><?= $sda_prov["tahun"]; ?></td>
