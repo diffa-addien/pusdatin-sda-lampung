@@ -8,7 +8,7 @@
     <table class="table">
     <tbody>
     <tr>
-      <td colspan="2" class="text-center">: <img src="<?=base_url('uploads/akun/foto_profil/'.$akun["foto"])?>" class="w-25"></td>
+      <td colspan="2" class="text-center"><img src="<?=base_url('uploads/akun/foto_profil/'.$akun["foto"])?>" onerror="this.src='<?=base_url('myassets/default-img/person-svg.svg')?>'" class="w-25 border"></td>
     </tr>
     <tr>
       <th scope="row" class="w-25">Username</th>

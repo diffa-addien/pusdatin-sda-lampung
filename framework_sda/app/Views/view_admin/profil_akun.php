@@ -14,10 +14,10 @@
           <tr>
             <td colspan="2" class="text-center">
               <input type="hidden" name="foto_lama" value="<?=$akun["foto"]?>" required>
-              <img id="ajaxImgUpload1" alt="Preview Image" src="<?=base_url('uploads/akun/foto_profil/'.$akun["foto"])?>" class="w-25">
-              <br class="mb-2"/><br class=""/>
+              <img id="ajaxImgUpload1" alt="Preview Image" src="<?=base_url('uploads/akun/foto_profil/'.$akun["foto"])?>" onerror="this.src='<?=base_url('myassets/default-img/person-svg.svg')?>'" class="w-25 border">
+              <br class="mb-0"/><br class=""/>
               Ganti foto: 
-              <input type="file" accept=".jpg,.png,.jpeg,.svg" name="foto_profil" class="w-50 border" id="foto" onchange="onFileUpload(this);">
+              <input type="file" accept=".jpg,.png,.jpeg,.svg" name="foto_profil" class="w-50 border mt-0" id="foto" onchange="onFileUpload(this);">
             </td>
           </tr>
           <tr>

@@ -405,7 +405,7 @@ class Admin extends _BaseController
         ]);
         return redirect()->to(base_url('Admin/kelola_akun'));
     }
-    public function ubah_pw()
+    public function ubah_pw($id)
     {
         if ($this->request->getVar('pw_baru') != $this->request->getVar('pw_baru_konfir')) {
             $err = "Konfirmasi Password Salah";
@@ -418,7 +418,7 @@ class Admin extends _BaseController
         $ModelAkun = new \App\Models\M_Akun();
 
         $ModelAkun->save([
-          'username' => session()->get('username'),
+          'username' => $id,
           'password' => password_hash($this->request->getVar('pw_baru'), PASSWORD_DEFAULT),
         ]);
 

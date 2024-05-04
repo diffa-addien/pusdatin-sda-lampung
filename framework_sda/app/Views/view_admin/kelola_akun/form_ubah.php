@@ -71,7 +71,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form action="<?=base_url("Admin/ubah_pw")?>" method="post">
+        <form action="<?=base_url("Admin/ubah_pw/".$akun["username"])?>" method="post">
           <div class="modal-body">
           <div class="mb-3 row">
             <label for="pw" class="col-sm-3 mb-2 col-form-label">Password Baru</label>
