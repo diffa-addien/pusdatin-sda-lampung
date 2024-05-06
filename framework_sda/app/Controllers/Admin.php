@@ -680,7 +680,7 @@ class Admin extends _BaseController
         }
         if($this->request->getFile('geojson_titik')->isValid()){
             $geo_titik = $this->request->getFile('geojson_titik');
-            $extent = explode('.',$geo_garis->getName());
+            $extent = explode('.',$geo_titik->getName());
             $extent = end($extent);
             $namaGjsonTitik = "ID".$ID."_Titik.".$extent;
             $check = base_url($dir_geojson.$namaGjsonTitik);
@@ -981,7 +981,8 @@ class Admin extends _BaseController
             if (is_readable($check)){
                 unlink($check); // Hapus duplicate
             }
-            $geo_titik->move($dir_geojson, $namaGjsonTitik);
+            // $geo_titik->move($dir_geojson, $namaGjsonTitik);
+            $geo_titik->store($dir_geojson, $namaGjsonTitik);
         }
 
         $this->M_SDAProvinsi->insert([
@@ -1095,6 +1096,7 @@ class Admin extends _BaseController
             }
             $geo_petak->move($dir_geojson, $namaGjsonPetak);
         }
+
         if($this->request->getFile('geojson_garis')->isValid()){
             $geo_garis = $this->request->getFile('geojson_garis');
             $extent = explode('.',$geo_garis->getName());
