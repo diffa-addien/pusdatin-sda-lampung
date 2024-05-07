@@ -906,7 +906,7 @@ class Admin extends _BaseController
         }
 
         $getData = $this->M_SDAProvinsi->select('max(id) as lastID')->first();
-        $ID = $getData["lastID"] + 1;
+        $ID = $getData["lastID"] + 1; // ID identification
         
         if($this->request->getFile('gambar')->isValid()){
             $validationRule = [
@@ -955,34 +955,23 @@ class Admin extends _BaseController
             $extent = explode('.',$geo_petak->getName());
             $extent = end($extent);
             $namaGjsonPetak = "ID".$ID."_Petak.".$extent;
-            $check = base_url($dir_geojson.$namaGjsonPetak);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
-            }
-            $geo_petak->move($dir_geojson, $namaGjsonPetak);
+            $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
+            // $file->move(directory, rename?, replace?);
         }
         if($this->request->getFile('geojson_garis')->isValid()){
             $geo_garis = $this->request->getFile('geojson_garis');
             $extent = explode('.',$geo_garis->getName());
             $extent = end($extent);
             $namaGjsonGaris = "ID".$ID."_Garis.".$extent;
-            $check = base_url($dir_geojson.$namaGjsonGaris);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
-            }
-            $geo_garis->move($dir_geojson, $namaGjsonGaris);
+            $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
         }
-        if($this->request->getFile('geojson_titik')->isValid()){
+        if($this->request->getFile('geojson_titik')->isValid() && ! $this->request->getFile('geojson_titik')->hasMoved()){
             $geo_titik = $this->request->getFile('geojson_titik');
             $extent = explode('.',$geo_titik->getName());
             $extent = end($extent);
             $namaGjsonTitik = "ID".$ID."_Titik.".$extent;
             $check = base_url($dir_geojson.$namaGjsonTitik);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
-            }
-            // $geo_titik->move($dir_geojson, $namaGjsonTitik);
-            $geo_titik->store($dir_geojson, $namaGjsonTitik);
+            $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
         }
 
         $this->M_SDAProvinsi->insert([
