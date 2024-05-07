@@ -25,7 +25,7 @@ function get_extensi($file_name){
   $temp = explode('.',$file_name);
   $extension = end($temp);
 
-  if(preg_match('(pdf|doc|docx|ppt|pptx|zip|geojson|kml)', $extension) === 0) {
+  if(preg_match('(pdf|doc|docx|ppt|pptx|xlsx|zip|geojson|kml)', $extension) === 0) {
     $extension = "Lainnya";
   } 
 

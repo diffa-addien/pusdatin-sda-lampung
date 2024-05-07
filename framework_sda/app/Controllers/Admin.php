@@ -1049,11 +1049,7 @@ class Admin extends _BaseController
             $extent = explode('.',$img->getName());
             $extent = end($extent);
             $namaGambar = "Gambar_Data_".$ID.".".$extent;
-            $check = base_url($dir_img .$namaGambar);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
-            }
-            $img->move($dir_img, $namaGambar);
+            $img->move($dir_img, $namaGambar, true);
         }
 
         if($tipe_dokumen=="upload"){
@@ -1062,11 +1058,7 @@ class Admin extends _BaseController
                 $extent = explode('.',$dok->getName());
                 $extent = end($extent);
                 $namaDokumen = "ID".$ID."_Dokumen.".$extent;
-                $check = base_url($dir_doc.$namaDokumen);
-                if (is_readable($check)){
-                    unlink($check); // Hapus duplicate
-                }
-                $dok->move($dir_doc, $namaDokumen);
+                $dok->move($dir_doc, $namaDokumen, true);
             }
         }else if(!empty($this->request->getVar('link_dokumen'))){
             $namaDokumen = $this->request->getVar('link_dokumen');
@@ -1079,11 +1071,7 @@ class Admin extends _BaseController
             $extent = explode('.',$geo_petak->getName());
             $extent = end($extent);
             $namaGjsonPetak = "ID".$ID."_Petak.".$extent;
-            $check = base_url($dir_geojson.$namaGjsonPetak);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
-            }
-            $geo_petak->move($dir_geojson, $namaGjsonPetak);
+            $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
         }
 
         if($this->request->getFile('geojson_garis')->isValid()){
@@ -1091,22 +1079,14 @@ class Admin extends _BaseController
             $extent = explode('.',$geo_garis->getName());
             $extent = end($extent);
             $namaGjsonGaris = "ID".$ID."_Garis.".$extent;
-            $check = base_url($dir_geojson.$namaGjsonGaris);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
-            }
-            $geo_garis->move($dir_geojson, $namaGjsonGaris);
+            $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
         }
         if($this->request->getFile('geojson_titik')->isValid()){
             $geo_titik = $this->request->getFile('geojson_titik');
             $extent = explode('.',$geo_titik->getName());
             $extent = end($extent);
             $namaGjsonTitik = "ID".$ID."_Titik.".$extent;
-            $check = base_url($dir_geojson.$namaGjsonTitik);
-            if (is_readable($check)){
-                unlink($check); // Hapus duplicate
-            }
-            $geo_titik->move($dir_geojson, $namaGjsonTitik);
+            $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
         }
 
         $this->M_SDAProvinsi->save([
