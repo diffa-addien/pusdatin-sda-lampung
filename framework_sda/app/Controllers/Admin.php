@@ -24,11 +24,14 @@ class Admin extends _BaseController
     // View Controllers ====================================================================================
     public function index()
     {
-        $SDA_kab = $this->M_SDAWilayah->findAll();
-        $SDA_prov = $this->M_SDAProvinsi->findAll();
+        $count_SDA_kab = $this->M_SDAWilayah->countAll();
+        $count_SDA_prov = $this->M_SDAProvinsi->countAll();
         $data_kab = $this->M_Wilayah->findAll();
         $data_akun = $this->M_Akun->findAll();
         $data_kat = $this->M_Kategori->findAll();
+
+        $SDA_kab = $this->M_SDAWilayah->orderBy('id', 'DESC')->limit(15)->findAll();
+        $SDA_prov = $this->M_SDAProvinsi->orderBy('id', 'DESC')->limit(15)->findAll();
         
         $geo_kosong = file_get_contents(realpath("geojson_kosong.geojson"));
         $geo_kosong = json_decode($geo_kosong)->features;
@@ -37,6 +40,7 @@ class Admin extends _BaseController
             'title' => "Dasbor",
             'layerProv' => $geo_kosong, 'layerKosong' => $geo_kosong, 'irigasi' => $geo_kosong,
             'SDA_kab' => $SDA_kab, 'SDA_prov' => $SDA_prov, 'data_akun' => $data_akun, 'data_kat' => $data_kat, 'data_kab' => $data_kab,
+            'count_sda_kab' => $count_SDA_kab, 'count_sda_prov' => $count_SDA_prov,
             'library' => [''],
         ];
 

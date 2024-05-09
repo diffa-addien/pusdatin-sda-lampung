@@ -4,6 +4,27 @@
 <link rel="stylesheet" href="<?= base_url('myassets/leaflet-search/src/leaflet-search.css')?>">
   
 <style>
+
+.leaflet-popup-content-wrapper {
+  max-width: 300px;
+  padding: 2px;
+  border-radius:5px
+}
+.leaflet-popup-content{
+  width: 260px;
+  margin: 3px;
+} 
+.leaflet-popup-content img{
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+table{
+  display: block;
+  width: 100%;
+  max-height: 30vh;
+  overflow-x:scroll;
+}
 .control-wrapper {
   width: 200px;
 }
@@ -20,7 +41,7 @@
         <div class="small-box shadow-none m-0">
           <div class="inner">
             <p>Total Data</p>
-            <?php $total_sda = count($SDA_kab) + count($SDA_prov); ?>
+            <?php $total_sda = $count_sda_kab+$count_sda_prov; ?>
             <h3><?=$total_sda?></h3>
           </div>
           <div class="icon">
@@ -433,7 +454,7 @@ try {
                 if (prop == 'judul_data'){break;}
                 popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -489,7 +510,7 @@ try {
                 if (prop == 'judul_data'){break;}
                 popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -544,7 +565,7 @@ try {
                 if (prop == 'judul_data'){break;}
                 popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -662,6 +683,27 @@ map.addControl( searchControl );  //inizialize search control
 
 // add a scale at at your map.
 var scale = L.control.scale({imperial: false}).addTo(map); 
+
+// add button penghitung
+L.Control.counter = L.Control.extend({
+  options: {
+    position: 'bottomright'
+  },
+  onAdd: function(map) {
+    var container = L.DomUtil.create('div', 'leaflet-bar p-0 count-wrap');
+
+    var button = L.DomUtil.create('div', 'px-1', container);
+    button.innerHTML = 'Menampilkan 30 data masuk terbaru';
+
+    L.DomEvent.disableClickPropagation(container);
+
+    return container;
+  },
+  onRemove: function(map) {},
+});
+
+var dataCounter = new L.Control.counter();
+dataCounter.addTo(map);
 
 // // Get the label.
 // var metres = scale._getRoundNum(map.containerPointToLatLng([0, map.getSize().y / 2 ]).distanceTo( map.containerPointToLatLng([scale.options.maxWidth,map.getSize().y / 2 ])))

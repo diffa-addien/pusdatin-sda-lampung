@@ -43,11 +43,19 @@ function cekView($value){
     .leaflet-popup-content-wrapper {
       max-width: 300px;
       padding: 2px;
+      border-radius:5px
     }
     .leaflet-popup-content{
       width: 260px;
       margin: 3px;
     } 
+    table{
+      display: block;
+      width: 100%;
+      max-height: 30vh;
+      overflow-x:scroll;
+    }
+
     .logo_img{
       position:relative;
       height: 40px;

@@ -28,6 +28,12 @@ $total_data = count($SDA_prov) + count($SDA_wilayah);
     width: 260px;
     margin: 3px;
   } 
+  table{
+    display: block;
+    width: 100%;
+    max-height: 35vh;
+    overflow-x:scroll;
+  }
   #kategori{
     max-height: 35vh;
     overflow-x: hidden;
@@ -160,7 +166,7 @@ $hitPetak = $hitGaris = $hitTitik = 0;
 foreach($SDA_wilayah as $sda) { 
   $cekGambar = "";
   if(!empty($sda['gambar'])){
-    $cekGambar = "<img src=\"".$dir_img.$sda['gambar']."\" class=\"img-pop border\">";
+    $cekGambar = "<img src=\"".base_url().$dir_img.$sda['gambar']."\" class=\"img-pop border\">";
   }
 ?>
 try {
@@ -238,7 +244,7 @@ try {
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -292,7 +298,7 @@ try {
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -344,7 +350,7 @@ $dir_prov_doc      = "uploads/sda_provinsi/dokumen/";
 foreach($SDA_prov as $sda_p) {
   $cekGambar = "";
   if(!empty($sda_p['gambar'])){
-    $cekGambar = "<img src=\"".$dir_prov_img.$sda_p['gambar']."\" class=\"img-pop border\">";
+    $cekGambar = "<img src=\"".base_url().$dir_prov_img.$sda_p['gambar']."\" class=\"img-pop border\">";
   }
 ?>
 try {
@@ -367,7 +373,7 @@ try {
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -425,7 +431,7 @@ try {
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -480,7 +486,7 @@ try {
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,

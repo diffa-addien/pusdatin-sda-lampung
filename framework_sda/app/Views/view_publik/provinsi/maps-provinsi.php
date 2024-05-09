@@ -86,7 +86,7 @@ $hitPetak = $hitGaris = $hitTitik = 0;
 foreach($sda_prov as $sda) { 
   $cekGambar = "";
   if(!empty($sda['gambar'])){
-    $cekGambar = "<img src=\"".$dir_img.$sda['gambar']."\" class=\"img-pop border\">";
+    $cekGambar = "<img src=\"".base_url().$dir_img.$sda['gambar']."\" class=\"img-pop border\">";
   }
 ?>
 try {
@@ -103,7 +103,6 @@ try {
               feature.properties.judul_data = '".$sda["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){
-
                   break;
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
@@ -163,7 +162,7 @@ try {
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
@@ -212,12 +211,11 @@ try {
               feature.properties.judul_data = '".$sda["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){
-
                   break;
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
