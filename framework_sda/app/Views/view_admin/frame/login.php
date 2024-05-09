@@ -108,7 +108,7 @@
 			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
 				<div class="container-fluid">
 					<div class="row py-4">
-						<h2>Log In</h2>
+						<h2>Login</h2>
 					</div>
 					<?php if (session()->getFlashdata('pesan')) { ?>
             <div class="p-2 my-2 bg-warning rounded">
