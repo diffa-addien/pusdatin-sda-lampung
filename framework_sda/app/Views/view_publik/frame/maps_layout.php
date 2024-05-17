@@ -49,7 +49,7 @@ function cekView($value){
       width: 260px;
       margin: 3px;
     } 
-    table{
+    .leaflet-popup-content table{
       display: block;
       width: 100%;
       max-height: 30vh;

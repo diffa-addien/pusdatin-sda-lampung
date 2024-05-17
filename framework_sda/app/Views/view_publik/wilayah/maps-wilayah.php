@@ -76,7 +76,7 @@ var customLayer = L.geoJson(null, {
 });
 
 <?php
-// For SDA Provinsi ============================================================================
+// For SDA Wilayah ============================================================================
 $dir_geojson  = "uploads/sda_wilayah/geografis/";
 $dir_img      = "uploads/sda_wilayah/gambar/";
 $dir_doc      = "uploads/sda_wilayah/dokumen/";

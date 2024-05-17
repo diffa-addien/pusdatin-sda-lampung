@@ -150,7 +150,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
           data-from="0.3" data-to="0" data-translatex="200"> -->
           <h2>Sumber Daya Air Provinsi</h2>
           <p class="fs-5 fw-light">Data sumber daya air yang dikelola oleh Pemerintah Provinsi Lampung.</p>
-          <a href="<?=base_url('publik/data_provinsi/?layout=maps')?>" class="btn btn-lg btn-outline-primary pt-1">Lihat Sumber Data Air Provinsi</a>
+          <a href="<?=base_url('publik/data_provinsi/?layout=maps')?>" class="btn btn-lg btn-outline-primary">Lihat Sumber Data Air Provinsi</a>
         <!-- </div> -->
       </div>
 

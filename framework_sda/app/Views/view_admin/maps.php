@@ -28,7 +28,7 @@ $total_data = count($SDA_prov) + count($SDA_wilayah);
     width: 260px;
     margin: 3px;
   } 
-  table{
+  .leaflet-popup-content table{
     display: block;
     width: 100%;
     max-height: 35vh;

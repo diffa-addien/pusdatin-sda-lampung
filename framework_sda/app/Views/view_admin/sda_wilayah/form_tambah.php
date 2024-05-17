@@ -84,6 +84,11 @@
           File GEOJSON / KML <small title="Dibutuhkan untuk menampilkan data dalam map">*Dibutuhkan setidaknya 1 file geojson atau kml
             untuk menampilkan data ke dalam peta</small>
         </label>
+        <div class="m-2 row">
+          <label for="geojson" class="col-sm-2 col-form-label">Titik <span class="text-warning" data-toggle="tooltip"
+              data-placement="top" title="Untuk: Titik Lokasi / Bangunan"><i class="far fa-question-circle"></i></label>
+          <input type="file" name="geojson_titik" accept=".geojson,.kml" class="form-control col mx-2" rows="5">
+        </div>
         <div class="mx-2 row">
           <label for="geojson" class="col-sm-2 col-form-label">Garis <span class="text-warning" data-toggle="tooltip"
               data-placement="top" title="Untuk: Saluran / Aliran / Garis"><i
@@ -94,11 +99,6 @@
           <label for="geojson" class="col-sm-2 col-form-label">Petak <span class="text-warning" data-toggle="tooltip"
               data-placement="top" title="Untuk: Petak / Bentuk"><i class="far fa-question-circle"></i></label>
           <input type="file" name="geojson_petak" accept=".geojson,.kml" class="form-control col mx-2" rows="5">
-        </div>
-        <div class="m-2 row">
-          <label for="geojson" class="col-sm-2 col-form-label">Titik <span class="text-warning" data-toggle="tooltip"
-              data-placement="top" title="Untuk: Titik Lokasi / Bangunan"><i class="far fa-question-circle"></i></label>
-          <input type="file" name="geojson_titik" accept=".geojson,.kml" class="form-control col mx-2" rows="5">
         </div>
       </div>
 

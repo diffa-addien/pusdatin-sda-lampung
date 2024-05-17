@@ -45,7 +45,7 @@
       </div>
       <div class="mb-3 row">
         <label for="isi" class="col-sm-2 col-form-label">Deskripsi</label>
-        <textarea name="isi" class="form-control mx-2" rows="5" required><?=$data_SDA['isi_data']?></textarea>
+        <textarea id="isi" name="isi" class="form-control mx-2" rows="5" required><?=$data_SDA['isi_data']?></textarea>
       </div>
       <div class="mb-3 row">
         <div class="col-sm-6">
@@ -54,11 +54,11 @@
           <input type="file" accept=".jpg,.png,.jpeg,.svg" name="gambar" class="form-control" id="gambar"
             onchange="onFileUpload(this);">
           <div class="d-grid text-center border p-2" style="width: 100%">
-            <img class="w-100" id="ajaxImgUpload" alt="[ Belum ada gambar ]" src="<?=base_url('uploads/sda_provinsi/gambar/'.$data_SDA["gambar"])?>" />
+            <img class="w-100" id="ajaxImgUpload" alt="[ Belum ada gambar ]" src="<?=base_url('uploads/sda_wilayah/gambar/'.$data_SDA["gambar"])?>" />
           </div>
         </div>
         <div class="col-sm-6">
-          <label for="lat" class="col-form-label">Dokumen <small class="text-muted">opsional</small></label>
+          <label for="tipe_dokumen" class="col-form-label">Dokumen <small class="text-muted">opsional</small></label>
           <select name="tipe_dokumen" id="tipe_dokumen" class="form-control" required>
             <option value="link">Link / URL</option>
             <option value="upload">Upload (Max: 10mb)</option>
@@ -92,14 +92,14 @@
             untuk menampilkan data ke dalam peta</small>
         </label>
         <div class="m-2 row">
-          <label for="geojson" class="col-sm-2 col-form-label">Titik <span class="text-warning" data-toggle="tooltip"
+          <label for="geojson_titik" class="col-sm-2 col-form-label">Titik <span class="text-warning" data-toggle="tooltip"
             data-placement="top" title="Untuk: Titik Lokasi / Bangunan"><i class="far fa-question-circle"></i></label>
           <input type="hidden" name="geotitik_sebelumnya" value="<?=$data_SDA["geojson_titik"]?>" required>
           <input type="file" name="geojson_titik" id="geojson_titik" accept=".geojson,.kml" class="form-control col mx-2" rows="5">
           <span class="col-3">Sebelumnya: <?=$data_SDA["geojson_titik"] == "" ? "Tidak Ada" : "Ada" ?></span>
         </div>
         <div class="mx-2 row">
-          <label for="geojson" class="col-sm-2 col-form-label">Garis <span class="text-warning" data-toggle="tooltip"
+          <label for="geojson_garis" class="col-sm-2 col-form-label">Garis <span class="text-warning" data-toggle="tooltip"
             data-placement="top" title="Untuk: Saluran / Aliran / Garis">
             <i class="far fa-question-circle"></i>
           </label>
@@ -108,7 +108,7 @@
           <span class="col-3">Sebelumnya: <?=$data_SDA["geojson_garis"] == "" ? "Tidak Ada" : "Ada" ?></span>
         </div>
         <div class="m-2 row">
-          <label for="geojson" class="col-sm-2 col-form-label">Petak <span class="text-warning" data-toggle="tooltip"
+          <label for="geojson_petak" class="col-sm-2 col-form-label">Petak <span class="text-warning" data-toggle="tooltip"
             data-placement="top" title="Untuk: Petak / Bentuk">
             <i class="far fa-question-circle"></i>
           </label>

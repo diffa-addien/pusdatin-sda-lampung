@@ -293,7 +293,7 @@ class Admin extends _BaseController
             $extent = end($extent);
             $check = realpath($dir_img.$logo_sis_fix);
             if (is_file($check)){unlink($check);}
-            $logo_sis_fix = "logo_sistem.".$extent;
+            $logo_sis_fix = "logo_sistem_".date('Ymd-his').".".$extent;
             $img->move($dir_img, $logo_sis_fix);
         }
 
@@ -318,7 +318,7 @@ class Admin extends _BaseController
             $extent = end($extent);
             $check = realpath($dir_img.$logo_prov_fix);
             if (is_file($check)){unlink($check);}
-            $logo_prov_fix = "logo_provinsi.".$extent;
+            $logo_prov_fix = "logo_provinsi_".date('Ymd-his').".".$extent;
             $img->move($dir_img, $logo_prov_fix);
         }
         
@@ -464,17 +464,6 @@ class Admin extends _BaseController
         $check = base_url('uploads/data_wilayah/gambar/'.$nama);
         $readFile =  './uploads/data_wilayah/gambar/'.$nama;
 
-        //check duplicate file [isValid, hasMoved, try catch]
-        // try {
-        //     // Jangan lakukan upload lagi
-        //     fopen($check, 'r');
-
-        // } catch (\Exception $e) {
-        //     // Upload File
-        //     $keterangan = $e->getMessage();
-        //     $img->move('uploads/data_wilayah/gambar/', $nama);
-        // }
-
         if (is_readable($readFile)){
             unlink($readFile); // Hapus duplicate
         }
@@ -491,7 +480,7 @@ class Admin extends _BaseController
         ]);
 
         session()->setFlashdata([
-            "icon" => "success", "pesan" => "Wilayah berhasil tambahkan",
+            "icon" => "success", "pesan" => "Wilayah berhasil ditambahkan",
         ]);
         return redirect()->to(base_url('Admin/kelola_wilayah'));
     }
@@ -515,15 +504,15 @@ class Admin extends _BaseController
     
                 return redirect()->back()->withInput();
             }
-            $img = $this->request->getFile('gambar');
+            // Menghapus Gambar Sebelumnya
             $check = base_url('uploads/data_wilayah/gambar/'.$nama);
-            $readFile =  './uploads/data_wilayah/gambar/'.$nama;
-
-            if (is_readable($readFile)){
-                unlink($readFile); // Hapus duplicate
+            $readFile =  realpath('uploads/data_wilayah/gambar/'.$nama);
+            if (is_file($readFile)){
+                unlink($readFile); 
             }
-
-            $nama = "Gambar_kota_".$ID.".".$img->guessExtension();
+            // Upload Gambar Baru
+            $img = $this->request->getFile('gambar');
+            $nama = "Gambar_kota_".$ID."_".date('Ymd-his').".".$img->guessExtension();
             $img->move('uploads/data_wilayah/gambar/', $nama);
         }
 
@@ -545,9 +534,13 @@ class Admin extends _BaseController
     public function hapus_kabupaten($id)
     {
         $file = $this->M_Wilayah->find($id);
-        var_dump($file["gambar"]);
-        $path = './uploads/data_wilayah/gambar/'. $file["gambar"];
-        unlink($path);
+
+        // Menghapus Gambar Sebelumnya
+        $readFile =  realpath('uploads/data_wilayah/gambar/'.$file["gambar"]);
+        if (is_file($readFile)){
+            unlink($readFile); 
+        }
+
         $this->M_Wilayah->delete($id);
 
         session()->setFlashdata([
@@ -595,7 +588,7 @@ class Admin extends _BaseController
     public function tambah_sda_wilayah()
     {
         $dir_geojson    = "uploads/sda_wilayah/geografis/";
-        $dir_img        = 'uploads/sda_wilayah/gambar/';
+        $dir_img        = "uploads/sda_wilayah/gambar/";
         $dir_doc        = "uploads/sda_wilayah/dokumen/";
 
         $namaGambar=$namaGjsonPetak=$namaGjsonGaris=$namaGjsonTitik=$namaDokumen = "";
@@ -636,7 +629,7 @@ class Admin extends _BaseController
             $img = $this->request->getFile('gambar');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
-            $namaGambar = "Gambar_Data_".$ID.".".$extent;
+            $namaGambar = "Gambar_Data_".$ID."_".date('Ymd-his').".".$extent;
             $img->move($dir_img, $namaGambar, true);
         }
         
@@ -645,34 +638,35 @@ class Admin extends _BaseController
                 $dok = $this->request->getFile('upload_dokumen');
                 $extent = explode('.',$dok->getName());
                 $extent = end($extent);
-                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $namaDokumen = "ID".$ID."_Dokumen_".date('Ymd-his').".".$extent;
                 $dok->move($dir_doc, $namaDokumen, true);
             }
         }else{
             $namaDokumen = $this->request->getVar('link_dokumen');
         }
 
+        if($this->request->getFile('geojson_titik')->isValid()){
+            $geo_titik = $this->request->getFile('geojson_titik');
+            $extent = explode('.',$geo_titik->getName());
+            $extent = end($extent);
+            $namaGjsonTitik = "ID".$ID."_Titik_".date('Ymd-his').".".$extent;
+            $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
+        }
         if($this->request->getFile('geojson_petak')->isValid()){
             $geo_petak = $this->request->getFile('geojson_petak');
             $extent = explode('.',$geo_petak->getName());
             $extent = end($extent);
-            $namaGjsonPetak = "ID".$ID."_Petak.".$extent;
+            $namaGjsonPetak = "ID".$ID."_Petak_".date('Ymd-his').".".$extent;
             $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
         }
         if($this->request->getFile('geojson_garis')->isValid()){
             $geo_garis = $this->request->getFile('geojson_garis');
             $extent = explode('.',$geo_garis->getName());
             $extent = end($extent);
-            $namaGjsonGaris = "ID".$ID."_Garis.".$extent;
+            $namaGjsonGaris = "ID".$ID."_Garis_".date('Ymd-his').".".$extent;
             $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
         }
-        if($this->request->getFile('geojson_titik')->isValid()){
-            $geo_titik = $this->request->getFile('geojson_titik');
-            $extent = explode('.',$geo_titik->getName());
-            $extent = end($extent);
-            $namaGjsonTitik = "ID".$ID."_Titik.".$extent;
-            $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
-        }
+        
 
         $this->M_SDAWilayah->insert([
             'id' => $ID,
@@ -702,6 +696,8 @@ class Admin extends _BaseController
         $dir_geojson    = "uploads/sda_wilayah/geografis/";
         $dir_img        = 'uploads/sda_wilayah/gambar/';
         $dir_doc        = "uploads/sda_wilayah/dokumen/";
+
+        $data = $this->M_SDAWilayah->find($id);
 
         $namaGambar     = $this->request->getVar('gambar_sebelumnya');
         $namaDokumen    = $this->request->getVar('dokumen_sebelumnya');
@@ -743,20 +739,31 @@ class Admin extends _BaseController
                 session()->setFlashdata('error', $this->validator->listErrors());
                 return redirect()->back()->withInput();
             }
-
+            // Menghapus File Sebelumnya
+            $check = realpath($dir_img.$data["gambar"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru
             $img = $this->request->getFile('gambar');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
-            $namaGambar = "Gambar_Data_".$ID.".".$extent;
+            $namaGambar = "Gambar_Data_".$ID."_".date('Ymd-his').".".$extent;
             $img->move($dir_img, $namaGambar, true);
         }
 
         if($tipe_dokumen=="upload"){
             if($this->request->getFile('upload_dokumen')->isValid()){
+                // Menghapus File Sebelumnya
+                $check = realpath($dir_doc.$data["dokumen"]);
+                if (is_file($check)){
+                    unlink($check);
+                }
+                // Upload File Baru
                 $dok = $this->request->getFile('upload_dokumen');
                 $extent = explode('.',$dok->getName());
                 $extent = end($extent);
-                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $namaDokumen = "ID".$ID."_Dokumen_".date('Ymd-his').".".$extent;
                 $dok->move($dir_doc, $namaDokumen, true);
             }
         }else if(!empty($this->request->getVar('link_dokumen'))){
@@ -765,26 +772,44 @@ class Admin extends _BaseController
             $tipe_dokumen = $this->request->getVar('tipe_sebelumnya');
         }
 
-        if($this->request->getFile('geojson_petak')->isValid()){
-            $geo_petak = $this->request->getFile('geojson_petak');
-            $extent = explode('.',$geo_petak->getName());
-            $extent = end($extent);
-            $namaGjsonPetak = "ID".$ID."_Petak.".$extent;
-            $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
-        }
-        if($this->request->getFile('geojson_garis')->isValid()){
-            $geo_garis = $this->request->getFile('geojson_garis');
-            $extent = explode('.',$geo_garis->getName());
-            $extent = end($extent);
-            $namaGjsonGaris = "ID".$ID."_Garis.".$extent;
-            $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
-        }
         if($this->request->getFile('geojson_titik')->isValid()){
+            // Menghapus File Sebelumnya
+            $check = realpath($dir_geojson.$data["geojson_titik"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru
             $geo_titik = $this->request->getFile('geojson_titik');
             $extent = explode('.',$geo_titik->getName());
             $extent = end($extent);
-            $namaGjsonTitik = "ID".$ID."_Titik.".$extent;
+            $namaGjsonTitik = "ID".$ID."_Titik_".date('Ymd-his').".".$extent;
             $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
+        }
+        if($this->request->getFile('geojson_petak')->isValid()){
+            // Menghapus File Sebelumnya
+            $check = realpath($dir_geojson.$data["geojson_petak"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru
+            $geo_petak = $this->request->getFile('geojson_petak');
+            $extent = explode('.',$geo_petak->getName());
+            $extent = end($extent);
+            $namaGjsonPetak = "ID".$ID."_Petak_".date('Ymd-his').".".$extent;
+            $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
+        }
+        if($this->request->getFile('geojson_garis')->isValid()){
+            // Menghapus File Sebelumnya
+            $check = realpath($dir_geojson.$data["geojson_garis"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru
+            $geo_garis = $this->request->getFile('geojson_garis');
+            $extent = explode('.',$geo_garis->getName());
+            $extent = end($extent);
+            $namaGjsonGaris = "ID".$ID."_Garis_".date('Ymd-his').".".$extent;
+            $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
         }
 
         $this->M_SDAWilayah->save([
@@ -891,7 +916,7 @@ class Admin extends _BaseController
             $img = $this->request->getFile('gambar');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
-            $namaGambar = "Gambar_Data_".$ID.".".$extent;
+            $namaGambar = "Gambar_Data_".$ID."_".date('Ymd-his').".".$extent;
             $img->move($dir_img, $namaGambar, true);
         }
         if($tipe_dokumen=="upload"){
@@ -899,18 +924,25 @@ class Admin extends _BaseController
                 $dok = $this->request->getFile('upload_dokumen');
                 $extent = explode('.',$dok->getName());
                 $extent = end($extent);
-                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $namaDokumen = "ID".$ID."_Dokumen_".date('Ymd-his').".".$extent;
                 $dok->move($dir_doc, $namaDokumen, true);
             }
         }else{
             $namaDokumen = $this->request->getVar('link_dokumen');
         }
 
+        if($this->request->getFile('geojson_titik')->isValid() && ! $this->request->getFile('geojson_titik')->hasMoved()){
+            $geo_titik = $this->request->getFile('geojson_titik');
+            $extent = explode('.',$geo_titik->getName());
+            $extent = end($extent);
+            $namaGjsonTitik = "ID".$ID."_Titik_".date('Ymd-his').".".$extent;
+            $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
+        }
         if($this->request->getFile('geojson_petak')->isValid()){
             $geo_petak = $this->request->getFile('geojson_petak');
             $extent = explode('.',$geo_petak->getName());
             $extent = end($extent);
-            $namaGjsonPetak = "ID".$ID."_Petak.".$extent;
+            $namaGjsonPetak = "ID".$ID."_Petak_".date('Ymd-his').".".$extent;
             $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
             // $file->move(directory, rename?, replace?);
         }
@@ -918,16 +950,8 @@ class Admin extends _BaseController
             $geo_garis = $this->request->getFile('geojson_garis');
             $extent = explode('.',$geo_garis->getName());
             $extent = end($extent);
-            $namaGjsonGaris = "ID".$ID."_Garis.".$extent;
+            $namaGjsonGaris = "ID".$ID."_Garis_".date('Ymd-his').".".$extent;
             $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
-        }
-        if($this->request->getFile('geojson_titik')->isValid() && ! $this->request->getFile('geojson_titik')->hasMoved()){
-            $geo_titik = $this->request->getFile('geojson_titik');
-            $extent = explode('.',$geo_titik->getName());
-            $extent = end($extent);
-            $namaGjsonTitik = "ID".$ID."_Titik.".$extent;
-            $check = base_url($dir_geojson.$namaGjsonTitik);
-            $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
         }
 
         $this->M_SDAProvinsi->insert([
@@ -957,6 +981,8 @@ class Admin extends _BaseController
         $dir_geojson    = "uploads/sda_provinsi/geografis/";
         $dir_img        = 'uploads/sda_provinsi/gambar/';
         $dir_doc        = "uploads/sda_provinsi/dokumen/";
+
+        $data = $this->M_SDAProvinsi->find($id);
 
         $namaGambar     = $this->request->getVar('gambar_sebelumnya');
         $namaDokumen    = $this->request->getVar('dokumen_sebelumnya');
@@ -1000,20 +1026,31 @@ class Admin extends _BaseController
                 session()->setFlashdata('error', $this->validator->listErrors());
                 return redirect()->back()->withInput();
             }
-
+            // Hapus File Sebelumnya
+            $check = realpath($dir_img.$data["gambar"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru 
             $img = $this->request->getFile('gambar');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
-            $namaGambar = "Gambar_Data_".$ID.".".$extent;
+            $namaGambar = "Gambar_Data_".$ID."_".date('Ymd-his').".".$extent;
             $img->move($dir_img, $namaGambar, true);
         }
 
         if($tipe_dokumen=="upload"){
             if($this->request->getFile('upload_dokumen')->isValid()){
+                // Hapus File Sebelumnya
+                $check = realpath($dir_doc.$data["dokumen"]);
+                if (is_file($check)){
+                    unlink($check);
+                }
+                // Upload File Baru
                 $dok = $this->request->getFile('upload_dokumen');
                 $extent = explode('.',$dok->getName());
                 $extent = end($extent);
-                $namaDokumen = "ID".$ID."_Dokumen.".$extent;
+                $namaDokumen = "ID".$ID."_Dokumen_".date('Ymd-his').".".$extent;
                 $dok->move($dir_doc, $namaDokumen, true);
             }
         }else if(!empty($this->request->getVar('link_dokumen'))){
@@ -1022,27 +1059,44 @@ class Admin extends _BaseController
             $tipe_dokumen = $this->request->getVar('tipe_sebelumnya');
         }
 
-        if($this->request->getFile('geojson_petak')->isValid()){
-            $geo_petak = $this->request->getFile('geojson_petak');
-            $extent = explode('.',$geo_petak->getName());
-            $extent = end($extent);
-            $namaGjsonPetak = "ID".$ID."_Petak.".$extent;
-            $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
-        }
-
-        if($this->request->getFile('geojson_garis')->isValid()){
-            $geo_garis = $this->request->getFile('geojson_garis');
-            $extent = explode('.',$geo_garis->getName());
-            $extent = end($extent);
-            $namaGjsonGaris = "ID".$ID."_Garis.".$extent;
-            $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
-        }
         if($this->request->getFile('geojson_titik')->isValid()){
+            // Hapus File Sebelumnya
+            $check = realpath($dir_geojson.$data["geojson_titik"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru
             $geo_titik = $this->request->getFile('geojson_titik');
             $extent = explode('.',$geo_titik->getName());
             $extent = end($extent);
-            $namaGjsonTitik = "ID".$ID."_Titik.".$extent;
+            $namaGjsonTitik = "ID".$ID."_Titik_".date('Ymd-his').".".$extent;
             $geo_titik->move($dir_geojson, $namaGjsonTitik, true);
+        }
+        if($this->request->getFile('geojson_petak')->isValid()){
+            // Hapus File Sebelumnya
+            $check = realpath($dir_geojson.$data["geojson_petak"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru
+            $geo_petak = $this->request->getFile('geojson_petak');
+            $extent = explode('.',$geo_petak->getName());
+            $extent = end($extent);
+            $namaGjsonPetak = "ID".$ID."_Petak_".date('Ymd-his').".".$extent;
+            $geo_petak->move($dir_geojson, $namaGjsonPetak, true);
+        }
+        if($this->request->getFile('geojson_garis')->isValid()){
+            // Hapus File Sebelumnya
+            $check = realpath($dir_geojson.$data["geojson_garis"]);
+            if (is_file($check)){
+                unlink($check);
+            }
+            // Upload File Baru
+            $geo_garis = $this->request->getFile('geojson_garis');
+            $extent = explode('.',$geo_garis->getName());
+            $extent = end($extent);
+            $namaGjsonGaris = "ID".$ID."_Garis_".date('Ymd-his').".".$extent;
+            $geo_garis->move($dir_geojson, $namaGjsonGaris, true);
         }
 
         $this->M_SDAProvinsi->save([
