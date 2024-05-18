@@ -28,7 +28,7 @@ class Publik extends _BaseController
         $sda_prov   = $this->M_SDAProvinsi->findAll();
 
         $data = [
-            "title" => "Pusat Data SDA Lampung",
+            "title" => "Pusdatin Sumber Daya Air Provinsi Lampung",
             "data_kab" => $data_kab, "sda_kab" => $sda_kab, "sda_prov" => $sda_prov, "data_kat" => $data_kat,
             "data_akun" => $data_akun,
         ];
