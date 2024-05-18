@@ -106,7 +106,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
         </span>
       </div>
       <div class="col-md-6 text-center mb-4 mb-sm-0" style="">
-        <img src="<?=base_url('myassets/lampungbnr.png')?>" style="max-height:75vh; width:85%;" class="text-center floating p-0">
+        <img src="<?=base_url('myassets/lampungbnr.png')?>" alt="demographic image" style="max-height:75vh; width:85%;" class="text-center floating p-0">
       </div>
     </div>
   </div>
@@ -137,9 +137,9 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
         <!-- <div class="animateme" data-easing="easeinout" data-when="enter" data-opacity="0"
           data-from="0.3" data-to="0" data-translatex="-200"> -->
           <?php if(!empty(profil_sistem('logo_provinsi'))){?>
-          <img src="<?=base_url("uploads/data_provinsi/".profil_sistem('logo_provinsi'))?>" class="w-25">
+          <img src="<?=base_url("uploads/data_provinsi/".profil_sistem('logo_provinsi'))?>" alt="Logo Provinsi" class="w-25">
           <?php }else{?>
-          <img src="<?=base_url('myassets/default-img/no-image.svg')?>" class="w-25">
+          <img src="<?=base_url('myassets/default-img/no-image.svg')?>" alt="Logo provinsi tidak ditemukan" class="w-25">
             
           <?php } ?>
         <!-- </div> -->

@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Diffa Addien Aziz">
+	<meta name="description" content="Halaman login pusat data dan informasi sumber daya air Provinsi Lampung">
+	<meta name=”robots” content="index, follow">
+
 	<link rel="icon" type="image/x-icon" href="/myassets/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/myassets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/myassets/favicon/favicon-32x32.png">

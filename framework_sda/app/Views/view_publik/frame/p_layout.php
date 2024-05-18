@@ -60,7 +60,7 @@
     id="header">
     <div class="container">
       <a class="navbar-brand me-5" href="<?= base_url()?>">
-        <img src="<?=base_url('uploads/data_provinsi/'.profil_sistem("logo_sistem"))?>" class="logo_img">
+        <img src="<?=base_url('uploads/data_provinsi/'.profil_sistem("logo_sistem"))?>" class="logo_img" alt="Logo Sistem">
         <span class="logo_teks"><?=profil_sistem("nama_sistem")?></span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
