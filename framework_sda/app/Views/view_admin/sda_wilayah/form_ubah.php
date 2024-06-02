@@ -88,7 +88,7 @@
       </div>
       <div class="border rounded">
         <label class="border-bottom w-100 px-3 py-2" style="background-color:#ddd">
-          File GEOJSON / KML <small title="Dibutuhkan untuk menampilkan data dalam map">*Dibutuhkan setidaknya 1 file geojson atau kml
+          File GEOJSON / KML <small title="Dibutuhkan untuk menampilkan data dalam map">*Dibutuhkan setidaknya 1 file <b>geojson</b> atau <b>kml</b>
             untuk menampilkan data ke dalam peta</small>
         </label>
         <div class="m-2 row">
@@ -109,7 +109,7 @@
         </div>
         <div class="m-2 row">
           <label for="geojson_petak" class="col-sm-2 col-form-label">Petak <span class="text-warning" data-toggle="tooltip"
-            data-placement="top" title="Untuk: Petak / Bentuk">
+            data-placement="top" title="Untuk: Petak / Bentuk / Polygon">
             <i class="far fa-question-circle"></i>
           </label>
           <input type="hidden" name="geopetak_sebelumnya" value="<?=$data_SDA["geojson_petak"]?>" required>

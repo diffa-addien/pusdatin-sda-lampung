@@ -162,7 +162,7 @@ try {
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
               }
-              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
+              layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table class=\"table table-sm\">' + popupcontent.join(\"\") + '</table>');
               layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
