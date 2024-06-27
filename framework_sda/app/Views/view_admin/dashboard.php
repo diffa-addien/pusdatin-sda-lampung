@@ -383,9 +383,6 @@ try {
       if($extension == "kml"){
         echo "
           var customLayer = L.geoJson(null, {
-            pointToLayer: function (feature, latlng) {
-              return L.circleMarker(latlng, geojsonMarkerOptions);
-            },
             onEachFeature: function onEachFtr(feature, layer) {
               var popupcontent = [];
               feature.properties.judul_data = '".$sda["judul_data"]."';
@@ -568,9 +565,6 @@ try {
       if($extension == "kml"){
         echo "
           var customLayer = L.geoJson(null, {
-            pointToLayer: function (feature, latlng) {
-              return L.circleMarker(latlng, geojsonMarkerOptions);
-            },
             onEachFeature: function onEachFtr(feature, layer) {
               var popupcontent = [];
               feature.properties.judul_data = 'Titik ".$sda_p["judul_data"]."';
