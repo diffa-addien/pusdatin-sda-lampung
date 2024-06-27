@@ -178,23 +178,36 @@ var geojsonMarkerOptions = {
   fillOpacity: 0.4
 };
 
-var stylePetak = {
-  fillColor: 'blue',
-  fillOpacity: 0.5,
-  weight: 2,
+function stylePetak(feature) {
+  return {
+    fillColor: getColor(feature.properties.fill),
+    fillOpacity: 0.7,
+    weight: 1,
+  };
+}
+
+function getColor(d) {
+    if(d){
+      return d;
+    }else{
+      return "blue";
+    }
 }
 
 function highlightFeature(e) {
   var layer = e.target;
   layer.setStyle({
     weight: 3,
-    fillOpacity: 0.7
+    fillOpacity: 0.9
   });
 }
 
 function resetHighlight(e) {
   var layer = e.target;
-  layer.setStyle(stylePetak);
+  layer.setStyle({
+    weight: 1,
+    fillOpacity: 0.7
+  });
 }
 
 function zoomToFeature(e) {

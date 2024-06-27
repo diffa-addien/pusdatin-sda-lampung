@@ -81,8 +81,8 @@
       </div>
       <div class="border rounded">
         <label class="border-bottom w-100 px-3 py-2" style="background-color:#ddd">
-          File GEOJSON / KML <small title="Dibutuhkan untuk menampilkan data dalam map">*Dibutuhkan setidaknya 1 file <b>geojson</b> atau <b>kml</b>
-            untuk menampilkan data ke dalam peta</small>
+          File GEOJSON / KML<small title="Dibutuhkan untuk menampilkan data dalam map"> *Dibutuhkan setidaknya 1 file <b>geojson</b> atau <b>kml</b>
+            untuk menampilkan data ke dalam peta [Maks. 10mb]</small>
         </label>
         <div class="m-2 row">
           <label for="geojson" class="col-sm-2 col-form-label">Titik <span class="text-warning" data-toggle="tooltip"

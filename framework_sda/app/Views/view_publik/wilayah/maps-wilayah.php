@@ -31,10 +31,20 @@ var mapbox = L.tileLayer(
 
 var kosong = L.geoJson({"type": "FeatureCollection","features": []});
 
-var stylePetak = {
-  fillColor: 'blue',
-  fillOpacity: 0.5,
-  weight: 2,
+function stylePetak(feature) {
+  return {
+    fillColor: getColor(feature.properties.fill),
+    fillOpacity: 0.7,
+    weight: 1,
+  };
+}
+
+function getColor(d) {
+    if(d){
+      return d;
+    }else{
+      return "blue";
+    }
 }
 
 var geojsonMarkerOptions = {
@@ -50,13 +60,16 @@ function highlightFeature(e) {
   var layer = e.target;
   layer.setStyle({
     weight: 3,
-    fillOpacity: 0.7
+    fillOpacity: 0.9
   });
 }
 
 function resetHighlight(e) {
   var layer = e.target;
-  layer.setStyle(stylePetak);
+  layer.setStyle({
+    weight: 1,
+    fillOpacity: 0.7
+  });
 }
 
 var customLayer = L.geoJson(null, {
@@ -203,9 +216,6 @@ try {
       if($extension == "kml"){
         echo "
           var customLayer = L.geoJson(null, {
-            pointToLayer: function (feature, latlng) {
-              return L.circleMarker(latlng, geojsonMarkerOptions);
-            },
             onEachFeature: function onEachFtr(feature, layer) {
               var popupcontent = [];
               feature.properties.deskripsi = '".$sda["isi_data"]."';
@@ -237,9 +247,6 @@ try {
         // echo "console.log('File checked');";
         echo "
         var layerTitik".++$hitTitik." = L.geoJSON(".json_encode($titikJSON).", {
-          pointToLayer: function (feature, latlng) {
-              return L.circleMarker(latlng, geojsonMarkerOptions);
-          },
           onEachFeature: function (feature, layer) {
             var popupcontent = [];
             for (var prop in feature.properties) {
