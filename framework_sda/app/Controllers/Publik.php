@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use CodeIgniter\HTTP\Request;
 
 use App\Models\M_Akun;
 use App\Models\M_Wilayah;
@@ -17,6 +18,15 @@ class Publik extends _BaseController
         $this->M_Kategori = new M_Kategori();
         $this->M_SDAProvinsi = new M_SDAProvinsi();
         $this->M_SDAWilayah = new M_SDAWilayah();
+
+        //FOR Maintenance
+        if(getenv("REMOTE_ADDR")=="114.79.3.81"){
+            echo "yes :".getenv("REMOTE_ADDR");
+        }else{
+            echo "Not Valid";
+        }
+        die;
+
     }
 
     public function index()

@@ -1,0 +1,7 @@
+CRITICAL - 2024-06-30 10:54:55 --> Undefined variable: request
+in APPPATH\Controllers\Publik.php on line 23.
+ 1 APPPATH\Controllers\Publik.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH\\Controllers\\Publik.php', 23, [])
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Publik->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
