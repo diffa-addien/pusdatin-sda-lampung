@@ -20,10 +20,10 @@ class Publik extends _BaseController
         $this->M_SDAWilayah = new M_SDAWilayah();
 
         //FOR Maintenance
-        if(getenv("REMOTE_ADDR")=="114.79.3.81"){
+        if(getenv("REMOTE_ADDR")=="114.79.6.73"){
             echo "yes :".getenv("REMOTE_ADDR");
         }else{
-            echo "Not Valid";
+            echo "Server sedang dalam maintenance...";
         }
         die;
 
