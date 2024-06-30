@@ -24,8 +24,9 @@ class Publik extends _BaseController
             echo "yes :".getenv("REMOTE_ADDR");
         }else{
             echo "Server sedang dalam maintenance...";
+            die;
         }
-        die;
+        
 
     }
 
