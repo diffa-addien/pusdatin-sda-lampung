@@ -66,7 +66,7 @@ class Filters extends BaseConfig
      */
     public array  $filters = [
         'logger' => ['before' => ['*'],'after' => ['Admin', 'Admin/*']],
-        'filterAdmin' => ['before' => ['Admin', 'Admin/*']],
+        'filterAdmin' => ['before' => ['Admin', 'Admin/*'],'Admin/tambah_akun'],
         'filter_AdmProv'      => ['before' => ['admin/kelola_akun', 'admin/sda_wilayah/*']],
         'filter_Kontributor'  => ['before' => ['admin/kelola_akun', 'admin/kelola_wilayah', 'admin/kelola_kategori', 'admin/profil_sistem', 'admin/sda_provinsi']]
     ];

@@ -23,10 +23,10 @@ class Login extends _BaseController
                 if (!empty($verif_username)) {
                     $data_akun = $verif_username;
                     if (!password_verify($password, $data_akun['password'])) {
-                        $err = "Password salah";
+                        $err = "Username atau Password salah";
                     }
                 } else {
-                    $err = "username salah";
+                    $err = "Username atau Password salah";
                 }
 
                 if (empty($err)) {

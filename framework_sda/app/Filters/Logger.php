@@ -27,13 +27,12 @@ class Logger implements FilterInterface
         helper('filesystem');
         if (session()->get('username')) {
             $user = session()->get('username');
-            $time = date('Y-m-d H:i:s');
             $route = implode('/', $request->uri->getSegments());
             $from = $_SERVER['HTTP_REFERER'];
             $method = $request->getMethod();
             $ip = getenv("REMOTE_ADDR");
 
-            $text = "[$time] $user ($method) /$route from $from (IP: $ip)";
+            $text = "$user ($method) /$route from $from (IP: $ip)";
 
             log_message('info', $text);
         }
