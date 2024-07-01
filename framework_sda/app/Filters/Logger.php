@@ -11,14 +11,14 @@ class Logger implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         //FOR Maintenance
-        if (getenv("REMOTE_ADDR") != "114.79.6.73") {
-            echo "<div style='position:fixed; padding: 5px; bottom:5px; left:5px; border: 3px solid #73AD21;z-index:99'>";
-            echo "Maintanance MODE: " . getenv("REMOTE_ADDR");
-            echo "</div>";
-        } else {
-            echo "Server sedang dalam maintenance...";
-            die;
-        }
+        // if (getenv("REMOTE_ADDR") != "114.79.6.73") {
+        //     echo "<div style='position:fixed; padding: 5px; bottom:5px; left:5px; border: 3px solid #73AD21;z-index:99'>";
+        //     echo "Maintanance MODE: " . getenv("REMOTE_ADDR");
+        //     echo "</div>";
+        // } else {
+        //     echo "Server sedang dalam maintenance...";
+        //     die;
+        // }
     }
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
