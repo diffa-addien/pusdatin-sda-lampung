@@ -18,16 +18,6 @@ class Publik extends _BaseController
         $this->M_Kategori = new M_Kategori();
         $this->M_SDAProvinsi = new M_SDAProvinsi();
         $this->M_SDAWilayah = new M_SDAWilayah();
-
-        //FOR Maintenance
-        if(getenv("REMOTE_ADDR")=="114.79.6.73"){
-            echo "yes :".getenv("REMOTE_ADDR");
-        }else{
-            echo "Server sedang dalam maintenance...";
-            die;
-        }
-        
-
     }
 
     public function index()
