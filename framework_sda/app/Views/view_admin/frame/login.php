@@ -126,7 +126,7 @@
 								</div>
 								<input type="text" class="form-control" name="user_log" id="user_log" placeholder="Username">
 							</div>
-							
+
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<div class="input-group-text h-100"><i class="fa fa-key"></i></div>

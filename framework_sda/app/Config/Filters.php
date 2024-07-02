@@ -22,6 +22,7 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'logger'        => \App\Filters\Logger::class,
+        'throttler'     => \App\Filters\Throttler::class,
         'filterAdmin'   => \App\Filters\FilterAdmin::class,
         'filter_AdmProv'     => \App\Filters\Filter_AdmProv::class,
         'filter_Kontributor' => \App\Filters\Filter_Kontributor::class,
@@ -55,7 +56,9 @@ class Filters extends BaseConfig
      * permits any HTTP method to access a controller. Accessing the controller
      * with a method you don’t expect could bypass the filter.
      */
-    public array $methods = [];
+    public array $methods = [
+        'post' => ['throttler']
+    ];
 
     /**
      * List of filter aliases that should run on any
@@ -64,7 +67,7 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array  $filters = [
+    public array $filters = [
         'logger' => ['before' => ['*'],'after' => ['Admin', 'Admin/*']],
         'filterAdmin' => ['before' => ['Admin', 'Admin/*'],'Admin/tambah_akun'],
         'filter_AdmProv'      => ['before' => ['admin/kelola_akun', 'admin/sda_wilayah/*']],
