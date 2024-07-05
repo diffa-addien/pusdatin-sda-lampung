@@ -32,7 +32,7 @@
       </div>
       <?php } } endforeach; ?>
     </div>
-    <hr class="mt-0"/>
+    <hr style="border-color: rgba(0,0,0,.3);" class="mt-0"/>
     <div class="row">
       <?php foreach ($data_wilayah as $data_kam) : 
          if($data_kam["jenis"] == "kampus"){

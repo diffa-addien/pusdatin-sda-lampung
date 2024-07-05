@@ -23,15 +23,15 @@ class Publik extends _BaseController
     public function index()
     {
         $data_akun  = $this->M_Akun->findAll();
-        $data_kab   = $this->M_Wilayah->findAll();
+        $data_kab   = $this->M_Wilayah->orderBy('nama', 'ASC')->findAll();
         $data_kat   = $this->M_Kategori->findAll();
         $sda_kab    = $this->M_SDAWilayah->findAll();
         $sda_prov   = $this->M_SDAProvinsi->findAll();
 
         $data = [
             "title" => "Pusdatin Sumber Daya Air Provinsi Lampung",
-            "data_kab" => $data_kab, "sda_kab" => $sda_kab, "sda_prov" => $sda_prov, "data_kat" => $data_kat,
-            "data_akun" => $data_akun,
+            "data_kab" => $data_kab, "sda_kab" => $sda_kab, "sda_prov" => $sda_prov, 
+            "data_kat" => $data_kat, "data_akun" => $data_akun,
         ];
 
         return view('view_publik/beranda', $data);

@@ -67,7 +67,7 @@ table{
         <!-- small box -->
         <div class="small-box shadow-none m-0">
           <div class="inner">
-          <p>Kota / Kabupaten</p>
+          <p>Kota / Kampus</p>
             <h3><?=count($data_kab)?></h3>
             
           </div>

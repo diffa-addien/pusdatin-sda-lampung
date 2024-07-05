@@ -32,7 +32,7 @@ class Logger implements FilterInterface
             $method = $request->getMethod();
             $ip = getenv("REMOTE_ADDR");
 
-            $text = "$user ($method) /$route from $from (IP: $ip)";
+            $text = "$user ($method) \"/$route\" from \"$from\" (IP: $ip)";
 
             log_message('info', $text);
         }
