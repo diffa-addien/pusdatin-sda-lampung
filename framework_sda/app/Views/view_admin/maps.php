@@ -334,9 +334,6 @@ try {
         // echo "console.log('File checked');";
         echo "
         var layerTitik".++$hitTitik." = L.geoJSON(".json_encode($titikJSON).", {
-          pointToLayer: function (feature, latlng) {
-              return L.circleMarker(latlng, geojsonMarkerOptions);
-          },
           onEachFeature: function (feature, layer) {
             var popupcontent = [];
             for (var prop in feature.properties) {
@@ -519,9 +516,6 @@ try {
         // echo "console.log('File checked');";
         echo "
         var layerTitik".++$hitTitik." = L.geoJSON(".json_encode($titikJSON).", {
-          pointToLayer: function (feature, latlng) {
-              return L.circleMarker(latlng, geojsonMarkerOptions);
-          },
           onEachFeature: function (feature, layer) {
             var popupcontent = [];
             for (var prop in feature.properties) {

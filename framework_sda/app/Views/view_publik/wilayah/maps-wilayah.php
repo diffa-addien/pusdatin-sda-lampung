@@ -145,7 +145,6 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
               if (prop == 'judul_data'){
-                
                 break;
               }
               popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
@@ -171,7 +170,6 @@ try {
               feature.properties.judul_data = '".$sda["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){
-                  
                   break;
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
@@ -201,7 +199,6 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
                 if (prop == 'judul_data' ){
-                  
                   break;
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
@@ -222,7 +219,6 @@ try {
               feature.properties.judul_data = '".$sda["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){
-                  
                   break;
                 }
                 popupcontent.push('<tr><td>' + prop + '</td><td>:</td><td> ' + feature.properties[prop] + '</td></tr>');
