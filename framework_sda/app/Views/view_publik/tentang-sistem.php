@@ -117,14 +117,14 @@
       <img class="mainImg shadow" src="<?=base_url('myassets/GSG_Unila.jpg')?>">
       <div class="purpleBox shadow bg-primary pb-1">
         <p class="text-white">
-          SistemSDAL dikembangkan dan dikelola oleh Universitas Lampung, data yang disimpan pada sistem ini merupakan
+          <?=profil_sistem("nama_sistem")?> dikembangkan dan dikelola oleh Universitas Lampung, data yang disimpan pada sistem ini merupakan
           kontribusi dari beberapa pihak.
         </p>
       </div>
     </div>
     <div class="allText bottomText">
       <p class="fs-4 text-primary">
-        SistemSDAL
+        <?=profil_sistem("nama_sistem")?>
       </p>
       <p class="fs-5 subHeadingText">
         Sistem Informasi Pusat Data Sumber Daya Air Provinsi Lampung
