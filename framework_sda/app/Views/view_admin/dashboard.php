@@ -13,7 +13,13 @@
 .leaflet-popup-content{
   width: 260px;
   margin: 3px;
-} 
+}
+.leaflet-popup-content table{
+  display: block;
+  width: 100%;
+  max-height: 30vh;
+  overflow-x:scroll;
+}
 .leaflet-popup-content img{
   width: 100%;
   max-height: 150px;
@@ -226,7 +232,7 @@ function onEachFtr(feature, layer) {
   var popupcontent = [];
   for (var prop in feature.properties) {
     if (prop == 'judul_data'){break;}
-    popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+    popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
   }
   layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join("") + '</table>');
   layer.on({
@@ -242,7 +248,7 @@ var customLayer = L.geoJson(null, {
     var popupcontent = [];
     for (var prop in feature.properties) {
       if (prop == 'judul_data'){break;}
-      popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+      popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
     }
     layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join("") + '</table>');
     layer.on({
@@ -281,7 +287,7 @@ try {
               feature.properties.judul_data = '".$sda["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
               }
               layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
@@ -309,7 +315,7 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
               if (prop == 'judul_data'){break;}
-              popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+              popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
             }
             layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>".$cekGambar."<table>' + popupcontent.join(\"\") + '</table>');
             layer.on({
@@ -336,7 +342,7 @@ try {
               feature.properties.judul_data = '".$sda["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
               }
               layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
@@ -364,7 +370,7 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
                 if (prop == 'judul_data' ){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
             }
             layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>".$cekGambar."<table>' + popupcontent.join(\"\") + '</table>');
             layer.on({
@@ -388,7 +394,7 @@ try {
               feature.properties.judul_data = '".$sda["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
               }
               layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5><table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
@@ -415,7 +421,7 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
               if (prop == 'judul_data' ){break;}
-              popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+              popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
             }
             layer.bindPopup('<h5>'+feature.properties.judul_data+'</h5>".$cekGambar."<table>' + popupcontent.join(\"\") + '</table>');
             layer.on({
@@ -459,7 +465,7 @@ try {
               feature.properties.judul_data = '".$sda_p["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
               }
               layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
@@ -488,7 +494,7 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
               if (prop == 'judul_data'){break;}
-              popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+              popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
             }
             layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>".$cekGambar."<table>' + popupcontent.join(\"\") + '</table>');
             layer.on({
@@ -515,7 +521,7 @@ try {
               feature.properties.judul_data = '".$sda_p["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
               }
               layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
@@ -543,7 +549,7 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
                 if (prop == 'judul_data' ){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
             }
             layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>".$cekGambar."<table>' + popupcontent.join(\"\") + '</table>');
             layer.on({
@@ -567,7 +573,7 @@ try {
               feature.properties.judul_data = 'Titik ".$sda_p["judul_data"]."';
               for (var prop in feature.properties) {
                 if (prop == 'judul_data'){break;}
-                popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+                popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
               }
               layer.bindPopup('<h5>' +feature.properties.judul_data+ '</h5>$cekGambar<table>' + popupcontent.join(\"\") + '</table>');
               layer.on({
@@ -594,7 +600,7 @@ try {
             var popupcontent = [];
             for (var prop in feature.properties) {
               if (prop == 'judul_data' ){break;}
-              popupcontent.push('<tr><td>' + prop + '</td><td>: ' + feature.properties[prop] + '</td></tr>');
+              popupcontent.push('<tr><td>' + prop + '</td><td>' + feature.properties[prop] + '</td></tr>');
             }
             layer.bindPopup('<h5>'+feature.properties.judul_data+'</h5>".$cekGambar."<table>' + popupcontent.join(\"\") + '</table>');
             layer.on({
