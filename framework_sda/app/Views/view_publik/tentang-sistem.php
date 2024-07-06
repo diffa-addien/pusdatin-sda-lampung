@@ -126,12 +126,13 @@
       <p class="fs-4 text-primary">
         <?=profil_sistem("nama_sistem")?>
       </p>
-      <p class="fs-5 subHeadingText">
+      <p class="fs-3 subHeadingText">
         Sistem Informasi Pusat Data Sumber Daya Air Provinsi Lampung
       </p>
       <p class="text-blk description">
-        Universitas Lampung berkomitmen dengan membangun fasilitas pendukung pengelolaan sampah Yaitu Tempat Pengolahan
-        Sampah Terpadu (TPST) Universitas Lampung.
+      Kami berkomitmen untuk menjadi pusat data sumber daya air di Provinsi Lampung yang memiliki potensi untuk memberikan banyak manfaat bagi masyarakat dan lingkungan. Dengan menyediakan informasi akurat dan mudah diakses.
+      <br/><br/>
+      Sistem ini diharapkan dapat membantu meningkatkan pengelolaan sumber daya air, meningkatkan ketahanan air, mendukung pembangunan berkelanjutan, meningkatkan transparansi dan akuntabilitas, dan meningkatkan kesadaran publik.
       </p>
       Ada Pertanyaan?<br class="mb-2"/>
       <a href="<?=base_url('hubungi-kami')?>" class="btn btn-outline-primary rounded-0">
