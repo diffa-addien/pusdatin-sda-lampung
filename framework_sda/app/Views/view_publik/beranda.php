@@ -42,7 +42,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-	margin-left: 30px;
+	margin-left: 30px; margin-right:auto;
 	margin-top: 5px;
 }
 
@@ -85,6 +85,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
   .hide-desktop{display:block}
   .hide-mobile{display:none}
   .hero-btn{max-width:100%; font-size:90%}
+  .floating {margin-left:auto}
 }
 </style>
 
@@ -115,7 +116,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
         </span>
       </div>
       <div class="col-md-6 text-center mb-4 mb-sm-0" style="">
-        <img src="<?=base_url('myassets/lampungbnr.png')?>" alt="demographic image" style="max-height:75vh; width:85%;" class="text-center floating mb-5 p-0">
+        <img src="<?=base_url('myassets/lampungbnr.png')?>" alt="demographic image" style="max-height:75vh; width:85%;" class="floating mb-5 p-0">
         <span class="mb-0 hide-desktop">
           <a href="javascript: scrollke('mainmenu')" class="btn btn-warning rounded-0 hero-btn">Selengkapnya <i class="fas fa-chevron-circle-down"></i></a>
         </span>
