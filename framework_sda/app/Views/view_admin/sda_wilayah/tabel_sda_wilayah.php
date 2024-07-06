@@ -5,7 +5,7 @@
 <div class="card">
   <div class="card-header">
     <h3 class="card-title my-1">Pilih Wilayah Terlebih Dahulu</h3> <span class="float-right">
-      ( Total: <?=count($data_wilayah)?> Wilayah) </span>
+      (Total: <?=count($data_wilayah)?> Wilayah) </span>
   </div>
   <!-- /.card-header -->
   <div class="card-body">

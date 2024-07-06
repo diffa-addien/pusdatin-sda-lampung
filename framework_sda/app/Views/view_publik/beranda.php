@@ -19,6 +19,9 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
 <?=$this->section('head')?>
 <style>
 .svh{min-height: calc(85vh - 4rem - 2rem); min-height: calc(85svh - 4rem - 2rem);}
+.hero-title{}
+.hide-desktop{display:none}
+.hero-btn{padding: 7px 20px 7px 20px; max-width:100%;}
 
 .waves{position:relative;width:100%;height:15vh;margin-bottom:-7px;min-height:100px;max-height:150px}
 .parallax>use{animation:25s cubic-bezier(.55,.5,.45,.5) infinite move-forever}
@@ -73,9 +76,15 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
     font-size:24px;
   }
   .logo_wilayah{
-  height: 125px;
-  object-fit: contain
+    height: 125px;
+    object-fit: contain
+  }
 }
+@media (max-width: 575px){
+  .hero-title{padding: 40px 10px 35px 10px}
+  .hide-desktop{display:block}
+  .hide-mobile{display:none}
+  .hero-btn{max-width:100%; font-size:90%}
 }
 </style>
 
@@ -97,16 +106,19 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
   <div class="container d-flex flex-column justify-content-center text-light p-6 svh">
     <div class="row">
       <div class="col-md-6 d-flex flex-column justify-content-center text-sm-start text-center">
-        <h1 class="p-6 fw-bolder">Pusat Data Sumber Daya Air Provinsi Lampung</h1>
-        <p class="py-2">
+        <h1 class="p-6 hero-title">Pusat Data dan Informasi Sumber Daya Air Provinsi Lampung</h1>
+        <p class="py-2 hide-mobile">
         Selamat datang di sistem! Kami sangat senang Anda berkunjung. Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami.
         </p>
-        <span class="mb-3">
-          <a href="javascript: scrollke('mainmenu')" class="btn btn-warning btn-lg btn-block rounded-0 text-center" style="width:240px; max-width:100%">Selengkapnya <i class="fas fa-chevron-circle-down"></i></a>
+        <span class="mb-3 hide-mobile">
+          <a href="javascript: scrollke('mainmenu')" class="btn btn-warning rounded-0 hero-btn">Selengkapnya <i class="fas fa-chevron-circle-down"></i></a>
         </span>
       </div>
       <div class="col-md-6 text-center mb-4 mb-sm-0" style="">
-        <img src="<?=base_url('myassets/lampungbnr.png')?>" alt="demographic image" style="max-height:75vh; width:85%;" class="text-center floating p-0">
+        <img src="<?=base_url('myassets/lampungbnr.png')?>" alt="demographic image" style="max-height:75vh; width:85%;" class="text-center floating mb-5 p-0">
+        <span class="mb-0 hide-desktop">
+          <a href="javascript: scrollke('mainmenu')" class="btn btn-warning rounded-0 hero-btn">Selengkapnya <i class="fas fa-chevron-circle-down"></i></a>
+        </span>
       </div>
     </div>
   </div>

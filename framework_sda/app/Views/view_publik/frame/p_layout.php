@@ -104,7 +104,7 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/swup@3"></script>
+  <!-- <script src="https://unpkg.com/swup@3"></script> -->
   <!-- Bootstrap core JavaScript-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="<?= base_url('myassets/bootstrap-5.3.0/js/bootstrap.bundle.min.js')?>"></script>

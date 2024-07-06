@@ -127,10 +127,10 @@
         <?=profil_sistem("nama_sistem")?>
       </p>
       <p class="fs-3 subHeadingText">
-        Sistem Informasi Pusat Data Sumber Daya Air Provinsi Lampung
+        Sistem Informasi Pusat Data dan Informasi Sumber Daya Air Provinsi Lampung
       </p>
       <p class="text-blk description">
-      Kami berkomitmen untuk menjadi pusat data sumber daya air di Provinsi Lampung yang memiliki potensi untuk memberikan banyak manfaat bagi masyarakat dan lingkungan. Dengan menyediakan informasi akurat dan mudah diakses.
+      Kami berkomitmen untuk menjadi distributor data sumber daya air di Provinsi Lampung yang memiliki potensi untuk memberikan banyak manfaat bagi masyarakat dan lingkungan. Dengan menyediakan informasi akurat dan mudah diakses.
       <br/><br/>
       Sistem ini diharapkan dapat membantu meningkatkan pengelolaan sumber daya air, meningkatkan ketahanan air, mendukung pembangunan berkelanjutan, meningkatkan transparansi dan akuntabilitas, dan meningkatkan kesadaran publik.
       </p>
@@ -142,7 +142,7 @@
   </div>
   <div class="container text-center mb-5">
     <h4 class="my-4">Release notes</h4>
-    <div>Versi 1.0.0 - 09/10/2023 - Sistem diluncurkan pertama kali - <a href="https://www.linkedin.com/in/diffa-addien-aziz-790726222/">Diffa Addien Aziz</a></div>
+    <div>Versi 1.0.0 - 01/01/2024 - Sistem diluncurkan pertama kali - <a href="https://www.linkedin.com/in/diffa-addien-aziz-790726222/">Diffa Addien Aziz</a></div>
   </div>
 </div>
 <?= $this->endSection()?>
