@@ -483,3 +483,7 @@ INFO - 2024-07-07 08:17:50 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-07-07 08:17:50 --> admin (get) "/Admin/form_tambah_sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
 INFO - 2024-07-07 08:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-07-07 08:17:52 --> admin (get) "/admin/sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-07-07 08:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-07 08:22:32 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
+INFO - 2024-07-07 08:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-07 08:22:33 --> admin (get) "/Admin/form_tambah_sda_prov" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
