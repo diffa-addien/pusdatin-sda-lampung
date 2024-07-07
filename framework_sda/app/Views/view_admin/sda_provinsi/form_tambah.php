@@ -47,7 +47,7 @@
       </div>
       <div class="mb-3 row">
         <label for="isi" class="col-sm-2 col-form-label">Deskripsi</label>
-        <textarea name="isi" class="form-control mx-2" rows="5" required><?= old('isi')?></textarea>
+        <textarea name="isi" class="form-control mx-2" rows="5" required><?=old('isi')?></textarea>
       </div>
       <div class="mb-3 row">
         <div class="col-sm-6">
