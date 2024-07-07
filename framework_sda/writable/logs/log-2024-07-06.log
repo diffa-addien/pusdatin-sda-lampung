@@ -1,0 +1,409 @@
+INFO - 2024-07-06 16:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:06 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/Admin/form_tambah_sda_prov" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:15 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/Admin/form_tambah_sda_prov" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:16 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/Admin/form_tambah_sda_prov" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:40 --> admin (get) "/admin" from "http://sistemair:10/login" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:21:50 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:32:57 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:33:07 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:33:07 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:34:30 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:34:30 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:34:37 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:34:37 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:34:40 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:36:19 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:36:25 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:36:25 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:37:13 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:37:26 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:37:26 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:37:53 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:38:01 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:38:01 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:38:09 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:38:10 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:38:23 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:38:23 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:38:57 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:39:04 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:39:04 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:39:24 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:39:24 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:39:38 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:39:38 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:39:44 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:41:00 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:41:51 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:41:51 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:41:56 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:43:45 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:44:24 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:44:25 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:44:26 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:45:38 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:45:42 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:45:42 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:45:44 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:47:20 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:47:24 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:47:24 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:47:26 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:49:22 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:49:22 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:49:45 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:49:45 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:03 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:05 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:06 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:18 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:18 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:31 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:32 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:43 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:44 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:50:46 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:51:30 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:51:30 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:52:55 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:52:57 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:52:57 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:56:35 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:56:39 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:56:39 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:56:41 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:56:57 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 16:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 16:56:57 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:03:05 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:03:11 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:03:11 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:03:43 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:03:43 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:08:44 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:08:44 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:09:42 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:09:42 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:09:56 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:09:56 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:09:58 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:12:47 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:12:47 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:13:03 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:13:03 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:13:13 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:13:13 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:17:08 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:17:08 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:17:10 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:17:20 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:17:20 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:19:46 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:19:46 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:05 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-06 17:20:07 --> Trying to get property 'features' of non-object
+in APPPATH\Views\view_admin\dashboard.php on line 482.
+ 1 APPPATH\Views\view_admin\dashboard.php(482): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'features\' of non-object', 'APPPATH\\Views\\view_admin\\dashboard.php', 482, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\view_admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('view_admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(47): view('view_admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-06 17:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:11 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:23 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:24 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:26 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:34 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:34 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:36 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:46 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:20:46 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:05 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:06 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:08 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:22 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:22 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:24 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:40 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:21:41 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:25:19 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:25:42 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:25:42 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:45:14 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:45:14 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:47:11 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:47:11 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:47:31 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:47:31 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:47:33 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:47:43 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:47:43 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:15 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:23 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:23 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:33 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:33 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:35 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:52 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:49:52 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:50:42 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:50:42 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:03 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:04 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:23 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:29 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:29 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:51 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:51 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:59 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 17:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 17:51:59 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:09:06 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:09:15 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:09:15 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:19:33 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:19:33 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:19:37 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:19:41 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:19:44 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:20:41 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:20:41 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:20:51 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:20:51 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:21:08 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:21:09 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:21:13 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:21:23 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:21:23 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:21:28 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:22:24 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:22:24 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:23:45 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:23:51 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:23:51 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:24:11 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:24:16 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:24:16 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:24:51 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:24:51 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:31:33 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:31:57 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:31:57 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:33:09 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:33:09 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:34:02 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:34:10 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:34:10 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:34:57 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:34:57 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:24 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:24 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:37 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:42 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:42 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:49 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:49 --> admin (get) "/Admin/sda_provinsi" from "http://sistemair:10/index.php/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:35:52 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/Admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:36:08 --> admin (post) "/Admin/ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)
+INFO - 2024-07-06 18:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 18:36:08 --> admin (get) "/admin/form_ubah_sda_prov/12" from "http://sistemair:10/admin/form_ubah_sda_prov/12" (IP: 127.0.0.1)

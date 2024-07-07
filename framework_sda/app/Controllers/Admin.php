@@ -610,22 +610,23 @@ class Admin extends _BaseController
         $getData = $this->M_SDAWilayah->select('max(id) as lastID')->first();
         $ID = $getData["lastID"] + 1;
         
+        $validationRule = [
+            'judul_data' => ['label' => 'Nama Data', 'rules' => ['required', 'max_length[150]']],
+            'gambar' => ['label' => 'Gambar: ','rules' => ['mime_in[gambar,image/jpg,image/jpeg,image/png]','max_size[gambar,2040]']],
+            'upload_dokumen' => ['rules' => ['ext_in[upload_dokumen,pdf,doc,docx,ppt,pptx,xlsx,zip]','max_size[upload_dokumen,10400]'],
+                'errors' => [
+                    'ext_in' => 'Input dokumen hanya boleh (pdf,ppt,doc,excel,zip)',
+                ]],
+            'geojson_titik' => ['label' => 'GIS Titik/Lokasi: ','rules' => ['ext_in[geojson_titik,kml,geojson]','max_size[geojson_titik,17000]']],
+            'geojson_garis' => ['label' => 'GIS Garis/Saluran: ','rules' => ['ext_in[geojson_garis,kml,geojson]','max_size[geojson_garis,17000]']],
+            'geojson_petak' => ['label' => 'GIS Petak/Polygon: ','rules' => ['ext_in[geojson_petak,kml,geojson]','max_size[geojson_petak,17000]']],
+        ];
+        if (!$this->validate($validationRule)) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        
         if($this->request->getFile('gambar')->isValid()){
-            $validationRule = [
-                'gambar' => [
-                    'label' => 'Error Image: ',
-                    'rules' => [
-                        'uploaded[gambar]',
-                        'mime_in[gambar,image/jpg,image/jpeg,image/png]',
-                        'max_size[gambar,3000]'
-                    ],
-                ],
-            ];
-            if (!$this->validate($validationRule)) {
-                session()->setFlashdata('error', $this->validator->listErrors());
-                return redirect()->back()->withInput();
-            }
-
             $img = $this->request->getFile('gambar');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
@@ -723,22 +724,24 @@ class Admin extends _BaseController
         }
 
         $ID = $id;
+
+        $validationRule = [
+            'judul_data' => ['label' => 'Nama Data', 'rules' => ['required', 'max_length[150]']],
+            'gambar' => ['label' => 'Gambar: ','rules' => ['mime_in[gambar,image/jpg,image/jpeg,image/png]','max_size[gambar,2040]']],
+            'upload_dokumen' => ['rules' => ['ext_in[upload_dokumen,pdf,doc,docx,ppt,pptx,xlsx,zip]','max_size[upload_dokumen,10400]'],
+                'errors' => [
+                    'ext_in' => 'Input dokumen hanya boleh (pdf,ppt,doc,excel,zip)',
+                ]],
+            'geojson_titik' => ['label' => 'GIS Titik/Lokasi: ','rules' => ['ext_in[geojson_titik,kml,geojson]','max_size[geojson_titik,17000]']],
+            'geojson_garis' => ['label' => 'GIS Garis/Saluran: ','rules' => ['ext_in[geojson_garis,kml,geojson]','max_size[geojson_garis,17000]']],
+            'geojson_petak' => ['label' => 'GIS Petak/Polygon: ','rules' => ['ext_in[geojson_petak,kml,geojson]','max_size[geojson_petak,17000]']],
+        ];
+        if (!$this->validate($validationRule)) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
         
         if($this->request->getFile('gambar')->isValid()){
-            $validationRule = [
-                'gambar' => [
-                    'label' => 'Error Image: ',
-                    'rules' => [
-                        'uploaded[gambar]',
-                        'mime_in[gambar,image/jpg,image/jpeg,image/png]',
-                        'max_size[gambar,3000]'
-                    ],
-                ],
-            ];
-            if (!$this->validate($validationRule)) {
-                session()->setFlashdata('error', $this->validator->listErrors());
-                return redirect()->back()->withInput();
-            }
             // Menghapus File Sebelumnya
             $check = realpath($dir_img.$data["gambar"]);
             if (is_file($check)){
@@ -897,22 +900,23 @@ class Admin extends _BaseController
         $getData = $this->M_SDAProvinsi->select('max(id) as lastID')->first();
         $ID = $getData["lastID"] + 1; // ID identification
         
+        $validationRule = [
+            'judul_data' => ['label' => 'Nama Data', 'rules' => ['required', 'max_length[150]']],
+            'gambar' => ['label' => 'Gambar: ','rules' => ['mime_in[gambar,image/jpg,image/jpeg,image/png]','max_size[gambar,2040]']],
+            'upload_dokumen' => ['rules' => ['ext_in[upload_dokumen,pdf,doc,docx,ppt,pptx,xlsx,zip]','max_size[upload_dokumen,10400]'],
+                'errors' => [
+                    'ext_in' => 'Input dokumen hanya boleh (pdf,ppt,doc,excel,zip)',
+                ]],
+            'geojson_titik' => ['label' => 'GIS Titik/Lokasi: ','rules' => ['ext_in[geojson_titik,kml,geojson]','max_size[geojson_titik,17000]']],
+            'geojson_garis' => ['label' => 'GIS Garis/Saluran: ','rules' => ['ext_in[geojson_garis,kml,geojson]','max_size[geojson_garis,17000]']],
+            'geojson_petak' => ['label' => 'GIS Petak/Polygon: ','rules' => ['ext_in[geojson_petak,kml,geojson]','max_size[geojson_petak,17000]']],
+        ];
+        if (!$this->validate($validationRule)) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        
         if($this->request->getFile('gambar')->isValid()){
-            $validationRule = [
-                'gambar' => [
-                    'label' => 'Error Image: ',
-                    'rules' => [
-                        'uploaded[gambar]',
-                        'mime_in[gambar,image/jpg,image/jpeg,image/png]',
-                        'max_size[gambar,3000]'
-                    ],
-                ],
-            ];
-            if (!$this->validate($validationRule)) {
-                session()->setFlashdata('error', $this->validator->listErrors());
-                return redirect()->back()->withInput();
-            }
-
             $img = $this->request->getFile('gambar');
             $extent = explode('.',$img->getName());
             $extent = end($extent);
@@ -1011,21 +1015,23 @@ class Admin extends _BaseController
 
         $ID = $id;
         
+        $validationRule = [
+            'judul_data' => ['label' => 'Nama Data', 'rules' => ['required', 'max_length[150]']],
+            'gambar' => ['label' => 'Gambar: ','rules' => ['mime_in[gambar,image/jpg,image/jpeg,image/png]','max_size[gambar,2040]']],
+            'upload_dokumen' => ['rules' => ['ext_in[upload_dokumen,pdf,doc,docx,ppt,pptx,xlsx,zip]','max_size[upload_dokumen,10400]'],
+                'errors' => [
+                    'ext_in' => 'Input dokumen hanya boleh (pdf,ppt,doc,excel,zip)',
+                ]],
+            'geojson_titik' => ['label' => 'GIS Titik/Lokasi: ','rules' => ['ext_in[geojson_titik,kml,geojson]','max_size[geojson_titik,17000]']],
+            'geojson_garis' => ['label' => 'GIS Garis/Saluran: ','rules' => ['ext_in[geojson_garis,kml,geojson]','max_size[geojson_garis,17000]']],
+            'geojson_petak' => ['label' => 'GIS Petak/Polygon: ','rules' => ['ext_in[geojson_petak,kml,geojson]','max_size[geojson_petak,17000]']],
+        ];
+        if (!$this->validate($validationRule)) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+
         if($this->request->getFile('gambar')->isValid()){
-            $validationRule = [
-                'gambar' => [
-                    'label' => 'Error Image: ',
-                    'rules' => [
-                        'uploaded[gambar]',
-                        'mime_in[gambar,image/jpg,image/jpeg,image/png]',
-                        'max_size[gambar,3000]'
-                    ],
-                ],
-            ];
-            if (!$this->validate($validationRule)) {
-                session()->setFlashdata('error', $this->validator->listErrors());
-                return redirect()->back()->withInput();
-            }
             // Hapus File Sebelumnya
             $check = realpath($dir_img.$data["gambar"]);
             if (is_file($check)){

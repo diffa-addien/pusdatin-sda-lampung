@@ -196,6 +196,10 @@ class FileRules
         }
 
         foreach ($files as $file) {
+            // Manual Add: Get extension string V4.3.2
+            $temp = explode('.',$file->getName());
+            $extension = end($temp);
+
             if ($file === null) {
                 return false;
             }
@@ -204,7 +208,8 @@ class FileRules
                 return true;
             }
 
-            if (! in_array($file->guessExtension(), $params, true)) {
+            //  Manual Edit: guessExtension() to extension string
+            if (! in_array($extension, $params, true)) {
                 return false;
             }
         }

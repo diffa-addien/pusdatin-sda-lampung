@@ -424,7 +424,15 @@ class Mimes
         'kml' => [
             'application/vnd.google-earth.kml+xml',
             'application/xml',
+            'application/kml',
             'text/xml',
+            'text/kml',
+        ],
+        'geojson' => [
+            'application/geo+json',
+            'application/vnd.geo+json',
+            'application/json',
+            'text/json'
         ],
         'ics'  => 'text/calendar',
         'ical' => 'text/calendar',

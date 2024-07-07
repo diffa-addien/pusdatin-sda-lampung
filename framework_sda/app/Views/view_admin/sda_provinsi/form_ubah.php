@@ -10,9 +10,12 @@
 <div class="card">
   <div class="card-body">
     <?php if(!empty(session()->getFlashData('error'))):
-        echo "<div class='bg-warning text-white rounded p-2'>".session()->getFlashData('error')."</div>";
-      ?>
-    <?php endif ?>
+        echo "<div class='bg-warning text-white rounded pt-3 pb-1'>".
+        "<div class='ml-3 mb-2 text-bold'>Gagal, tolong periksa kembali input berikut:</div>"
+        .session()->getFlashData('error').
+        "</div>";
+        endif
+    ?>
 
     <form class="was-validated" action="<?=base_url('Admin/ubah_sda_prov/'.$data_SDA['id'])?>" method="POST"
       enctype="multipart/form-data">
@@ -48,7 +51,7 @@
       </div>
       <div class="mb-3 row">
         <div class="col-sm-6">
-          <label for="gambar" class="col-form-label">Gambar <small class="text-muted">opsional</small></label>
+          <label for="gambar" class="col-form-label">Gambar <small class="text-muted">opsional (Max: 2mb)</small></label>
           <input type="hidden" name="gambar_sebelumnya" value="<?=$data_SDA["gambar"]?>" required>
           <input type="file" accept=".jpg,.png,.jpeg,.svg" name="gambar" class="form-control" id="gambar"
             onchange="onFileUpload(this);">
@@ -66,7 +69,7 @@
             title="Masukan nilai yang valid">
           <input type="hidden" name="dokumen_sebelumnya" value="<?=$data_SDA["dokumen"]?>" required>
           <input type="hidden" name="tipe_sebelumnya" value="<?=$data_SDA["tipe_dokumen"]?>" required>
-          <input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.zip" id="upload_dokumen" name="upload_dokumen" class="form-control d-none"
+          <input type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.zip" id="upload_dokumen" name="upload_dokumen" class="form-control d-none"
             title="Masukan nilai yang valid">
           <div class="p-1 border rounded-0">Sebelumnya: <?=$data_SDA["dokumen"] == "" ? "Tanpa Dokumen!" : "[".$data_SDA["tipe_dokumen"]."] ".$data_SDA["dokumen"]?> (<?=$data_SDA["ket_dokumen"] == "" ? "Tanpa Keterangan" : $data_SDA["ket_dokumen"]?>)</div>
           <div class="pl-1">
