@@ -51,14 +51,14 @@ $nama_gis = explode('/',$URL_gis);
   <div class="card-header py-2 pl-3" style="height: 50px">
     <h3 class="card-title">
       <a href="javascript:history.back()" type="button" class="btn btn-sm btn-outline-secondary px-3 mr-2"><i class="fas fa-chevron-left"></i> Kembali</a> 
-      <span style="position: relative; top: 2px">
-      <i class="fas fa-map mx-1"></i>
-      GIS Viewer: <?= "[".$judul."] ".end($nama_gis)?>
+      <span class="text-nowrap position-absolute" style="display: inline-block; top: 12px; left: 120px; overflow: hidden">
+        <i class="fas fa-map mx-1"></i>
+        GIS Viewer: <?= "[".$judul."] ".end($nama_gis)?>
       </span>
     </h3>
-    <div class="card-tools pr-sm-1">
+    <div class="card-tools pr-sm-1 position-absolute bg-white" style="right:17px">
       <div class="btn-group">
-        <a href="<?=base_url($URL_gis)?>" title="Download File" type="button" class="btn btn-sm btn-outline-primary" download>Download GIS File</a>
+        <a href="<?=base_url($URL_gis)?>" title="Download File" type="button" class="btn btn-sm btn-outline-primary" download>Download</a>
       </div>
     </div>
   </div><!-- /.card-header -->
@@ -250,11 +250,11 @@ L.control.scale({imperial: false}).addTo(map);
 setTimeout(function () {
   try{
     map.fitBounds(grabDataGis.getBounds(), {padding: [50, 50]});
-    console.log("layers loaded in first try");
+    console.log("getBounds success in first try");
   } catch {
     setTimeout(function () {
       map.fitBounds(grabDataGis.getBounds(), {padding: [50, 50]});
-      console.log("layers loaded in seconds try"); 
+      console.log("getBounds success in seconds try"); 
     }, 3000);
   }
 }, 1000);

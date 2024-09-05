@@ -107,3 +107,27 @@ INFO - 2024-09-05 04:06:17 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-09-05 04:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-09-05 04:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-09-05 04:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-05 04:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-05 05:00:01 --> unlink(C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem-pusdatin-lampung\framework_sda\writable\debugbar/debugbar_1725512157.740842.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\Users\\ACER\\OneDrive\\Dokumen\\_SKRIPSI\\PROJECT\\sistem-pusdatin-lampung\\framework_sda\\writable\\debugbar/debugbar_1725512157.740842.json): No such file or directory', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 76, [...])
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('FCPATH\\framework_sda\\writable\\debugbar/debugbar_1725512157.740842.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1725512399.307303', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-05 05:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-05 05:00:10 --> unlink(C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem-pusdatin-lampung\framework_sda\writable\debugbar/debugbar_1725512175.986073.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\Users\\ACER\\OneDrive\\Dokumen\\_SKRIPSI\\PROJECT\\sistem-pusdatin-lampung\\framework_sda\\writable\\debugbar/debugbar_1725512175.986073.json): No such file or directory', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 76, [...])
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('FCPATH\\framework_sda\\writable\\debugbar/debugbar_1725512175.986073.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1725512408.699245', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-05 05:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-05 05:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
