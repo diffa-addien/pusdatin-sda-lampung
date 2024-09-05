@@ -58,7 +58,7 @@ $nama_gis = explode('/',$URL_gis);
     </h3>
     <div class="card-tools pr-sm-1">
       <div class="btn-group">
-        <a href="<?=base_url('uploads/sda_wilayah/geografis/ID1_Petak.geojson')?>" title="Download File" type="button" class="btn btn-sm btn-outline-primary" download>Download GIS File</a>
+        <a href="<?=base_url($URL_gis)?>" title="Download File" type="button" class="btn btn-sm btn-outline-primary" download>Download GIS File</a>
       </div>
     </div>
   </div><!-- /.card-header -->

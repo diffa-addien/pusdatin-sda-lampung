@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name=”robots” content="index, follow">
+  <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="ryKp7nOZvoV34O9ztIZxQyM-01pOD_A_iqpzaEyySZU" />
   <meta name="description" content="Pusat data dan informasi sumber daya air Provinsi Lampung. Dapatkan akses ke pusat informasi terpusat yang didedikasikan untuk sumber daya air.">
   <meta name="keywords" content="Sumber daya air, sistem informasi air, Sumber Daya Air Lampung,">
