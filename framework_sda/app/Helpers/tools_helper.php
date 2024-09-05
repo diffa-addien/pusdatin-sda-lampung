@@ -1,6 +1,7 @@
 <?php
 use App\Models\M_ProfilSistem;
 use App\Models\M_Kategori;
+use App\Models\M_SDAWilayah;
 
 function profil_sistem($konteks){
   $M_ProfilSistem = new M_ProfilSistem;
@@ -52,6 +53,14 @@ function get_kategoriById($id){
   $namaKategori = $model["nama"];
 
   return $namaKategori;
+}
+
+function count_sda_wilayah($wilayah){
+  $M_SDAWilayah = new M_SDAWilayah;
+  $model = $M_SDAWilayah->query('SELECT id FROM data_sda_wilayah where id_wilayah = '.$wilayah)->getResultArray();
+  $count = count($model);
+
+  return $count;
 }
 
 function cekSesiUnduh($link){

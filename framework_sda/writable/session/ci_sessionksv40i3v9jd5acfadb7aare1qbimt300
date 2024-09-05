@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1721058544;_ci_previous_url|s:56:"http://sistemair:10/index.php/Admin/form_tambah_sda_prov";username|s:5:"admin";nama|s:13:"Administrator";role|s:11:"admin_utama";wilayah|s:5:"semua";error|s:258:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Input dokumen hanya boleh (pdf,ppt,doc,excel,zip)</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:10:"judul_data";s:18:"Uji Coba Data 2020";s:5:"tahun";s:4:"2024";s:11:"id_kategori";s:1:"1";s:3:"isi";s:9:"Deskripsi";s:12:"tipe_dokumen";s:6:"upload";s:12:"link_dokumen";s:0:"";}}_ci_validation_errors|a:1:{s:14:"upload_dokumen";s:49:"Input dokumen hanya boleh (pdf,ppt,doc,excel,zip)";}

@@ -252,7 +252,6 @@ class Admin extends _BaseController
 
     public function form_ubah_sda_wilayah($id)
     {
-        
         $data_SDA = $this->M_SDAWilayah->find($id);
         $kota = $this->M_Wilayah->find($data_SDA["id_wilayah"]);
         $kategori = $this->M_Kategori->findAll();
@@ -621,7 +620,7 @@ class Admin extends _BaseController
             'geojson_garis' => ['label' => 'GIS Garis/Saluran: ','rules' => ['ext_in[geojson_garis,kml,geojson]','max_size[geojson_garis,17000]']],
             'geojson_petak' => ['label' => 'GIS Petak/Polygon: ','rules' => ['ext_in[geojson_petak,kml,geojson]','max_size[geojson_petak,17000]']],
         ];
-        if (!$this->validate($validationRule)) {
+        if (!$this->validate($validationRule)){
             session()->setFlashdata('error', $this->validator->listErrors());
             return redirect()->back()->withInput();
         }

@@ -153,7 +153,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
           <img src="<?=base_url("uploads/data_provinsi/".profil_sistem('logo_provinsi'))?>" alt="Logo Provinsi" class="w-25">
           <?php }else{?>
           <img src="<?=base_url('myassets/default-img/no-image.svg')?>" alt="Logo provinsi tidak ditemukan" class="w-25">
-            
+
           <?php } ?>
         <!-- </div> -->
       </div>
@@ -161,8 +161,9 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
       <div class="col-md-6 d-flex flex-column justify-content-center">
         <!-- <div class="animateme" data-easing="easeinout" data-when="enter" data-opacity="0"
           data-from="0.3" data-to="0" data-translatex="200"> -->
-          <h2>Sumber Daya Air Provinsi</h2>
-          <p class="fs-5 fw-light">Data sumber daya air yang dikelola oleh Pemerintah Provinsi Lampung.</p>
+          <span class="fs-2">Sumber Daya Air Provinsi </span>
+          <div><span class="d-inline-block px-2 py-1 my-1 bg-primary-subtle"><?=count($sda_prov)?> Data Tersimpan</span></div>
+          <p class="fs-5 mb-3 fw-light">Data sumber daya air yang dikelola oleh Pemerintah Provinsi Lampung.</p>
           <a href="<?=base_url('publik/data_provinsi/?layout=maps')?>" class="btn btn-lg btn-outline-primary">Lihat Sumber Data Air Provinsi</a>
         <!-- </div> -->
       </div>
@@ -212,8 +213,9 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
     <div class="col-4 col-md-3 col-lg-2">
       <div class="card shadow">
         <img src="<?=base_url('uploads/data_wilayah/gambar/' . $kab['gambar'])?>" onerror="this.src='<?=base_url('myassets/default-img/no-image.svg')?>'" class="card-img-top logo_wilayah p-1" alt="...">
-        <div class="card-body p-0">
-          <a href="<?=base_url('publik/data_wilayah/'.$kab['id'].'?layout=maps')?>" class="btn btn-primary p-1 pb-2 pt-1 rounded-top-0 w-100"><?=$kab['nama']?></a>
+        <div class="card-body p-1">
+          <a href="<?=base_url('publik/data_wilayah/'.$kab['id'].'?layout=maps')?>" class="btn btn-primary pt-1 w-100"><?=$kab['nama']?></a>
+          <div class="text-center"><?=count_sda_wilayah($kab["id"])?> Data</div>
         </div>
       </div>
     </div>
@@ -236,8 +238,9 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
     <div class="col-4 col-md-3 col-lg-2">
       <div class="card shadow">
         <img src="<?=base_url('uploads/data_wilayah/gambar/' . $kam['gambar'])?>" class="card-img-top logo_wilayah p-1" alt="...">
-        <div class="card-body p-0">
-          <a href="<?=base_url('publik/data_wilayah/'.$kam['id'].'?layout=maps')?>" class="btn btn-primary p-1 pb-2 pt-1 rounded-top-0 w-100"><?=$kam['nama']?></a>
+        <div class="card-body p-1">
+          <a href="<?=base_url('publik/data_wilayah/'.$kam['id'].'?layout=maps')?>" class="btn btn-primary pt-1 w-100"><?=$kam['nama']?></a>
+          <div class="text-center"><?=count_sda_wilayah($kam["id"])?> Data</div>
         </div>
       </div>
     </div>

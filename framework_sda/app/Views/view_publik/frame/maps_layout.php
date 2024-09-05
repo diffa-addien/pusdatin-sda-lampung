@@ -111,7 +111,9 @@ function cekView($value){
 
         <a href="<?= base_url('admin')?>" target="_blank" class="btn btn-outline-light">
           <i class="fa fa-user me-1"></i>
+          <?php if(empty(session()->get('username'))){?>
           Login
+          <?php }else{ echo session()->get('username'); }?>
         </a>
         <!-- <a href="<?= base_url('admin')?>" target="_blank" class="btn btn-outline-light ml-3"><i class="fa fa-user"></i>
           Register

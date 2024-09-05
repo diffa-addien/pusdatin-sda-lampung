@@ -43,10 +43,11 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
       <table id="tabel-wilayah" class="table table-bordered table-hover">
         <thead>
           <tr>
-            <th class="w-25">Judul Data</th>
-            <th class="w-50">Deskripsi</th>
+            <th style="min-width: 20%">Judul Data</th>
+            <th style="min-width: 35%">Deskripsi</th>
             <th>GIS File</th>
             <th>Dokumen</th>
+            <th>Kategori</th>
             <th>Tahun</th>
           </tr>
         </thead>
@@ -57,9 +58,9 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
             <td><?= $sda_wilayah["judul_data"]; ?></td>
             <td><?= $sda_wilayah["isi_data"]; ?></td>
             <td>
-              <?= $sda_wilayah["geojson_petak"] == "" ? "-" : "<i class='fas fa-object-ungroup'></i> "; ?>
-              <?= $sda_wilayah["geojson_garis"] == "" ? "-" : "<i class='fas fa-wave-square'></i> "; ?>
-              <?= $sda_wilayah["geojson_titik"] == "" ? "-" : "<i class='fas fa-map-marker'></i>"; ?>
+              <?= $sda_wilayah["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_petak"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
+              <?= $sda_wilayah["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_garis"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i></a>"; ?>
+              <?= $sda_wilayah["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_titik"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i></a>"; ?>
             </td>
             <td>
               <?php if($sda_wilayah["dokumen"]){?>
@@ -67,6 +68,7 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
                   class='fas fa-file'> <?=get_extensi($sda_wilayah["dokumen"])?></i></a>
               <?php }else{ echo "-";} ?>
             </td>
+            <td><?= get_kategoriById($sda_wilayah["id_kategori"]) ?></td>
             <td><?= $sda_wilayah["tahun"]; ?></td>
           </tr>
           <?php endforeach;

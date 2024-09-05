@@ -34,9 +34,9 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
           <?php }else{ echo "-";} ?>
         </td>
         <td>
-          <?= $data_sda["geojson_petak"] == "" ? "-" : "<i class='fas fa-object-ungroup'></i> "; ?>
-          <?= $data_sda["geojson_garis"] == "" ? "-" : "<i class='fas fa-wave-square'></i> "; ?>
-          <?= $data_sda["geojson_titik"] == "" ? "-" : "<i class='fas fa-map-marker'></i>"; ?>
+          <?= $data_sda["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$data_sda["geojson_petak"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
+          <?= $data_sda["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$data_sda["geojson_garis"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i></a>"; ?>
+          <?= $data_sda["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$data_sda["geojson_titik"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i></a>"; ?>
         </td>
         <td class="text-center">
           <a href="<?=base_url('admin/form_ubah_sda_wilayah/'.$data_sda["id"])?>" type="button" title="Edit Data" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>

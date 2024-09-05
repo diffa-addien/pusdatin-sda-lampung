@@ -9,6 +9,8 @@
   <meta name=”robots” content="index, follow">
   <meta name="google-site-verification" content="ryKp7nOZvoV34O9ztIZxQyM-01pOD_A_iqpzaEyySZU" />
   <meta name="description" content="Pusat data dan informasi sumber daya air Provinsi Lampung. Dapatkan akses ke pusat informasi terpusat yang didedikasikan untuk sumber daya air.">
+  <meta name="keywords" content="Sumber daya air, sistem informasi air, Sumber Daya Air Lampung,">
+
 
   <link rel="icon" type="image/x-icon" href="/myassets/favicon/favicon.ico">
 
@@ -81,7 +83,9 @@
 
         <a href="<?= base_url('admin')?>" target="_blank" class="btn btn-outline-light">
           <i class="fa fa-user me-1"></i>
+          <?php if(empty(session()->get('username'))){?>
           Login
+          <?php }else{ echo session()->get('username'); }?>
         </a>
         <!-- <a href="<?= base_url('admin')?>" target="_blank" class="btn btn-outline-light ml-3"><i class="fa fa-user"></i>
           Register

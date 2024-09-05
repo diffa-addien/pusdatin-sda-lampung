@@ -27,6 +27,9 @@
               <img src="<?= base_url('uploads/data_wilayah/gambar/'.$data_kota["gambar"]); ?>" class="w-100 float-right"
                 style="height:80px; width:80px; object-fit: contain">
             </div>
+            <div class="col-12 mt-1" style="background-color: rgba(0,0,0,.05)">
+              <small class="mb-2 text-capitalize">Jumlah Data: <?=count_sda_wilayah($data_kota["id"])?></small>
+            </div>
           </div>
         </a>
       </div>
@@ -49,6 +52,9 @@
             <div class="col-4">
               <img src="<?= base_url('uploads/data_wilayah/gambar/'.$data_kam["gambar"]); ?>" class="w-100 float-right"
                 style="height:80px; width:80px; object-fit: contain">
+            </div>
+            <div class="col-12 mt-1" style="background-color: rgba(0,0,0,.05)">
+              <small class="mb-2 text-capitalize">Jumlah Data: <?=count_sda_wilayah($data_kam["id"])?></small>
             </div>
           </div>
         </a>
