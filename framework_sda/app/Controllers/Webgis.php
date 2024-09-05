@@ -45,10 +45,11 @@ class Webgis extends _BaseController
         $gis = $this->request->getVar("gis");
         // var_dump($gis);die;
         $data_gis = file_get_contents(realpath($gis));
+        $judul = $this->request->getVar("judul");
 
         $data = [
             "title" => "Pusdatin: GIS Viewer", "data_gis" => $data_gis,
-            "URL_gis" => $gis
+            "URL_gis" => $gis, "judul" => $judul
         ];
 
         return view('view_publik/gis-viewer', $data);

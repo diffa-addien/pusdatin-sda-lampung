@@ -53,7 +53,7 @@ $nama_gis = explode('/',$URL_gis);
       <a href="javascript:history.back()" type="button" class="btn btn-sm btn-outline-secondary px-3 mr-2"><i class="fas fa-chevron-left"></i> Kembali</a> 
       <span style="position: relative; top: 2px">
       <i class="fas fa-map mx-1"></i>
-      GIS Viewer: <?= "[".str_replace("_"," ",$nama_gis[1])."] ".end($nama_gis)?>
+      GIS Viewer: <?= "[".$judul."] ".end($nama_gis)?>
       </span>
     </h3>
     <div class="card-tools pr-sm-1">
@@ -248,8 +248,16 @@ L.control.layers(baseLayers, null, {
 L.control.scale({imperial: false}).addTo(map);
 
 setTimeout(function () {
-  map.fitBounds(grabDataGis.getBounds(), {padding: [50, 50]});
+  try{
+    map.fitBounds(grabDataGis.getBounds(), {padding: [50, 50]});
+    console.log("layers loaded in first try");
+  } catch {
+    setTimeout(function () {
+      map.fitBounds(grabDataGis.getBounds(), {padding: [50, 50]});
+      console.log("layers loaded in seconds try"); 
+    }, 3000);
+  }
 }, 1000);
-
+  
 </script>
 <?= $this->endSection('script') ?>

@@ -58,9 +58,9 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
             <td><?= $sda_wilayah["judul_data"]; ?></td>
             <td><?= $sda_wilayah["isi_data"]; ?></td>
             <td>
-              <?= $sda_wilayah["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_petak"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
-              <?= $sda_wilayah["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_garis"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i></a>"; ?>
-              <?= $sda_wilayah["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_titik"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i></a>"; ?>
+              <?= $sda_wilayah["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_petak"]."&judul=".$sda_wilayah["judul_data"]."' title='Lihat GIS'><i class='fas fa-object-ungroup'></i></a>"; ?>
+              <?= $sda_wilayah["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_garis"]."&judul=".$sda_wilayah["judul_data"]."' title='Lihat GIS'><i class='fas fa-wave-square'></i></a>"; ?>
+              <?= $sda_wilayah["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_wilayah%2Fgeografis%2F').$sda_wilayah["geojson_titik"]."&judul=".$sda_wilayah["judul_data"]."' title='Lihat GIS'><i class='fas fa-map-marker'></i></a>"; ?>
             </td>
             <td>
               <?php if($sda_wilayah["dokumen"]){?>

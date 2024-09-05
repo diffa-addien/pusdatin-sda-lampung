@@ -58,9 +58,9 @@
             <td><?= $sda_prov["judul_data"]; ?></td>
             <td><?= $sda_prov["isi_data"]; ?></td>
             <td>
-              <?= $sda_prov["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_petak"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
-              <?= $sda_prov["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_garis"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i></a>"; ?>
-              <?= $sda_prov["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_titik"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i></a>"; ?>
+              <?= $sda_prov["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_petak"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
+              <?= $sda_prov["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_garis"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i></a>"; ?>
+              <?= $sda_prov["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_titik"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i></a>"; ?>
             </td>
             <td>
               <?php if($sda_prov["dokumen"]){?>

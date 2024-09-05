@@ -34,9 +34,9 @@ $dir_doc = "uploads/sda_provinsi/dokumen/";
           }else{ echo "-";} ?>
         </td>
         <td>
-          <?= $sda_prov["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_petak"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
-          <?= $sda_prov["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_garis"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i> "; ?>
-          <?= $sda_prov["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_titik"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i>"; ?>
+          <?= $sda_prov["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_petak"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
+          <?= $sda_prov["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_garis"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i> "; ?>
+          <?= $sda_prov["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_titik"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i>"; ?>
         </td>
         <td class="text-center">
           <a href="<?=base_url('admin/form_ubah_sda_prov/'.$sda_prov["id"])?>" type="button" title="Edit Data" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
