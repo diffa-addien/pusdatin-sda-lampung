@@ -29,6 +29,18 @@ function cekView($value){
   <link rel="stylesheet" href="<?= base_url('leaflet/leaflet.css')?>">
   <link rel="stylesheet" href="<?= base_url('myassets/leaflet-search/src/leaflet-search.css')?>">
   <style>
+    .navbar li a {
+      color: var(--bs-light);
+      opacity: 0.95;
+    }
+    .navbar li a.active, .navbar li a:hover  {
+      color: var(--bs-light);
+      opacity: 1;
+    }
+    .navbar li a.active {
+      font-weight: 600;
+    }
+    
     .disabled{pointer-events: none; color: grey;}
 
     .svh{height: calc(100vh - 110px); height: calc(100svh - 110px); width: 100%;}
@@ -106,6 +118,10 @@ function cekView($value){
           <li class="nav-item dropdown">
             <a class="nav-link <?= \Config\Services::request()->uri->getSegment(1) == 'hubungi-kami' ? 'active border-bottom' : '' ?>"
               href="<?= base_url('hubungi-kami')?>">Hubungi Kami</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link"
+              href="<?= base_url("publik/panduan")?>" target="_blank"><i class="fas fa-book"></i> Panduan Pengguna</a>
           </li>
         </ul>
 

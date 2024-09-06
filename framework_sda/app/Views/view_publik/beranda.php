@@ -124,7 +124,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
     </div>
   </div>
 
-  <!--Waves Container-->
+  <!-- START: Waves Container -------------------------------------->
   <div class="align-self-end">
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -139,78 +139,42 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
     </g>
     </svg>
   </div>
-  <!--Waves end ------------------------------------------------------------------------------------------------------------------------------------------------ -->
+  <!-- END: Waves Container ----------------------------------------->
 </div>
 
 <div class="container mb-1" id="mainmenu">
-  <!-- <div class="scrollme"> -->
     <div class="row text-sm-start text-center border-bottom mb-4 py-3">
 
       <div class="col-md-6 text-center">
-        <!-- <div class="animateme" data-easing="easeinout" data-when="enter" data-opacity="0"
-          data-from="0.3" data-to="0" data-translatex="-200"> -->
           <?php if(!empty(profil_sistem('logo_provinsi'))){?>
           <img src="<?=base_url("uploads/data_provinsi/".profil_sistem('logo_provinsi'))?>" alt="Logo Provinsi" class="w-25">
           <?php }else{?>
           <img src="<?=base_url('myassets/default-img/no-image.svg')?>" alt="Logo provinsi tidak ditemukan" class="w-25">
 
           <?php } ?>
-        <!-- </div> -->
       </div>
 
       <div class="col-md-6 d-flex flex-column justify-content-center">
-        <!-- <div class="animateme" data-easing="easeinout" data-when="enter" data-opacity="0"
-          data-from="0.3" data-to="0" data-translatex="200"> -->
           <span class="fs-2">Sumber Daya Air Provinsi </span>
           <div><span class="d-inline-block px-2 py-1 my-1 bg-primary-subtle"><?=count($sda_prov)?> Data Tersimpan</span></div>
           <p class="fs-5 mb-3 fw-light">Data sumber daya air yang dikelola oleh Pemerintah Provinsi Lampung.</p>
-          <a href="<?=base_url('publik/data_provinsi/?layout=maps')?>" class="btn btn-lg btn-outline-primary">Lihat Sumber Data Air Provinsi</a>
-        <!-- </div> -->
+          <a href="<?=base_url('publik/data_provinsi/?layout=maps')?>" class="btn btn-lg pt-1 btn-outline-primary">Lihat Data Provinsi</a>
       </div>
 
     </div>
-  <!-- </div> -->
 
   <div class="scrollme">
-    <!-- <div class="animateme" data-easing="easeinout" data-when="enter" data-opacity="0"
-      data-from="0.8"
-      data-to="0"
-      data-translatex="-200"> -->
       <h2 class="mb-1">Telusuri Kota</h2>
       <span class="d-inline-block px-3 py-1 mt-2 bg-primary-subtle"><?=$j_kota?> Kota</span> <span class="d-inline-block px-3 py-1 mt-2 bg-primary-subtle"><?=$j_kab?> Kabupaten</span>
-      <p class="fs-5 fw-light mt-2">Lihat data sumber daya air berdasarkan kota, sumber daya yang dikelompokkan ini dikelola oleh Pemerintah Daerah Tingkat 2.</p>
-      
-    <!-- </div> -->
+      <p class="fs-5 fw-light mt-2">Lihat data sumber daya air berdasarkan kota, data yang dikelompokkan ini, dikelola oleh Pemerintah Daerah Tingkat 2.</p>
   </div>
-
-  <!-- <div class="container overflow-hidden my-3" >
-	  <div class="row scrollme">
-		  <div class="MultiCarousel animateme" data-items="2,4,5,6" data-slide="1" id="MultiCarousel"
-        data-interval="1000" data-easing="easeinout" data-when="enter" data-opacity=".3" data-from="0.6" data-to="0" data-translatex="200">
-        <div class="MultiCarousel-inner">
-
-          <?php foreach ($data_kab as $kab) {?>
-            <div class="item">
-              <div class="shadow-sm">
-                <div class="my-0" style=""><img src="<?=base_url('uploads/data_wilayah/gambar/' . $kab['gambar'])?>" class="card-img-top mt-auto" alt='<?=$kab["nama"]?>'></div>
-                <p class="bg-primary-subtle mb-0"><a class="d-inline-block text-black px-1 py-2" style="text-decoration: none;" href="<?=base_url('publik/data_wilayah/' . $kab['id'])?>"><?=$kab["nama"]?></a></p>
-              </div>
-            </div>
-          <?php }?>
-
-        </div>
-        <button class="btn btn-primary leftLst"><i class="fa fa-arrow-left"></i></button>
-        <button class="btn btn-primary rightLst"><i class="fa fa-arrow-right"></i></button>
-      </div>
-    </div>
-  </div> -->
 
   <div class="scrolling-wrapper row flex-row flex-nowrap mt-0 pb-4 pt-0 border-bottom pb-5 mb-3">
     <?php 
     foreach ($data_kab as $kab) {
       if($kab["jenis"] == "kota" || $kab["jenis"] == "kabupaten"){
     ?>
-    <div class="col-4 col-md-3 col-lg-2">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
       <div class="card shadow">
         <img src="<?=base_url('uploads/data_wilayah/gambar/' . $kab['gambar'])?>" onerror="this.src='<?=base_url('myassets/default-img/no-image.svg')?>'" class="card-img-top logo_wilayah p-1" alt="...">
         <div class="card-body p-1">
@@ -227,7 +191,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
   <div class="scrollme">
       <h2 class="mb-1">Telusuri Kampus</h2>
       <span class="d-inline-block px-3 py-1 mt-2 bg-primary-subtle"><?=$j_kam?> Kampus</span>
-      <p class="fs-5 fw-light mt-2">Lihat data sumber daya air berdasarkan kampus, sumber daya yang dikelompokkan ini dikelola oleh pihak kampus.</p>  
+      <p class="fs-5 fw-light mt-2">Lihat data sumber daya air berdasarkan kampus, data yang dikelompokkan ini, dikelola oleh pihak kampus.</p>  
   </div>
 
   <div class="scrolling-wrapper row flex-row flex-nowrap mt-0 pb-4 pt-0">
@@ -235,7 +199,7 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
     foreach ($data_kab as $kam) {
       if($kam["jenis"] == "kampus"){
     ?>
-    <div class="col-4 col-md-3 col-lg-2">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
       <div class="card shadow">
         <img src="<?=base_url('uploads/data_wilayah/gambar/' . $kam['gambar'])?>" class="card-img-top logo_wilayah p-1" alt="...">
         <div class="card-body p-1">
@@ -286,109 +250,6 @@ if (!empty(array_count_values($col_role)['kontributor'])) {
 <?=$this->section('script')?>
 <script src="<?=base_url('myassets/scrollme-master/jquery.scrollme.js')?>"></script>
 <script>
-$(document).ready(function () {
-  var itemsMainDiv = ('.MultiCarousel');
-  var itemsDiv = ('.MultiCarousel-inner');
-  var itemWidth = "";
-
-  $('.leftLst, .rightLst').click(function () {
-      var condition = $(this).hasClass("leftLst");
-      if (condition)
-          click(0, this);
-      else
-          click(1, this)
-  });
-
-  ResCarouselSize();
-
-  $(window).resize(function () {
-      ResCarouselSize();
-  });
-
-  //this function define the size of the items
-  function ResCarouselSize() {
-      var incno = 0;
-      var dataItems = ("data-items");
-      var itemClass = ('.item');
-      var id = 0;
-      var btnParentSb = '';
-      var itemsSplit = '';
-      var sampwidth = $(itemsMainDiv).width();
-      var bodyWidth = $('body').width();
-      $(itemsDiv).each(function () {
-          id = id + 1;
-          var itemNumbers = $(this).find(itemClass).length;
-          btnParentSb = $(this).parent().attr(dataItems);
-          itemsSplit = btnParentSb.split(',');
-          $(this).parent().attr("id", "MultiCarousel" + id);
-
-
-          if (bodyWidth >= 1200) {
-              incno = itemsSplit[3];
-              itemWidth = sampwidth / incno;
-          }
-          else if (bodyWidth >= 992) {
-              incno = itemsSplit[2];
-              itemWidth = sampwidth / incno;
-          }
-          else if (bodyWidth >= 480) {
-              incno = itemsSplit[1];
-              itemWidth = sampwidth / incno;
-          }
-          else {
-              incno = itemsSplit[0];
-              itemWidth = sampwidth / incno;
-          }
-          $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
-          $(this).find(itemClass).each(function () {
-              $(this).outerWidth(itemWidth);
-          });
-
-          $(".leftLst").addClass("over");
-          $(".rightLst").removeClass("over");
-
-      });
-  }
-
-
-  //this function used to move the items
-  function ResCarousel(e, el, s) {
-      var leftBtn = ('.leftLst');
-      var rightBtn = ('.rightLst');
-      var translateXval = '';
-      var divStyle = $(el + ' ' + itemsDiv).css('transform');
-      var values = divStyle.match(/-?[\d\.]+/g);
-      var xds = Math.abs(values[4]);
-      if (e == 0) {
-          translateXval = parseInt(xds) - parseInt(itemWidth * s);
-          $(el + ' ' + rightBtn).removeClass("over");
-
-          if (translateXval <= itemWidth / 2) {
-              translateXval = 0;
-              $(el + ' ' + leftBtn).addClass("over");
-          }
-      }
-      else if (e == 1) {
-          var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
-          translateXval = parseInt(xds) + parseInt(itemWidth * s);
-          $(el + ' ' + leftBtn).removeClass("over");
-
-          if (translateXval >= itemsCondition - itemWidth / 2) {
-              translateXval = itemsCondition;
-              $(el + ' ' + rightBtn).addClass("over");
-          }
-      }
-      $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
-  }
-
-  //It is used to get some elements from btn
-  function click(ell, ee) {
-      var Parent = "#" + $(ee).parent().attr("id");
-      var slide = $(Parent).attr("data-slide");
-      ResCarousel(ell, Parent, slide);
-  }
-});
-
 function scrollke(id){
   var reqId = "#"+id;
   window.scrollTo(0, $(reqId).offset().top-85);

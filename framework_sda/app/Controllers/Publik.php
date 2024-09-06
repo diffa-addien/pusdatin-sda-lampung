@@ -60,6 +60,13 @@ class Publik extends _BaseController
         return view('view_publik/attention_download', $data);
     }
 
+    public function panduan()
+    {
+        $data = ["title" => "Panduan Penggunaan"];
+
+        return view('view_publik/panduan', $data);
+    }
+
     public function data_provinsi()
     {
         if(empty($_GET['layout'])){

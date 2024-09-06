@@ -24,6 +24,18 @@
     body{
       overflow-x: hidden;
     }
+    .navbar li a {
+      color: var(--bs-light);
+      opacity: 0.95;
+    }
+    .navbar li a.active, .navbar li a:hover  {
+      color: var(--bs-light);
+      opacity: 1;
+    }
+    .navbar li a.active {
+      font-weight: 600;
+    }
+    /* Paddinger = padding top navbar */
     .paddinger{
       border-top: 5rem solid var(--bs-primary);
     }
@@ -79,6 +91,10 @@
             <a class="nav-link <?= \Config\Services::request()->uri->getSegment(1) == 'hubungi-kami' ? 'active border-bottom' : '' ?>"
               href="<?= base_url('hubungi-kami')?>">Hubungi Kami</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link"
+              href="<?= base_url("publik/panduan")?>" target="_blank"><i class="fas fa-book"></i> Panduan Pengguna</a>
+          </li>
         </ul>
 
         <a href="<?= base_url('admin')?>" target="_blank" class="btn btn-outline-light">
@@ -103,7 +119,7 @@
   <div class="py-4 bg-footer-2">
     <div class="container-sm">
       <div class="text-center border-dark-subtle">
-        Copyright © <?= date("Y")?> Universitas Lampung
+        Copyright © <?= date("Y")?> - Universitas Lampung
       </div>
     </div>
   </div>

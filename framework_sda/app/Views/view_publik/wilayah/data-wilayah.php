@@ -74,7 +74,7 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
           <?php endforeach;
         }else{?>
           <tr>
-            <td class="text-center" colspan="5">Data kosong</td>
+            <td class="text-center" colspan="6">Data kosong</td>
           </tr>
           <?php } ?>
         </tbody>
