@@ -62,7 +62,7 @@ class Publik extends _BaseController
 
     public function panduan()
     {
-        $data = ["title" => "Panduan Penggunaan"];
+        $data = ["title" => "Panduan Pengguna"];
 
         return view('view_publik/panduan', $data);
     }

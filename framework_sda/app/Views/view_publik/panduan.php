@@ -11,7 +11,7 @@ $fignum = 1;
 
   <title><?=$title?></title>
   <link rel="icon" type="image/x-icon" href="/myassets/favicon/favicon.ico">
-  <meta name="description" content="Panduan penggunaan sistem pusdatin sda.">
+  <meta name="description" content="Panduan pengguna sistem pusdatin sda">
   <meta name="author" content="Diffa Addien Aziz">
 
   <link rel="stylesheet" href="style.css?">
@@ -96,7 +96,7 @@ $fignum = 1;
 
         <h2>Rekomendasi penggunaan: </h2>
         <p>
-          Agar sistem dapat jalan dengan optimal, pengguna disarankan mengakses sistem dengan persyaratan setidaknya sebagai berikut: 
+          Agar sistem dapat berjalan dengan optimal, pengguna disarankan mengakses sistem dengan spesifikasi setidaknya atau lebih tinggi dari yang disebutkan sebagai berikut: 
           <br/><br/>
             - <b>Kecepatan Internet:</b> 5 Mbps<br/>
             - <b>RAM:</b> 4 GB<br/>
