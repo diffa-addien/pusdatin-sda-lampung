@@ -96,11 +96,11 @@ $fignum = 1;
 
         <h2>Rekomendasi penggunaan: </h2>
         <p>
-          Agar sistem dapat berjalan dengan optimal, pengguna disarankan mengakses sistem dengan spesifikasi setidaknya atau lebih tinggi dari yang disebutkan sebagai berikut: 
+          Agar sistem dapat berjalan dengan optimal, pengguna disarankan mengakses sistem dengan spesifikasi setidaknya atau lebih tinggi dari berikut:
           <br/><br/>
-            - <b>Kecepatan Internet:</b> 5 Mbps<br/>
-            - <b>RAM:</b> 4 GB<br/>
-            - <b>Disk:</b> SSD 500 Mbps<br/>
+            - <b>Koneksi Internet:</b> Stabil dengan kecepatan 5 Mbps<br/>
+            - <b>Memori:</b> 4 GB RAM<br/>
+            - <b>Penyimpanan:</b> SSD dengan kecepatan 500 Mbps<br/>
         </p>
 
         <div class="divider" style="width:30%; margin:30px 0;"></div>
