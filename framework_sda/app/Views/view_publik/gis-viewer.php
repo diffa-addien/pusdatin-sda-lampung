@@ -252,16 +252,9 @@ setTimeout(function () {
     map.fitBounds(grabDataGis.getBounds(), {padding: [50, 50]});
     console.log("getBounds success in first try");
   } catch {
-    try{
-      setTimeout(function () {
-        map.fitBounds(grabDataGis.getBounds(), {padding: [50, 50]});
-        console.log("getBounds success in seconds try"); 
-      }, 3000);
-    }catch{
-      alert("Perhatian! File GIS ini mungkin membutuhkan waktu lebih lama untuk dimuat");
-    }
+    alert("Perhatian! File GIS ini mungkin membutuhkan waktu lebih lama untuk dimuat");
   }
-}, 1000);
+}, 2000);
   
 </script>
 <?= $this->endSection('script') ?>
