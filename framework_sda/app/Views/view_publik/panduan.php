@@ -206,9 +206,14 @@ $fignum = 1;
         <h2 id="kontributor">Menjadi Kontributor</h2>
 
         <p>
-          Kami sangat mengapresiasi apabila anda yang ingin membagikan data sumber daya air. Secara normal pengguna bisa menjadi kontributor untuk kota atau kampus yang anda miliki datanya, dengan menekan tombol registrasi pada halaman halaman login.
+          Mari bersama lengkapi peta sumber daya air! Anda punya data tentang air di kota atau kampus Anda? Bagikan bersama kami! Caranya gampang:
           <br/><br/>
-          Pada halaman registrasi, mohon isi seluruh kolom sesuai dengan perintah, maka permohonan akun kontributor telah dibuat dan akan diproses oleh admin. Anda bisa cek akun sudah bisa digunakan atau tidak dengan memasukkannya pada halaman login, atau menunggu informasi dari admin melalui email yang anda berikan saat registrasi.
+          1. Daftar: Klik 'Registrasi sekarang' di halaman login.<br/>
+          2. Isi profil: Lengkapi data diri dan wilayah Anda.<br/>
+          3. Verifikasi: Tunggu email konfirmasi dari kami.<br/>
+          4. Mulai kontribusi: Setelah akun aktif, Anda bisa langsung mulai mengunggah data.
+          <br/><br/>
+          Dengan menjadi kontributor anda memiliki akses untuk mengunduh dokumen pada sistem, dan setiap data yang Anda berikan akan sangat berarti untuk semua orang.
         </p>
 
         <!-- Batas warna hitam -->
