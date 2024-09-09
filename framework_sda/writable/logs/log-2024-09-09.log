@@ -7,3 +7,210 @@ INFO - 2024-09-09 05:05:09 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-09-09 05:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-09-09 05:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-09-09 05:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:27:02 --> admin (get) "/admin" from "http://sistemair:10/login" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:27:23 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:29:19 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:29:29 --> admin (get) "/admin/kelola_wilayah" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:29:31 --> admin (get) "/admin/kelola_kategori" from "http://sistemair:10/admin/kelola_wilayah" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:29:33 --> admin (get) "/admin/kelola_wilayah" from "http://sistemair:10/admin/kelola_kategori" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:29:35 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin/kelola_wilayah" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:29:37 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:30:38 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin/kelola_wilayah" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:30:40 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:32:47 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:33:14 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:33:20 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:33:31 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:33:33 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:33:45 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:33:58 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:34:06 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:35:23 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:35:41 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:38:54 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:39:47 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:40:09 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 05:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 05:42:26 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-09 08:08:02 --> unlink(C:\Users\ACER\OneDrive\Dokumen\_SKRIPSI\PROJECT\sistem-pusdatin-lampung\framework_sda\writable\debugbar/debugbar_1725859773.567302.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\Users\\ACER\\OneDrive\\Dokumen\\_SKRIPSI\\PROJECT\\sistem-pusdatin-lampung\\framework_sda\\writable\\debugbar/debugbar_1725859773.567302.json): No such file or directory', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 76, [...])
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('FCPATH\\framework_sda\\writable\\debugbar/debugbar_1725859773.567302.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1725869281.377566', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-09 08:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:41:44 --> admin (get) "/admin" from "http://sistemair:10/login" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:42:03 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:42:10 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:42:46 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:43:41 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:43:45 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:43:53 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:43:54 --> admin (get) "/admin/sda_wilayah/pilih" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 08:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 08:43:58 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:09:12 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:09:27 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:09:58 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:10:17 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:10:41 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:10:46 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:10:52 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:11:02 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:15:27 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:18:02 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:18:31 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:18:39 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:19:16 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:19:30 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:19:44 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:20:17 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:20:33 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:20:39 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:20:44 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:20:48 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:21:04 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:21:12 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:21:30 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:21:56 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:24:01 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:24:05 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:24:07 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:24:13 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:24:19 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:24:21 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/kelola_akun" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:25:43 --> admin (get) "/admin/kelola_akun" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:25:44 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:25:45 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:25:59 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:26:05 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:26:08 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:27:15 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:28:52 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:29:21 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:29:27 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:29:37 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:29:44 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:29:56 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:30:00 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:31:04 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:33:56 --> admin (get) "/admin/sda_wilayah/pilih" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:33:57 --> admin (get) "/admin/sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:34:10 --> admin (get) "/admin/sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:34:13 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:34:22 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:34:28 --> admin (get) "/admin/sda_wilayah/pilih" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:34:29 --> admin (get) "/admin/sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:34:31 --> admin (get) "/admin/detail_akun/admin" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:34:32 --> admin (get) "/admin/sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:36:58 --> admin (get) "/admin/sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:38:08 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:38:47 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:39:13 --> admin (get) "/admin/sda_wilayah/pilih" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:39:14 --> admin (get) "/admin/sda_wilayah/1" from "http://sistemair:10/admin/sda_wilayah/pilih" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:39:41 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_wilayah/1" (IP: 127.0.0.1)
+INFO - 2024-09-09 09:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-09 09:41:00 --> admin (get) "/admin/sda_provinsi" from "http://sistemair:10/admin/sda_provinsi" (IP: 127.0.0.1)

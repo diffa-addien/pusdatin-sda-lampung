@@ -2,6 +2,7 @@
 use App\Models\M_ProfilSistem;
 use App\Models\M_Kategori;
 use App\Models\M_SDAWilayah;
+use App\Models\M_Akun;
 
 function profil_sistem($konteks){
   $M_ProfilSistem = new M_ProfilSistem;
@@ -53,6 +54,14 @@ function get_kategoriById($id){
   $namaKategori = $model["nama"];
 
   return $namaKategori;
+}
+
+function getNamaByUser($user){
+  $M_Akun = new M_Akun;
+  $model = $M_Akun->find($user);
+  $nama = $model["nama_lengkap"];
+
+  return $nama;
 }
 
 function count_sda_wilayah($wilayah){

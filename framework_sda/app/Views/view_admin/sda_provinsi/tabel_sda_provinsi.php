@@ -25,20 +25,28 @@ $dir_doc = "uploads/sda_provinsi/dokumen/";
         <?php if(!empty($sda_prov)) {
         foreach ($sda_prov as $sda_prov) : ?>
         <tr>
-        <td><?= $sda_prov["id"]; ?></td>
-        <td><?= $sda_prov["judul_data"]; ?></td>
+        <td class="align-middle"><?= $sda_prov["id"]; ?></td>
         <td>
+          <?= $sda_prov["judul_data"]; ?>
+          <hr class="my-1 mt-2 "/>
+          <small class="text-secondary">
+            <i class="fas fa-user-circle"></i> <a class="text-secondary" href="<?=base_url("admin/detail_akun")."/".$sda_prov["diupload_oleh"]?>"><?=getNamaByUser($sda_prov["diupload_oleh"])?></a>
+            &nbsp; <i class="fas fa-tag"></i> <?=get_kategoriById($sda_prov["id_kategori"])?>
+            &nbsp; <i class="fas fa-calendar"></i> <?=$sda_prov["tahun"]?>
+          </small>       
+        </td>
+        <td class="align-middle">
           <?php if($sda_prov["dokumen"]){?>
           <a href="<?=dokumen_link($sda_prov["dokumen"],$sda_prov["tipe_dokumen"],"provinsi")?>" data-placement="top" data-toggle="tooltip" title="<?=$sda_prov["ket_dokumen"]?>"><i class='fas fa-file'> <?=get_extensi($sda_prov["dokumen"])?></i></a>
           <?php
           }else{ echo "-";} ?>
         </td>
-        <td>
+        <td class="align-middle">
           <?= $sda_prov["geojson_petak"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_petak"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-object-ungroup'></i></a>"; ?>
           <?= $sda_prov["geojson_garis"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_garis"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-wave-square'></i> "; ?>
           <?= $sda_prov["geojson_titik"] == "" ? "-" : "<a href='".base_url('Webgis/viewer/?gis=uploads%2Fsda_provinsi%2Fgeografis%2F').$sda_prov["geojson_titik"]."&judul=".$sda_prov["judul_data"]."' title='Lihat GIS' data-placement='top' data-toggle='tooltip'><i class='fas fa-map-marker'></i>"; ?>
         </td>
-        <td class="text-center">
+        <td class="text-center align-middle">
           <a href="<?=base_url('admin/form_ubah_sda_prov/'.$sda_prov["id"])?>" type="button" title="Edit Data" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
           <a href="<?=base_url('admin/hapus_sda_prov/'.$sda_prov["id"])?>" type="button" title="Hapus Data" class="btn btn-sm btn-outline-danger" onclick="return confirm('Konfirmasi hapus data sumber daya air ini?');"><i class="fas fa-trash"></i></a>
         </td>
