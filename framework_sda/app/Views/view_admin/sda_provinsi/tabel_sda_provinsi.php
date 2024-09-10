@@ -38,6 +38,7 @@ $dir_doc = "uploads/sda_provinsi/dokumen/";
         <td class="align-middle">
           <?php if($sda_prov["dokumen"]){?>
           <a href="<?=dokumen_link($sda_prov["dokumen"],$sda_prov["tipe_dokumen"],"provinsi")?>" data-placement="top" data-toggle="tooltip" title="<?=$sda_prov["ket_dokumen"]?>"><i class='fas fa-file'> <?=get_extensi($sda_prov["dokumen"])?></i></a>
+          <small class="text-nowrap">(<?=getSize($sda_prov["dokumen"],$sda_prov["tipe_dokumen"],"provinsi")?>)</small>
           <?php
           }else{ echo "-";} ?>
         </td>

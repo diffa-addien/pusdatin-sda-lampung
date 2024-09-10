@@ -65,7 +65,7 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
             <td>
               <?php if($sda_wilayah["dokumen"]){?>
               <a href="<?=cekSesiUnduh(dokumen_link($sda_wilayah["dokumen"],$sda_wilayah["tipe_dokumen"],"wilayah"))?>"><i
-                  class='fas fa-file'> <?=get_extensi($sda_wilayah["dokumen"])?></i></a>
+                  class='fas fa-file'> <?=get_extensi($sda_wilayah["dokumen"])?></i></a> <small class="text-nowrap">(<?=getSize($sda_wilayah["dokumen"],$sda_wilayah["tipe_dokumen"],"wilayah")?>)</small>
               <?php }else{ echo "-";} ?>
             </td>
             <td><?= get_kategoriById($sda_wilayah["id_kategori"]) ?></td>

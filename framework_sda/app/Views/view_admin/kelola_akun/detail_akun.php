@@ -7,9 +7,9 @@
   </div>
   <div class="card-body">
     <div class="row">
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-4 text-center">
         <img src="<?=base_url('uploads/akun/foto_profil/'.$akun["foto"])?>"
-          onerror="this.src='<?=base_url('myassets/default-img/person-svg.svg')?>'" class="w-75 border">
+          onerror="this.src='<?=base_url('myassets/default-img/person-svg.svg')?>'" class="w-75 border mx-auto">
       </div>
       <div class="col-12 col-md-8">
         <table class="table">

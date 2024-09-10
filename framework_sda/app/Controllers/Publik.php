@@ -13,6 +13,7 @@ class Publik extends _BaseController
 {
     public function __construct()
     {
+        $this->pager = service('pager');
         $this->M_Akun = new M_Akun();
         $this->M_Wilayah = new M_Wilayah();
         $this->M_Kategori = new M_Kategori();
@@ -107,6 +108,7 @@ class Publik extends _BaseController
 
             $starttime = microtime(true);
 
+            // $SDA_prov   = $this->M_SDAProvinsi->select('*')->where('tahun','2022');
             $SDA_prov   = $this->M_SDAProvinsi->query("SELECT * FROM data_sda_provinsi WHERE $query AND $tahun AND $kategori")->getResultArray();
             $data_kat   = $this->M_Kategori->findAll();
             $getTahun   = $this->M_SDAProvinsi->query("SELECT DISTINCT tahun FROM data_sda_provinsi")->getResultArray();

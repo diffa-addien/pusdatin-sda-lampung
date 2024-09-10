@@ -1,5 +1,17 @@
 <?php
-  $dir_doc = "uploads/sda_provinsi/dokumen/";
+$dir_doc = "uploads/sda_provinsi/dokumen/";
+
+$page = ! empty( $_GET['page'] ) ? (int) $_GET['page'] : 1;
+$total = count( $sda_prov ); //total items in array    
+$limit = 10; //per page    
+$totalPages = ceil( $total/ $limit ); //calculate total pages
+$page = max($page, 1); //get 1 page when $_GET['page'] <= 0
+$page = min($page, $totalPages); //get last page when $_GET['page'] > $totalPages
+$offset = ($page - 1) * $limit;
+if( $offset < 0 ) $offset = 0;
+
+$sda_prov = array_slice($sda_prov, $offset, $limit);
+
 ?>
 <?= $this->extend('view_publik/frame/maps_layout') ?>
 <?= $this->section('head') ?>
@@ -65,7 +77,7 @@
             <td>
               <?php if($sda_prov["dokumen"]){?>
               <a href="<?=cekSesiUnduh(dokumen_link($sda_prov["dokumen"],$sda_prov["tipe_dokumen"],"provinsi"))?>"><i
-                  class='fas fa-file'> <?=get_extensi($sda_prov["dokumen"])?></i></a>
+                  class='fas fa-file'> <?=get_extensi($sda_prov["dokumen"])?></i></a> <small class="text-nowrap">(<?=getSize($sda_prov["dokumen"],$sda_prov["tipe_dokumen"],"provinsi")?>)</small>
               <?php }else{ echo "-";} ?>
             </td>
             <td><?= get_kategoriById($sda_prov["id_kategori"]) ?></td>
@@ -79,6 +91,35 @@
           <?php } ?>
         </tbody>
       </table>
+
+      <?php
+      $link = '?layout=list&page=%d';
+      $pagerContainer = '<div style="width: 300px;">';   
+      if( $totalPages != 0 ) 
+      {
+        if( $page == 1 ) 
+        { 
+          $pagerContainer .= ''; 
+        } 
+        else 
+        { 
+          $pagerContainer .= sprintf( '<a href="' . $link . '"> << prev</a> ', $page - 1 ); 
+        }
+        $pagerContainer .= ' <span> Halaman <strong>' . $page . '</strong> dari ' . $totalPages . '</span>'; 
+        if( $page == $totalPages ) 
+        { 
+          $pagerContainer .= ''; 
+        }
+        else 
+        { 
+          $pagerContainer .= sprintf( ' <a href="' . $link . '">next >> </a>', $page + 1 ); 
+        }           
+      }                   
+      $pagerContainer .= '</div>';
+
+      echo $pagerContainer;
+      ?>
+
     </div>
 
   </div>

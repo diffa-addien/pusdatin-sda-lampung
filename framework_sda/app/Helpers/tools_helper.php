@@ -48,6 +48,27 @@ function dokumen_link($doc, $tipe, $dir){
   }
 }
 
+function getSize($doc, $tipe, $dir){
+  if($dir == "provinsi"){
+    $directory = "uploads/sda_provinsi/dokumen/";
+  }else{
+    $directory = "uploads/sda_wilayah/dokumen/";
+  }
+
+  if($tipe == "upload"){
+    $link = realpath($directory.$doc);
+    $mb = filesize($link) / 1000000;
+    $kb = filesize($link) / 1000;
+    if($mb >= 1){
+      return round($mb, 2)." MB";
+    }else{
+      return round($kb, 1)." KB";
+    }
+  }else{
+    return "-";
+  }
+}
+
 function get_kategoriById($id){
   $M_Kategori = new M_Kategori;
   $model = $M_Kategori->find($id);
