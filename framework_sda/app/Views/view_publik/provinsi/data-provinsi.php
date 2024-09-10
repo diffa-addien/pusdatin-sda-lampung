@@ -3,7 +3,7 @@ $dir_doc = "uploads/sda_provinsi/dokumen/";
 
 $page = ! empty( $_GET['page'] ) ? (int) $_GET['page'] : 1;
 $total = count( $sda_prov ); //total items in array    
-$limit = 10; //per page    
+$limit = 25; //per page    
 $totalPages = ceil( $total/ $limit ); //calculate total pages
 $page = max($page, 1); //get 1 page when $_GET['page'] <= 0
 $page = min($page, $totalPages); //get last page when $_GET['page'] > $totalPages
@@ -103,7 +103,7 @@ $sda_prov = array_slice($sda_prov, $offset, $limit);
         } 
         else 
         { 
-          $pagerContainer .= sprintf( '<a href="' . $link . '"> << prev</a> ', $page - 1 ); 
+          $pagerContainer .= sprintf( '<a class="btn btn-sm btn-outline-primary p-0 px-1" href="' . $link . '"><i class="fas fa-chevron-left"></i></a> ', $page - 1 ); 
         }
         $pagerContainer .= ' <span> Halaman <strong>' . $page . '</strong> dari ' . $totalPages . '</span>'; 
         if( $page == $totalPages ) 
@@ -112,7 +112,7 @@ $sda_prov = array_slice($sda_prov, $offset, $limit);
         }
         else 
         { 
-          $pagerContainer .= sprintf( ' <a href="' . $link . '">next >> </a>', $page + 1 ); 
+          $pagerContainer .= sprintf(' <a class="btn btn-sm btn-outline-primary p-0 px-1" href="'.$link.'"><i class="fas fa-chevron-right"></i></a>', $page + 1 ); 
         }           
       }                   
       $pagerContainer .= '</div>';

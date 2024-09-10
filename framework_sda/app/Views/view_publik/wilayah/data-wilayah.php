@@ -1,5 +1,16 @@
 <?php
 $dir_doc = "uploads/sda_wilayah/dokumen/";
+
+$page = ! empty( $_GET['page'] ) ? (int) $_GET['page'] : 1;
+$total = count( $sda_wilayah ); //total items in array    
+$limit = 25; //per page    
+$totalPages = ceil( $total/ $limit ); //calculate total pages
+$page = max($page, 1); //get 1 page when $_GET['page'] <= 0
+$page = min($page, $totalPages); //get last page when $_GET['page'] > $totalPages
+$offset = ($page - 1) * $limit;
+if( $offset < 0 ) $offset = 0;
+
+$sda_wilayah = array_slice($sda_wilayah, $offset, $limit);
 ?>
 <?= $this->extend('view_publik/frame/maps_layout') ?>
 <?= $this->section('head') ?>
@@ -65,7 +76,8 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
             <td>
               <?php if($sda_wilayah["dokumen"]){?>
               <a href="<?=cekSesiUnduh(dokumen_link($sda_wilayah["dokumen"],$sda_wilayah["tipe_dokumen"],"wilayah"))?>"><i
-                  class='fas fa-file'> <?=get_extensi($sda_wilayah["dokumen"])?></i></a> <small class="text-nowrap">(<?=getSize($sda_wilayah["dokumen"],$sda_wilayah["tipe_dokumen"],"wilayah")?>)</small>
+                  class='fas fa-file'> <?=get_extensi($sda_wilayah["dokumen"])?></i></a> <small
+                class="text-nowrap">(<?=getSize($sda_wilayah["dokumen"],$sda_wilayah["tipe_dokumen"],"wilayah")?>)</small>
               <?php }else{ echo "-";} ?>
             </td>
             <td><?= get_kategoriById($sda_wilayah["id_kategori"]) ?></td>
@@ -79,6 +91,35 @@ $dir_doc = "uploads/sda_wilayah/dokumen/";
           <?php } ?>
         </tbody>
       </table>
+
+      <?php
+      $link = '?layout=list&page=%d';
+      $pagerContainer = '<div style="width: 300px;">';   
+      if( $totalPages != 0 ) 
+      {
+        if( $page == 1 ) 
+        { 
+          $pagerContainer .= ''; 
+        } 
+        else 
+        { 
+          $pagerContainer .= sprintf( '<a class="btn btn-sm btn-outline-primary p-0 px-1" href="' . $link . '"><i class="fas fa-chevron-left"></i></a> ', $page - 1 ); 
+        }
+        $pagerContainer .= ' <span> Halaman <strong>' . $page . '</strong> dari ' . $totalPages . '</span>'; 
+        if( $page == $totalPages ) 
+        { 
+          $pagerContainer .= ''; 
+        }
+        else 
+        { 
+          $pagerContainer .= sprintf(' <a class="btn btn-sm btn-outline-primary p-0 px-1" href="'.$link.'"><i class="fas fa-chevron-right"></i></a>', $page + 1 ); 
+        }           
+      }                   
+      $pagerContainer .= '</div>';
+
+      echo $pagerContainer;
+      ?>
+
     </div>
 
   </div>
